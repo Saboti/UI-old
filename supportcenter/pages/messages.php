@@ -22,7 +22,7 @@
 
 if ($user['right']==1) {include('forbidden.php'); return 1;}
 
-$main_html .= '<span class=header><center>Messaggi</center></span><br>';
+$main_html .= '<span class=header><center>Nachrichten</center></span><br>';
 
 
 
@@ -173,16 +173,16 @@ $archStat		= $db->fetchrow($archStatList);
 
 /** main **/
 
-output('<center>L&#146;utente "STFC Support" &egrave; responsabile per queste news.<br>Inoltre pu&ograve; ricevere messaggi di risposta.<br>I messages non possono essere cancellati, perch&eacute; tutti i supporter abbiano la possibilita di leggerli.</center><br><br>');
+output('<center>Der Benutzer "STGC-Support" ist für diese Nachrichten verantwortlich.<br>Auf diesen Namen kann auch geantwortet werden.<br>Nachrichten können nicht gelöscht werden, weil alle Supporter die Möglichkeit haben sollen, sie zu lesen.</center><br><br>');
 
 output('
 	<center>
 	  <table width="90%" border=0 cellpadding=2 cellspacing=2 class="style_inner">
 	   <tr>
-		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=inbox').'"><b>Posta in entrata('.$inStat['unreadMessages'].'/'.$inStat['messages'].')</a></span></td>
-		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=outbox').'"><b>Posta in uscita</a></span></td>
-		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=archiv').'"><b>Archivio ('.$archStat['messages'].')</a></span></td>
-		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=newpost').'"><b>Invia messaggio</a></span></td>
+		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=inbox').'"><b>Posteingang('.$inStat['unreadMessages'].'/'.$inStat['messages'].')</a></span></td>
+		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=outbox').'"><b>Postausgang</a></span></td>
+		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=archiv').'"><b>Archiv ('.$archStat['messages'].')</a></span></td>
+		 <td width="25%"><span style="font-family:Arial,serif;font-size:9pt;"><center><a href="'.parse_link('p=messages&a2=newpost').'"><b>Nachricht senden</a></span></td>
 		</tr>
 	  </table>
 	 <br>');
@@ -218,7 +218,7 @@ function inbox()
 	if($inStat['messages'] == 0)
 		output('<tr>
 						 <td width="2%"></td>
-					    <td colspan="4"><i>Nessun messaggio</i></td>
+					    <td colspan="4"><i>keine Nachrichten</i></td>
 						 <td width="2%"></td>
 					   </tr>');
 	else
@@ -248,7 +248,7 @@ function inbox()
 		}
 
 	$links 	= navigation_show_pagelinks($page, $perpage, $inStat['messages'], 'p=messages&a2=inbox');
-	$mark		= '<a href="'.parse_link('p=messages&rmarkall=1').'">Marca tutti come letti</a>';
+	$mark		= '<a href="'.parse_link('p=messages&rmarkall=1').'">Alles als gelesen markieren</a>';
 	$delete	= '';
 
 	if($inStat['unreadMessages'] != 0)
@@ -275,8 +275,8 @@ function inbox()
 					   <td width="96%" colspan="4">
 						 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="style_inner">
                     <tr>
-                     <td width="50%" align="left">voci selezionate</td>
-                     <td width="50%" align="right"><input style="width: 120px;" type="submit" class="button" name="rarchiv" value="Archivia"></td>
+                     <td width="50%" align="left">gew&auml;glte Eintr&auml;ge</td>
+                     <td width="50%" align="right"><input style="width: 120px;" type="submit" class="button" name="rarchiv" value="Archivieren"></td>
                     </tr>
 					    </table>
 						<td width="2%">&nbsp;</td>
@@ -318,7 +318,7 @@ function outbox()
 	if($outStat['messages'] == 0)
 		output('<tr>
 						 <td width="2%"></td>
-					    <td colspan="4"><i>Nessun messaggio</i></td>
+					    <td colspan="4"><i>keine Nachrichten</i></td>
 						 <td width="2%"></td>
 					   </tr>');
 	else
@@ -379,7 +379,7 @@ function archiv()
 	if($archStat['messages'] == 0)
 		output('<tr>
 						 <td width="2%"></td>
-					    <td colspan="4"><i>Nessun messaggio</i></td>
+					    <td colspan="4"><i>keine Nachrichten</i></td>
 						 <td width="2%"></td>
 					   </tr>');
 	else
@@ -429,7 +429,7 @@ function archiv()
 					   <td width="96%" colspan="4">
 						 <table width="100%" border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                     <td width="50%" align="left">voci selezionate</td>
+                     <td width="50%" align="left">gew&auml;hlte Eintr&auml;ge</td>
                      <td width="50%" align="right"></td>
                     </tr>
 					    </table>
@@ -512,22 +512,22 @@ function view()
 		$datum 	= date("d.m.y H:i", $message['time']);
 		$text		= nl2br($message['text']);
 
-		output('<center><p><span class="sub_caption2"><b>Leggi messaggio:</b></p>
+		output('<center><p><span class="sub_caption2"><b>Nachricht lesen:</b></p>
 						 <table width="50%" border="0" cellpadding="0" cellspacing="0"   class="style_inner">
 						  <tr>
-						   <td width="25%">Mittente:</td>
+						   <td width="25%">Absender:</td>
 							<td width="75%">&nbsp;&nbsp;'.$sender.'</td>
 						  </tr>
 					     <tr>
-						   <td width="25%">Destinatario:</td>
+						   <td width="25%">Empf&auml;nger:</td>
 							<td width="75%">&nbsp;&nbsp;'.$receiver.'</td>
 						  </tr>
 						  <tr>
-						   <td width="25%">Data:</td>
+						   <td width="25%">Datum:</td>
 							<td width="75%">&nbsp;&nbsp;'.$datum.'</td>
 						  </tr>
 						  <tr>
-						   <td width="25%">Titolo:</td>
+						   <td width="25%">Titel:</td>
 							<td width="75%">&nbsp;&nbsp;'.$message['subject'].'</td>
 						  </tr>
 						 </table>
@@ -549,13 +549,13 @@ function view()
 							  <td width="50%" align="right">
 							   <form method="post" action="'.parse_link('p=messages&a2=newpost').'">
 							    <input type="hidden" name="id" value="'.$message['id'].'">
-							    <input type="submit" style="width: 120px;" class="button" value="Rispondi">&nbsp;
+							    <input type="submit" style="width: 120px;" class="button" value="Antworten">&nbsp;
 							   </form>
 							  </td>
 							  <td width="50%" align="left">
 						      <form method="post" action="'.parse_link('p=messages&a2=archiv').'">
 							    <input type="hidden" name="archiv" value="'.$message['id'].'">&nbsp;
-							    <input type="submit" style="width: 120px;" class="button" value="Archivia">
+							    <input type="submit" style="width: 120px;" class="button" value="Archivieren">
 							   </form>
 							  </td>
 							 </tr>
@@ -614,25 +614,25 @@ function newMessage()
 	             <table width="90%" border="0" cellpadding="1" cellspacing="1"  class="style_outer">
 					  <tr>
 					   <td width="100%">
-						<center><p><span class="sub_caption"><b>Scrivi messaggio:</b></p>
+						<center><p><span class="sub_caption"><b>Nachricht schreiben:</b></p>
 						 <table width="65%" border="0" cellpadding="0" cellspacing="0"  class="style_inner">
 					     <tr>
-						   <td width="25%">Destinatario *:</td>
+						   <td width="25%">Empf&auml;nger *:</td>
 							<td width="75%"><input type="text" name="receiver" size="30" class="Field" value="'.$receiver.'" maxlength="900"></td>
 						  </tr>
 						  <tr>
-						   <td width="25%">Titolo:</td>
+						   <td width="25%">Titel:</td>
 							<td width="75%"><input type="text" name="subject" size="30" class="Field" value="'.$subject.'" maxlength="30"></td>
 						  </tr>
 						  <tr>
 						   <td width="25%"></td>
-							<td width="75%">* destinatari multipli seperati da ;</td>
+							<td width="75%">* mehrere Empf&auml;nger durch ; trennen</td>
 						  </tr>
 						 </table>
 						 <br>
 						 <table width="75%" border="0" cellpadding="2" cellspacing="2" class="style_inner">
 						  <tr>
-						   <td width="100%">Messaggio:<br><textarea name="text" class="MessageReadField" cols="75" rows="15">'.$text.'</textarea>
+						   <td width="100%">Nachricht:<br><textarea name="text" class="MessageReadField" cols="75" rows="15">'.$text.'</textarea>
 
 							</td>
 						  </tr>
@@ -641,7 +641,7 @@ function newMessage()
 						 <table width="75%" border="0" cellpadding="2" cellspacing="2" class="style_inner">
 						  <tr>
 						   <td width="100%" align="center">
-							 <input type="submit" style="width: 120px;" class="button" value="Invia">
+							 <input type="submit" style="width: 120px;" class="button" value="senden">
 							</td>
 						  </tr>
 						 </table>
@@ -657,7 +657,7 @@ function submitMessage()
 
 	if(empty($_POST['text']) || empty($_POST['receiver']))
 	{
-		output('<center><p><span class="sub_caption">Per favore compila <u>tutti</u> i campi!</span></p></center>');
+		output('<center><p><span class="sub_caption">Bitte f&uuml;llen Sie alle Felder aus!</span></p></center>');
 		newMessage();
 	}
 	else
@@ -703,7 +703,7 @@ function submitMessage()
 				}
 				UpdateUnreadMessages($receiver['user_id']);
 			}
-			log_action('Messaggio con il titolo "'.$_POST['subject'].'" inviato a tutta la utenza');
+			log_action('Nachricht mit dem Titel "'.$_POST['subject'].'" an alle Empf&auml;nger gesendet');
 		}
 		else
 		{
@@ -712,7 +712,7 @@ function submitMessage()
 		$receiver = $db->queryrow('SELECT user_id FROM user WHERE user_name="'.$_POST['receiver'].'"');
 		if(($receiver) == false)
 		{
-			output('<center><p><span class="sub_caption">Il destinatario non esiste!</span></p></center>');
+			output('<center><p><span class="sub_caption">Ihre Nachricht wurde verschickt!</span></p></center>');
 			newMessage();
 		}
 		else
@@ -723,7 +723,7 @@ function submitMessage()
 				message(DATABASE_ERROR, 'message_query: Could not call INSERT INTO in message');
 				exit();
 			}
-			log_action('Messaggio con il titolo "'.$_POST['subject'].'" inviato a '.$_POST['receiver']);
+			log_action('Nachricht mit dem Titel "'.$_POST['subject'].'" verschickt an '.$_POST['receiver']);
 			UpdateUnreadMessages($receiver['user_id']);
 
 			output('<center><p><span class="sub_caption">Messaggio inviato</span></p></center>');

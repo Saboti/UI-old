@@ -22,7 +22,7 @@
 
 if ($user['right']==1) {include('forbidden.php'); return 1;}
 
-$main_html .= '<span class=header>Caccia agli account doppi</span><br>';
+$main_html .= '<span class=header>Suchen nach Multi Accounts</span><br>';
 
 
 if(isset($_REQUEST['name'])) {
@@ -34,7 +34,7 @@ if(isset($_REQUEST['name'])) {
 if (!isset($player['user_id']))
 {
     $main_html .= '
-<span class=header3><font color=green>Cerca giocatore</font></span><br>
+<span class=header3><font color=green>Spieler suchen</font></span><br>
 <form method="post" action="index.php?p=multihunt">
 <input type="text" name="name" value="'.$_POST['name'].'" class="field">
 <input class="button" type="submit" name="submit" value="Cerca">
@@ -42,15 +42,15 @@ if (!isset($player['user_id']))
     return 1;
 }
 
-$status='<font color=green>attivo</font>';
-if ($player['user_active']==0) $status='<font color=red>bannato</font>';
-if ($player['user_active']==2) $status='<font color=blue>non ancora attivato</font>';
+$status='<font color=green>aktiv</font>';
+if ($player['user_active']==0) $status='<font color=red>gebannt</font>';
+if ($player['user_active']==2) $status='<font color=blue>noch nicht aktiviert</font>';
 
 $main_html .= '
-<span class=header3><font color=green>Storico degli ultimi accessi all&#146;account del giocatore '.$player['user_name'].' ('.$status.'):</font></span><br><br>
+<span class=header3><font color=green>Verlauf der letzten Zugriffe auf das Konto des Spielers '.$player['user_name'].' ('.$status.'):</font></span><br><br>
 <form method="post" action="index.php?p=user">
 <table width="50%" border="1" cellpadding="2" cellspacing="2" class="border_grey">
-<tr><td wisth="20%"><b>IP</b></td><td width="40%"><b>Data</b></td><td width="40%"><b>Nome utente / sitter</b></td></tr>';
+<tr><td wisth="20%"><b>IP</b></td><td width="40%"><b>Datum</b></td><td width="40%"><b>Spielername / Sitter</b></td></tr>';
 
 $sql = 'SELECT * FROM user_iplog ip
         WHERE user_id='.$player['user_id'].' ORDER BY time DESC LIMIT 20';

@@ -40,7 +40,7 @@ function parse_link($get_string = '') {
 }
 
 
-
+/*
 class sql {
 
     var $login = array();
@@ -371,7 +371,9 @@ class sql {
 
 }
 
+*/
 
+include('../game/include/sql.php');
 
 
 
@@ -424,11 +426,11 @@ $show_logout = '<br><a href="index.php?logout"><b>Logout</b></a><br>';
 switch($user['galaxy'])
 {
     case 0:
-        $galaxyname = '(Galassia '.GALAXY1_NAME.')';
+        $galaxyname = '(Galaxie '.GALAXY1_NAME.')';
         $db = new sql($config['server'].":".$config['port'], $config['game_database'], $config['user'], $config['password']);
     break;
     case 1:
-        $galaxyname = '(Galassia '.GALAXY2_NAME.')';
+        $galaxyname = '(Galaxie '.GALAXY2_NAME.')';
         $db = new sql($config['server'].":".$config['port'], $config['game_database2'], $config['user'], $config['password']);
     break;
 }
@@ -464,7 +466,7 @@ if(!include('pages/'.$action.'.php')) {
 
 <HEAD>
 
-	<TITLE>STFC Supportcenter</TITLE>
+	<TITLE>STGW Supportcenter</TITLE>
 
 	<META NAME="publisher" CONTENT="Florian Brede">
 
@@ -554,7 +556,7 @@ text-align:left;
       <table border=0 cellpadding=0 cellspacing=0 width=900 bgcolor=#bbbbbbb>
         <tr>
           <td>
-            <span class="header0">STFC Supportcenter</span>
+            <span class="header0">STGW Supportcenter</span>
           </td>
           <td align="right">
             <span class="header3"><?php echo $galaxyname; ?></span>
@@ -564,36 +566,36 @@ text-align:left;
       <table border=0 cellpadding=0 cellspacing=0 width=900 bgcolor=#cccccc>
         <tr valign=top>
           <td width=150 valign=top bgcolor=#bbbbbbb>
-            <span class="header3">Generale:</span><br>
+            <span class="header3">Allgemein:</span><br>
             <a href="index.php?p=home">Home</a><br>
-            <a href="index.php?p=stats">Statistiche</a><br>
-            <a href="index.php?p=log">Log squadre</a><br>
-            <a href="index.php?p=log2">Log multiban</a><br>
+            <a href="index.php?p=stats">Statistiken</a><br>
+            <a href="index.php?p=log">Team Log</a><br>
+            <a href="index.php?p=log2">Multibann Log</a><br>
             <?php echo $show_logout; ?>
           </td>
           <td width=25 bgcolor=#bbbbbbb></td>
           <td width=150 valign=top bgcolor=#cccccc>
-            <span class="header3">Strumenti:</span><br>
-            <a href="index.php?p=news">Scrivi novit&agrave;</a><br>
-            <a href="index.php?p=polls">Scrivi sondaggi</a><br><br>
-            <a href="index.php?p=messages">Sistema messaggi</a><br>
-            <a href="index.php?p=bulkmail">Email di massa</a><br>
+            <span class="header3">Tools:</span><br>
+            <a href="index.php?p=news">News schreiben</a><br>
+            <a href="index.php?p=polls">Poll erstellen</a><br><br>
+            <a href="index.php?p=messages">Nachrichtensystem</a><br>
+            <a href="index.php?p=bulkmail">Massen E-Mail</a><br>
           </td>
           <td width=25 bgcolor=#cccccc></td>
           <td width=150 valign=top bgcolor=#bbbbbbb>
-            <span class="header3">Giocatori:</span><br>
-            <a href="index.php?p=user_stats">Sommario</a><br>
-            <a href="index.php?p=user">Cerca</a><br>
-            Es.<br>Cambia dati<br>Blocca<br>Cancella
+            <span class="header3">Spieler:</span><br>
+            <a href="index.php?p=user_stats">&Uuml;bersicht</a><br>
+            <a href="index.php?p=user">Suchen</a><br>
+            z.B.<br>Daten &auml;ndern<br>Sperren<br>L&ouml;schen
             <br>
           </td>
           <td width=25 bgcolor=#bbbbbbb></td>
           <td width=150 valign=top bgcolor=#cccccc>
-            <span class="header3">Pianeti:</span><br>
-            <!-- <a href="index.php?p=planet_overview"><i>Sommario</i></a><br>
-            <a href="index.php?p=planet_resources"><i>Risorse</i></a><br>
-            <a href="index.php?p=planet_units"><i>Unit&agrave;</i></a><br>
-            <a href="index.php?p=planet_ships"><i>Navi</i></a><br> !-->
+            <span class="header3">Planeten:</span><br>
+            <!-- <a href="index.php?p=planet_overview"><i>&Uuml;bersicht</i></a><br>
+            <a href="index.php?p=planet_resources"><i>Ressourcen</i></a><br>
+            <a href="index.php?p=planet_units"><i>Einheiten</i></a><br>
+            <a href="index.php?p=planet_ships"><i>Schiffsbau</i></a><br> !-->
             <br>
           </td>
           <td width=25 bgcolor=#cccccc></td>

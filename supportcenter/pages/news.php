@@ -22,18 +22,18 @@
 
 if ($user['right']==1) {include('forbidden.php'); return 1;}
 
-$main_html .= '<span class=header>Comunicati news</span><br>';
+$main_html .= '<span class=header>Newsmeldungen</span><br>';
 
 if(isset($_REQUEST['remove'])) {
     $msg = $db->queryrow('SELECT * FROM portal_news WHERE id="'.((int)$_REQUEST['id']).'"');
-    log_action('La news Portale con il titolo "'.$msg['header'].'" &egrave; stata cancellata');
+    log_action('Portal-News mit dem Titel "'.$msg['header'].'" gel&ouml;scht');
 
 
     $sql = 'DELETE FROM portal_news WHERE id="'.((int)$_REQUEST['id']).'" LIMIT 1';
     if(!$db->query($sql)) {
         //message(DATABASE_ERROR, 'Could not remove portal news data');
     }
-    $main_html .= '<span class=header3><font color=green>Il messaggio &egrave; stato cancellato</font></span><br>';
+    $main_html .= '<span class=header3><font color=green>Meldung wurde gel&ouml;scht</font></span><br>';
 
 
 }
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) {
          $sql = 'INSERT INTO portal_news (type, header, message, date)
                  VALUES ('.$_POST['type'].', "'.$_POST['title'].'", "'.addslashes($_POST['text']).'", '.$send_time.')';
 
-         log_action('La newe Portale con il titolo "'.$_POST['title'].'" &egrave; stata salvata');
+         log_action('Portal-News mit dem Titel "'.$_POST['title'].'" geschrieben');
 
          if(!$db->query($sql)) {
 
@@ -57,13 +57,13 @@ if(isset($_POST['submit'])) {
 
         }
 
-        $main_html .= '<span class=header3><font color=green>L&#146;annuncio &egrave; stato pubblicato</font></span><br>';
+        $main_html .= '<span class=header3><font color=green>Meldung wurde eingetragen</font></span><br>';
     }
     else
     {
         $sql = 'UPDATE portal_news SET type='.((int)$_POST['type']).', header="'.$_POST['title'].'", message="'.addslashes($_POST['text']).'" WHERE id="'.((int)$_POST['id']).'"';
 
-        log_action('La news Portale (nuova?) con il titolo "'.$_POST['title'].'" &egrave; stata modificata');
+        log_action('Portal-News mit dem Titel "'.$_POST['title'].'" ge&auml;ndert');
 
 //echo $sql;
 
@@ -73,7 +73,7 @@ if(isset($_POST['submit'])) {
             //message(DATABASE_ERROR, 'Could not update portal news data');
 
         }
-        $main_html .= '<span class=header3><font color=green>L&#146;annuncio &egrave stato pubblicato</font></span><br>';
+        $main_html .= '<span class=header3><font color=green>Die News wurden ver&ouml;ffentlicht</font></span><br>';
 
     }
 
@@ -90,7 +90,7 @@ if(isset($_POST['submit'])) {
                 $db->query('UPDATE user SET unread_messages="'.$num['unread'].'" WHERE user_id="'.$receiver['user_id'].'"');
         }
 
-        log_action('Messaggio con il titolo "'.$_POST['title'].'" inviato a tutta la utenza');
+        log_action('Nachricht mit dem Titel "'.$_POST['title'].'" an alle Benutzer gesendet');
     }
 }
 
@@ -108,12 +108,12 @@ $message=stripslashes($new['message']);
 $header=stripslashes($new['header']);
 $type=$new['type'];
 $id=(int)$_REQUEST['id'];
-$main_html .= '<span class=header3><font color=blue>Modifica il messaggio "'.$header.' ('.$id.')"</font></span><br>';
+$main_html .= '<span class=header3><font color=blue>&Auml;ndern der Meldung "'.$header.' ('.$id.')"</font></span><br>';
 }
 }
 
 
-if ($type==-1) $main_html .= '<span class=header3><font color=blue>Componi nuovo messaggio</font></span><br>';
+if ($type==-1) $main_html .= '<span class=header3><font color=blue>Verfassen einer neuen Meldung</font></span><br>';
 
 
     
@@ -122,42 +122,42 @@ if ($type==-1) $main_html .= '<span class=header3><font color=blue>Componi nuovo
 $main_html .= '
 
 <br>
-Attenzione: La News sar&agrave; in formato HTML, usare un &#8249;br&#8250 <br> per inserire una nuova linea (non usare il tasto Enter), <br> i link possono essere inseriti con il tag standard &#8249;a&#8250;.
+Achtung: Die News werden im HTML Format geschrieben, ein &#8249;br&#8250 steht <br> für eine neue Zeile (NICHT die Enter Taste benutzen), <br> Links werden mit den Standard &#8249;a&#8250; Tags eingef&uuml;gt.
 <br><br>
 
 <form method="post" action="index.php?p=news">
 
-Tipologia:&nbsp;<select name="type" class="select">
+Typ:&nbsp;<select name="type" class="select">
 
-  <option value="1" '.($type==1 ? 'selected="selected"' : '').'>Bug</option>
+  <option value="1" '.($type==1 ? 'selected="selected"' : '').'>Bugmeldung</option>
 
   <option value="2" '.($type==2 ? 'selected="selected"' : '').'>Bugfix</option>
 
-  <option value="3" '.($type==3 ? 'selected="selected"' : '').'>Modifica</option>
+  <option value="3" '.($type==3 ? 'selected="selected"' : '').'>&Auml;nderung</option>
 
   <option value="4" '.($type==4 ? 'selected="selected"' : '').'>Feature</option>
 
-  <option value="5" '.($type==5 ? 'selected="selected"' : '').'>Novit&agrave; gen.</option>
+  <option value="5" '.($type==5 ? 'selected="selected"' : '').'>Allg. News</option>
 
 </select>
 
 <br><br>
 
-Invia a tutti gli utenti una copia come messaggio:&nbsp;<input type="checkbox" name="message">
+Senden Sie allen Benutzern eine Kopie als Nachricht:&nbsp;<input type="checkbox" name="message">
 
 <br><br>
 
-Titolo:&nbsp;<input type="text" name="title" value="'.$header.'" class="field">
+Titel:&nbsp;<input type="text" name="title" value="'.$header.'" class="field">
 
 <br><br>
 
-Testo:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
+Text:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
 
 <br><br>
 
 <input type=hidden name="id" value="'.$id.'">
 
-<input class="button" type="submit" name="submit" value="Invia">
+<input class="button" type="submit" name="submit" value="Eintragen">
 
 
 </form>
@@ -170,15 +170,15 @@ Testo:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
 
     $news_types = array(
 
-        1 => array('Bug', '#FF0000'),
+        1 => array('Bugmeldung', '#FF0000'),
 
         2 => array('Bugfix', '#6256FF'),
 
-        3 => array('Modifica', '#C9CD00'),
+        3 => array('&Auml;nderung', '#C9CD00'),
 
         4 => array('Feature', '#23F025'),
 
-        5 => array('News', '#AAAAAA'),
+        5 => array('Allg. News', '#AAAAAA'),
 
     );
 
@@ -202,7 +202,7 @@ Testo:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
             
 
     $main_html .= '
-<span class=header3><font color=blue>Tutte le notizie in un colpo d&#146;occhio</font></span><br>
+<span class=header3><font color=blue>Alle Newsmeldungen im Überblick</font></span><br>
 
 <table class="style_outer" border="1" cellpadding="2" cellspacing="2" width="250" bgcolor=#666666>
 
@@ -227,8 +227,8 @@ Testo:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
           <td valign="top" width="60" bgcolor=#333333><span class="text_large" style="color: '.$news_types[$news['type']][1].'">'.$news_types[$news['type']][0].':</span>
 		  
 		  <br><br>
-		  [<a href="index.php?p=news&id='.$news['id'].'"><font color=white>Modifica</font></a>]<br><br>
-		  [<a href="index.php?p=news&id='.$news['id'].'&remove"><font color=white>Cancella</font></a>]<br>
+		  [<a href="index.php?p=news&id='.$news['id'].'"><font color=white>&Auml;ndern</font></a>]<br><br>
+		  [<a href="index.php?p=news&id='.$news['id'].'&remove"><font color=white>L&ouml;schen</font></a>]<br>
 		  
 		  </td>
 

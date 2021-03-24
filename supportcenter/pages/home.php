@@ -27,7 +27,7 @@ $main_html .= '
 
 
 
-Benvenuti al Centro di supporto STFC per la galassia delle Pleiadi! <br> <br> Qui troverai strumenti utili al fine di aiutare i giocatori a risolvere i problemi e di correggere gli errori.
+Willkommen im STGW Supportcenter!<br> <br> Hier findet ihr nützliche Tools, um Spielern zu helfen, Probleme zu lösen und Fehler zu berichtigen.
 <br><br>
 </td>
 
