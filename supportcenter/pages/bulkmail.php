@@ -32,7 +32,7 @@ function send_mail($myname, $myemail, $contactname, $contactemail, $subject, $me
 
 if ($user['right']==1) {include('forbidden.php'); return 1;}
 
-$main_html .= '<span class=header>Comunicati email</span><br>';
+$main_html .= '<span class=header>Massen E-Mail</span><br>';
 
 
 if(isset($_POST['submit'])) {
@@ -43,9 +43,9 @@ if(isset($_POST['submit'])) {
 
         send_mail("STFC Mailer",$config['admin_email'],$_POST['user_name'],$contact['user_email'],$_POST['title'],$_POST['text']);
 
-        log_action('La email con il titolo "'.$_POST['title'].'" &egrave; stata inviata');
+        log_action('Massen E-Mail mit dem Titel "'.$_POST['title'].'" versendet');
 
-        $main_html .= '<span class=header3><font color=green>L&#146;email &egrave; stata inviata</font></span><br>';
+        $main_html .= '<span class=header3><font color=green>E-Mail versendet</font></span><br>';
     }
 
     // Se e` stata richiesta una copia via messaggio
@@ -65,9 +65,9 @@ if(isset($_POST['submit'])) {
             }
         }
 
-        log_action('Email con il titolo "'.$_POST['title'].'" inviato a tutta la utenza');
+        log_action('E-Mail mit dem titel "'.$_POST['title'].'" an alle Benutzer gesendet');
 
-        $main_html .= '<span class=header3><font color=green>L&#146;email &egrave; stata inviata</font></span><br>';
+        $main_html .= '<span class=header3><font color=green>Die E-Mail ist wurde gesendet</font></span><br>';
     }
 }
 
@@ -77,30 +77,30 @@ $message='';
 $header='';
 
 
-$main_html .= '<span class=header3><font color=blue>Componi nuovo messaggio</font></span><br>
+$main_html .= '<span class=header3><font color=blue>Neue Nachricht verfassen</font></span><br>
 
 <br>
-Attenzione: L&#146;email sar&agrave; in formato HTML, usare un &#8249;br&#8250 <br> per inserire una nuova linea (non usare il tasto Enter), <br> i link possono essere inseriti con il tag standard &#8249;a&#8250;.
+Achtung: Die E-Mail wird im HTML Format geschrieben, ein &#8249;br&#8250 steht <br> für eine neue Zeile (NICHT die Enter Taste benutzen), <br> Links werden mit den Standard &#8249;a&#8250; Tags eingef&uuml;gt.
 
 <form method="post" action="index.php?p=bulkmail">
 
 <br>
 
-Destinari *:&nbsp;<input type="text" name="user_name" value="'.$user_name.'" class="field"> * usare ALL per inviare a tutti gli utenti.
+Empf&auml;nger *:&nbsp;<input type="text" name="user_name" value="'.$user_name.'" class="field"> * Verwenden Sie ALL, um an alle Benutzer zu senden.
 
 <br><br>
 
-Titolo:&nbsp;<input type="text" name="title" value="'.$header.'" class="field">
+Titel:&nbsp;<input type="text" name="title" value="'.$header.'" class="field">
 
 <br><br>
 
-Testo:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
+Text:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
 
 <br><br>
 
 <input type=hidden name="id" value="'.$id.'">
 
-<input class="button" type="submit" name="submit" value="Invia">
+<input class="button" type="submit" name="submit" value="senden">
 
 
 </form>

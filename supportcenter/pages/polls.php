@@ -22,11 +22,11 @@
 
 if ($user['right']==1) {include('forbidden.php'); return 1;}
 
-$main_html .= '<span class=header>Sondaggi</span><br>';
+$main_html .= '<span class=header>Umfragen</span><br>';
 
 if(isset($_REQUEST['remove'])) {
 	$poll = $db->queryrow('SELECT * FROM portal_poll WHERE id="'.((int)$_REQUEST['id']).'"');
-	log_action('Il sondaggio con il titolo "'.$poll['question'].'" &egrave; stata cancellata');
+	log_action('Die Umfrage mit dem Titel "'.$poll['question'].'" wurde gel&ouml;scht');
 
 
 	$sql = 'DELETE FROM portal_poll WHERE id="'.((int)$_REQUEST['id']).'" LIMIT 1';
@@ -39,7 +39,7 @@ if(isset($_REQUEST['remove'])) {
 		//message(DATABASE_ERROR, 'Could not remove portal news data');
 	}
 
-	$main_html .= '<span class=header3><font color=green>Il sondaggio &egrave; stato cancellato</font></span><br>';
+	$main_html .= '<span class=header3><font color=green>Die Umfrage wurde gel&ouml;scht</font></span><br>';
 
 
 }
@@ -53,14 +53,14 @@ if(isset($_POST['submit'])) {
 		$sql = 'INSERT INTO portal_poll (date, question, choice_1, choice_2, choice_3, choice_4, choice_5, choice_6, choice_7, choice_8, choice_9, choice_10)
 		        VALUES ('.time().', "'.$_POST['question'].'", "'.addslashes($_POST['choice_1']).'", "'.addslashes($_POST['choice_2']).'", "'.addslashes($_POST['choice_3']).'", "'.addslashes($_POST['choice_4']).'", "'.addslashes($_POST['choice_5']).'", "'.addslashes($_POST['choice_6']).'", "'.addslashes($_POST['choice_7']).'", "'.addslashes($_POST['choice_8']).'", "'.addslashes($_POST['choice_9']).'", "'.addslashes($_POST['choice_10']).'")';
 
-		log_action('Il sondaggio con il titolo "'.$_POST['question'].'" &egrave; stata salvato');
+		log_action('Die Umfrage mit dem Titel "'.$_POST['question'].'" wurde ver&ouml;ffentlicht');
 
 		if(!$db->query($sql)) {
 
 			//message(DATABASE_ERROR, 'Could not insert portal news data');
 
 		}
-		$main_html .= '<span class=header3><font color=green>Il sondaggio &egrave; stato pubblicato</font></span><br>';
+		$main_html .= '<span class=header3><font color=green>Die Umfrage mit dem Titel wurde ver&ouml;ffentlicht</font></span><br>';
 
 	}
 	else
@@ -80,14 +80,14 @@ if(isset($_POST['submit'])) {
 		               closed='.$_POST['closed'].'
 		        WHERE id="'.((int)$_POST['id']).'"';
 
-		log_action('Il sondaggio con il titolo "'.$_POST['question'].'" &egrave; stato modificato');
+		log_action('Die Umfrage mit dem titel "'.$_POST['question'].'" wurde bearbeitet');
 
 		if(!$db->query($sql)) {
 
 			//message(DATABASE_ERROR, 'Could not update portal news data');
 
 		}
-		$main_html .= '<span class=header3><font color=green>Il sondaggio &egrave stato pubblicato</font></span><br>';
+		$main_html .= '<span class=header3><font color=green>Die Umfrage wurde ver&ouml;ffentlicht</font></span><br>';
 
 	}
 
@@ -116,12 +116,12 @@ $choice_9=stripslashes($new['choice_9']);
 $choice_10=stripslashes($new['choice_10']);
 
 $id=(int)$_REQUEST['id'];
-$main_html .= '<span class=header3><font color=blue>Modifica il sondaggio "'.$question.' ('.$id.')"</font></span><br>';
+$main_html .= '<span class=header3><font color=blue>&Auml;ndern der Umfrage "'.$question.' ('.$id.')"</font></span><br>';
 }
 }
 
 
-if ($type==-1) $main_html .= '<span class=header3><font color=blue>Componi nuovo sondaggio</font></span><br>';
+if ($type==-1) $main_html .= '<span class=header3><font color=blue>Neue Umfrage verfassen</font></span><br>';
 
 
     
@@ -130,60 +130,59 @@ if ($type==-1) $main_html .= '<span class=header3><font color=blue>Componi nuovo
 $main_html .= '
 
 <br>
-Attenzione: Le domande nel sondaggio non sono filtrate (i campi opzioni lasciati in bianco, non saranno inseriti al sondaggio).<br><br>
-
+Achtung: Die Fragen in der Umfrage werden nicht gefiltert (die leer gelassenen Optionsfelder werden nicht in die Umfrage aufgenommen).<br><br>
 
 <form method="post" action="index.php?p=polls">
 
-Domanda: <input type="text" name="question" value="'.$question.'" class="field">
+Frage: <input type="text" name="question" value="'.$question.'" class="field">
 
 <br><br>
 
-1a opzione: <input type="text" name="choice_1" value="'.$choice_1.'" class="field">
+1 Antwort: <input type="text" name="choice_1" value="'.$choice_1.'" class="field">
 
 <br><br>
 
-2a opzione: <input type="text" name="choice_2" value="'.$choice_2.'" class="field">
+2 Antwort: <input type="text" name="choice_2" value="'.$choice_2.'" class="field">
 
 <br><br>
 
-3a opzione: <input type="text" name="choice_3" value="'.$choice_3.'" class="field">
+3 Antwort: <input type="text" name="choice_3" value="'.$choice_3.'" class="field">
 
 <br><br>
 
-4a opzione: <input type="text" name="choice_4" value="'.$choice_4.'" class="field">
+4 Antwort: <input type="text" name="choice_4" value="'.$choice_4.'" class="field">
 
 <br><br>
 
-5a opzione: <input type="text" name="choice_5" value="'.$choice_5.'" class="field">
+5 Antwort: <input type="text" name="choice_5" value="'.$choice_5.'" class="field">
 
 <br><br>
 
-6a opzione: <input type="text" name="choice_6" value="'.$choice_6.'" class="field">
+6 Antwort: <input type="text" name="choice_6" value="'.$choice_6.'" class="field">
 
 <br><br>
 
-7a opzione: <input type="text" name="choice_7" value="'.$choice_7.'" class="field">
+7 Antwort: <input type="text" name="choice_7" value="'.$choice_7.'" class="field">
 
 <br><br>
 
-8a opzione: <input type="text" name="choice_8" value="'.$choice_8.'" class="field">
+8 Antwort: <input type="text" name="choice_8" value="'.$choice_8.'" class="field">
 
 <br><br>
 
-9a opzione: <input type="text" name="choice_9" value="'.$choice_9.'" class="field">
+9 Antwort: <input type="text" name="choice_9" value="'.$choice_9.'" class="field">
 
 <br><br>
 
-10a opzione: <input type="text" name="choice_10" value="'.$choice_10.'" class="field">
+10 Antwort: <input type="text" name="choice_10" value="'.$choice_10.'" class="field">
 
 <br><br>
 
 <select name="closed" class="select">
 
-  <option value="1" '.($new['closed'] == true ? 'selected="selected"' : '').'>Chiuso</option>
+  <option value="1" '.($new['closed'] == true ? 'selected="selected"' : '').'>Geschlossen</option>
 
-  <option value="0" '.($new['closed'] == false ? 'selected="selected"' : '').'>Aperto</option>
+  <option value="0" '.($new['closed'] == false ? 'selected="selected"' : '').'>Offen</option>
 
 </select>
 
@@ -191,7 +190,7 @@ Domanda: <input type="text" name="question" value="'.$question.'" class="field">
 
 <input type=hidden name="id" value="'.$id.'">
 
-<input class="button" type="submit" name="submit" value="Invia">
+<input class="button" type="submit" name="submit" value="Eintragen">
 
 
 </form>
@@ -218,7 +217,7 @@ Domanda: <input type="text" name="question" value="'.$question.'" class="field">
             
 
     $main_html .= '
-<span class=header3><font color=blue>Tutte i sondaggi in un colpo d&#146;occhio</font></span><br>
+<span class=header3><font color=blue>Alle Umfragen im &Uuml;berblick</font></span><br>
 
 <table class="style_outer" border="1" cellpadding="2" cellspacing="2" width="500" bgcolor=#666666>
 
@@ -226,7 +225,7 @@ Domanda: <input type="text" name="question" value="'.$question.'" class="field">
 
     <td>
 
-      <center><span class="sub_caption">Sondaggi:</span></center><br>
+      <center><span class="sub_caption">Umfrage:</span></center><br>
 
     ';
 
@@ -256,8 +255,8 @@ Domanda: <input type="text" name="question" value="'.$question.'" class="field">
           <td valign="top" width="60" bgcolor=#333333><span class="sub_caption2" style="color: #23F025">Opzioni:</span>
 		  
 		  <br><br>
-		  [<a href="index.php?p=polls&id='.$poll['id'].'"><font color=white>Modifica</font></a>]<br><br>
-		  [<a href="index.php?p=polls&id='.$poll['id'].'&remove"><font color=white>Cancella</font></a>]<br>
+		  [<a href="index.php?p=polls&id='.$poll['id'].'"><font color=white>&Auml;ndern</font></a>]<br><br>
+		  [<a href="index.php?p=polls&id='.$poll['id'].'&remove"><font color=white>L&ouml;schen</font></a>]<br>
 		  
 		  </td>
 

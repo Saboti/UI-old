@@ -22,7 +22,7 @@
 
 if ($user['right']==1) {include('forbidden.php'); return 1;}
 
-$main_html .= '<span class=header>Modifica giocatore</span><br>';
+$main_html .= '<span class=header>Spieler bearbeiten</span><br>';
 
 
 if (isset($_POST['remove']) && $_POST['confirm1']==1)
@@ -31,7 +31,7 @@ if (isset($_POST['remove']) && $_POST['confirm1']==1)
 	$db->query($sql);
 	$name=$db->queryrow('SELECT user_name FROM user WHERE user_id="'.$_POST['id'].'"');
 	log_action('Giocatore '.$name['user_name'].' cancellato');
-	$main_html .= '<span class=header3><font color=green>Giocatore cancellato</font></span><br>';
+	$main_html .= '<span class=header3><font color=green>Spieler gel&ouml;scht</font></span><br>';
 }
 
 if (isset($_POST['ban']) && $_POST['confirm2']==1)
@@ -40,7 +40,7 @@ if (isset($_POST['ban']) && $_POST['confirm2']==1)
 	$db->query($sql);
 	$name=$db->queryrow('SELECT user_name FROM user WHERE user_id="'.$_POST['id'].'"');
 	log_action('Giocatore '.$name['user_name'].' bannato');
-	$main_html .= '<span class=header3><font color=green>Giocatore bannato</font></span><br>';
+	$main_html .= '<span class=header3><font color=green>Spieler gebannt</font></span><br>';
 }
 
 if (isset($_POST['unban']) && $_POST['confirm2']==1)
@@ -50,7 +50,7 @@ if (isset($_POST['unban']) && $_POST['confirm2']==1)
 
 	$name=$db->queryrow('SELECT user_name FROM user WHERE user_id="'.$_POST['id'].'"');
 	log_action('Giocatore '.$name['user_name'].' non bannato');
-	$main_html .= '<span class=header3><font color=green>Giocatore non bannato</font></span><br>';
+	$main_html .= '<span class=header3><font color=green>Spieler unbanned</font></span><br>';
 }
 
 if (isset($_POST['deactivate']) && $_POST['confirm3']==1)
@@ -60,7 +60,7 @@ if (isset($_POST['deactivate']) && $_POST['confirm3']==1)
 
 	$name=$db->queryrow('SELECT user_name FROM user WHERE user_id="'.$_POST['id'].'"');
 	log_action('Giocatore '.$name['user_name'].' disattivato');
-	$main_html .= '<span class=header3><font color=green>Giocatore disattivato</font></span><br>';
+	$main_html .= '<span class=header3><font color=green>Spieler deaktiviert</font></span><br>';
 }
 
 if (isset($_POST['activate']) && $_POST['confirm3']==1)
@@ -70,19 +70,19 @@ if (isset($_POST['activate']) && $_POST['confirm3']==1)
 
 	$name=$db->queryrow('SELECT user_name FROM user WHERE user_id="'.$_POST['id'].'"');
 	log_action('Giocatore '.$name['user_name'].' attivato');
-	$main_html .= '<span class=header3><font color=green>Giocatore attivato</font></span><br>';
+	$main_html .= '<span class=header3><font color=green>Spieler aktiviert</font></span><br>';
 }
 
 if (isset($_POST['submitdata']))
 {
 
     if(empty($_POST['name'])) {
-       	$main_html .= '<span class=header3><font color=red>Nessun nome giocatore</font></span><br>';
+       	$main_html .= '<span class=header3><font color=red>Kein Spieler angegeben</font></span><br>';
         return true;
     }
     
     if(strstr($_POST['name'], ' ')) {
-       	$main_html .= '<span class=header3><font color=red>Il nome del giocatore contiene spazi</font></span><br>';
+       	$main_html .= '<span class=header3><font color=red>Spielername enth&auml; ein Leerzeichen</font></span><br>';
         return true;
     }
     
@@ -90,7 +90,7 @@ if (isset($_POST['submitdata']))
        $val=ord( (substr($_POST['name'], $count, 1)) );
        if ($val<48 || ($val>57 && $val<65) || ($val>90 && $val<97) || $val>122)
        {
-       	$main_html .= '<span class=header3><font color=red>Il nome del giocatore contiene caratteri non permessi [solo 0-9,a-z,A-Z]</font></span><br>';
+       	$main_html .= '<span class=header3><font color=red>Spielername enth&auml;lt unzul&auml;ssige Zeichen [nur 0-9,a-z,A-Z]</font></span><br>';
         return true;
        }
    }
@@ -99,13 +99,13 @@ if (isset($_POST['submitdata']))
        $val=ord( (substr($_POST['loginname'], $count, 1)) );
        if ($val<48 || ($val>57 && $val<65) || ($val>90 && $val<97) || $val>122)
        {
-       	$main_html .= '<span class=header3><font color=red>La login contiene caratteri non permessi [solo 0-9,a-z,A-Z]</font></span><br>';
+       	$main_html .= '<span class=header3><font color=red>Loginname enth&auml;lt unzul&auml;ssige Zeichen [nur 0-9,a-z,A-Z]</font></span><br>';
         return true;
        }
    }
 
     if(!in_array($_POST['race'], array(0, 1, 2, 3, 4, 5, 8, 9, 11, 12))) {
-       	$main_html .= '<span class=header3><font color=red>La specie non esiste</font></span><br>';
+       	$main_html .= '<span class=header3><font color=red>Rasse existiert nicht!</font></span><br>';
         return true;
     }
 
@@ -144,7 +144,7 @@ if (isset($_POST['submitdata']))
     }
     /* */
 
-    $main_html .= '<span class=header3><font color=green>Dati giocatori ripresi</font></span><br>';
+    $main_html .= '<span class=header3><font color=green>Spielerdaten &uuml;bernommen</font></span><br>';
     log_action('Dati giocatori '.$_POST['name'].' modificati');
 }
 
@@ -158,41 +158,41 @@ $player=$db->queryrow($sql);
 if (!isset($player['user_id']))
 {
 $main_html .= '
-<span class=header3><font color=green>Cerca giocatore</font></span><br>
+<span class=header3><font color=green>Spieler suchen</font></span><br>
 <form method="post" action="index.php?p=user">
 <input type="text" name="name" value="'.$_POST['name'].'" class="field">
-<input class="button" type="submit" name="submit" value="Cerca">
+<input class="button" type="submit" name="submit" value="suchen">
 </form>';
 return 1;
 }
 
-$status='<font color=green>attivo</font>';
-if ($player['user_active']==0) $status='<font color=red>bannato</font>';
-if ($player['user_active']==2) $status='<font color=blue>non ancora attivato</font>';
+$status='<font color=green>aktiv</font>';
+if ($player['user_active']==0) $status='<font color=red>gebannt</font>';
+if ($player['user_active']==2) $status='<font color=blue>noch nicht aktiviert</font>';
 
 $main_html .= '
-<span class=header3><font color=green>Informazioni per il giocatore '.$player['user_name'].' ('.$status.'):</font></span><br>
+<span class=header3><font color=green>Spieler '.$player['user_name'].' ('.$status.') bearbeiten:</font></span><br>
 <form method="post" action="index.php?p=user">
 <table border=0 cellpadding=0 cellspacing=0>
-<tr><td width=100>Alleanza:</td><td>'.$player['alliance_name'].'</td></tr>
-<tr><td width=100>Nome giocatore:</td><td><input type="text" name="name" value="'.$player['user_name'].'" class="field"></td></tr>
-<tr><td width=100>Nome login:</td><td><input type="text" name="loginname" value="'.$player['user_loginname'].'" class="field"></td></tr>
-<tr><td width=100>Indirizzo email:</td><td><input type="text" name="email" value="'.$player['user_email'].'" class="field"></td></tr>
-<tr><td width=100>Stato alleanza:</td><td>
+<tr><td width=100>Allianz:</td><td>'.$player['alliance_name'].'</td></tr>
+<tr><td width=100>Spielername:</td><td><input type="text" name="name" value="'.$player['user_name'].'" class="field"></td></tr>
+<tr><td width=100>Loginname:</td><td><input type="text" name="loginname" value="'.$player['user_loginname'].'" class="field"></td></tr>
+<tr><td width=100>E-Mail Adresse:</td><td><input type="text" name="email" value="'.$player['user_email'].'" class="field"></td></tr>
+<tr><td width=100>Allianzstatus:</td><td>
             <select style="width: 150px;" name="alliance_status">
-              <option value="1"'.( ($player['user_alliance_status'] == 1) ? ' selected="selected"' : '' ).'>Membro</option>
+              <option value="1"'.( ($player['user_alliance_status'] == 1) ? ' selected="selected"' : '' ).'>Mitglied</option>
               <option value="2"'.( ($player['user_alliance_status'] == 2) ? ' selected="selected"' : '' ).'>Admin</option>
-              <option value="3"'.( ($player['user_alliance_status'] == 3) ? ' selected="selected"' : '' ).'>Presidente</option>
+              <option value="3"'.( ($player['user_alliance_status'] == 3) ? ' selected="selected"' : '' ).'>Pr&auml;sident</option>
             </select>
             </td>
             </tr>
-<tr><td width=100>Specie *:</td><td>
+<tr><td width=100>Rasse *:</td><td>
             <select style="width: 150px;" name="race">
-              <option value="0"'.( ($player['user_race'] == 0) ? ' selected="selected"' : '' ).'>Federazione</option>
-              <option value="1"'.( ($player['user_race'] == 1) ? ' selected="selected"' : '' ).'>Romulani</option>
-              <option value="2"'.( ($player['user_race'] == 2) ? ' selected="selected"' : '' ).'>Klingon</option>
-              <option value="3"'.( ($player['user_race'] == 3) ? ' selected="selected"' : '' ).'>Cardassiani</option>
-              <option value="4"'.( ($player['user_race'] == 4) ? ' selected="selected"' : '' ).'>Dominio</option>
+              <option value="0"'.( ($player['user_race'] == 0) ? ' selected="selected"' : '' ).'>F&ouml;deration</option>
+              <option value="1"'.( ($player['user_race'] == 1) ? ' selected="selected"' : '' ).'>Romulaner</option>
+              <option value="2"'.( ($player['user_race'] == 2) ? ' selected="selected"' : '' ).'>Klingone</option>
+              <option value="3"'.( ($player['user_race'] == 3) ? ' selected="selected"' : '' ).'>Cardassianer</option>
+              <option value="4"'.( ($player['user_race'] == 4) ? ' selected="selected"' : '' ).'>Dominion</option>
               <option value="5"'.( ($player['user_race'] == 5) ? ' selected="selected"' : '' ).'>Ferengi</option>
               <option value="8"'.( ($player['user_race'] == 8) ? ' selected="selected"' : '' ).'>Breen</option>
               <option value="9"'.( ($player['user_race'] == 9) ? ' selected="selected"' : '' ).'>Hirogeni</option>
@@ -202,31 +202,31 @@ $main_html .= '
             </td>
             </tr>
 </table><br>
-* Attenzione: La specie solitamente pu&ograve; essere modificata, ma a partire da almeno ~100 punti sul pianeta non &egrave; raccomandabile (problemi con la ricerca dei componenti).
+* Achtung: Die Rasse kann IMMER geändert werden, aber ab ~100 Punkte auf min. einem Planeten ist es nicht empfehlenswert (Probleme mit der Komponentenforschung).
 <br>
 <input type=hidden name="id" value="'.$player['user_id'].'">
-<input class="button" type="submit" name="submitdata" value="Aggiorna dati">
+<input class="button" type="submit" name="submitdata" value="Daten &uuml;bernehmen">
 <br><br>
 
-<input style="border: none;" type="checkbox" name="confirm1" value="1"> Conferma di sicurezza (cancella)&nbsp;&nbsp;
-<input class="button" type="submit" name="remove" value="Cancella giocatore">
+<input style="border: none;" type="checkbox" name="confirm1" value="1"> Sicherheitsbest&auml;tigung (L&ouml;schen)&nbsp;&nbsp;
+<input class="button" type="submit" name="remove" value="Spieler L&ouml;schen">
 <br><br>
 '.($player['user_active']==1 ?
-'<input style="border: none;" type="checkbox" name="confirm2" value="1"> Conferma di sicurezza (sospendi)&nbsp;&nbsp;
-<input class="button" type="submit" name="ban" value="Sospendi giocatore">
+'<input style="border: none;" type="checkbox" name="confirm2" value="1"> Sicherheitsbest&auml;tigung (bannen)&nbsp;&nbsp;
+<input class="button" type="submit" name="ban" value="Spieler bannen">
 '
 :
-'<input style="border: none;" type="checkbox" name="confirm2" value="1"> Conferma di sicurezza (riabilita)&nbsp;&nbsp;
-<input class="button" type="submit" name="unban" value="Riabilita giocatore">
+'<input style="border: none;" type="checkbox" name="confirm2" value="1"> Sicherheitsbest&auml;tigung (unbannen)&nbsp;&nbsp;
+<input class="button" type="submit" name="unban" value="Spieler unbannen">
 ').'
 <br><br>
 '.($player['user_active']==1 ?
-'<input style="border: none;" type="checkbox" name="confirm3" value="1"> Conferma di sicurezza (disattiva)&nbsp;&nbsp;
-<input class="button" type="submit" name="deactivate" value="Disattiva giocatore">
+'<input style="border: none;" type="checkbox" name="confirm3" value="1"> Sicherheitsbest&auml;tigung (deaktivieren)&nbsp;&nbsp;
+<input class="button" type="submit" name="deactivate" value="Spieler deaktivieren">
 '
 :
-'<input style="border: none;" type="checkbox" name="confirm3" value="1"> Conferma di sicurezza (attiva)&nbsp;&nbsp;
-<input class="button" type="submit" name="activate" value="Attiva giocatore">
+'<input style="border: none;" type="checkbox" name="confirm3" value="1"> Sicherheitsbest&auml;tigung (aktivieren)&nbsp;&nbsp;
+<input class="button" type="submit" name="activate" value="Spieler aktivieren">
 ').'
 </form>
 ';

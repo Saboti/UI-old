@@ -29,72 +29,72 @@ switch($_REQUEST['order'])
 	case 2:
 		$sql = 'SELECT * FROM user ORDER by user_name ASC';
 		$col_id = '<a href="'.parse_link('p=stats&order=1').'">ID</a>';
-		$col_name = '<b>Nome</b>';
-		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Registrazione</a>';
-		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">Attivo il</a>';
-		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP registrazione</a>';
-		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">Ultimo IP</a>';
-		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Permessi</a>';
+		$col_name = '<b>Name</b>';
+		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Dabei seit</a>';
+		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">zuletzt aktiv</a>';
+		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP Registrierung</a>';
+		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">letzte IP</a>';
+		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Rechte</a>';
 	break;
 	case 3:
 		$sql = 'SELECT * FROM user ORDER by user_registration_time ASC';
 		$col_id = '<a href="'.parse_link('p=stats&order=1').'">ID</a>';
-		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Nome</a>';
-		$col_regtime = '<b>Registrazione</b>';
-		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">Attivo il</a>';
-		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP registrazione</a>';
-		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">Ultimo IP</a>';
-		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Permessi</a>';
+		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Name</a>';
+		$col_regtime = '<b>Dabei seit</b>';
+		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">zuletzt aktiv</a>';
+		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP Registrierung</a>';
+		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">letzte IP</a>';
+		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Rechte</a>';
 	break;
 	case 4:
 		$sql = 'SELECT * FROM user ORDER by last_active DESC';
 		$col_id = '<a href="'.parse_link('p=stats&order=1').'">ID</a>';
-		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Nome</a>';
-		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Registrazione</a>';
-		$col_lastact = '<b>Attivo il</b>';
-		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP registrazione</a>';
-		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">Ultimo IP</a>';
-		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Permessi</a>';
+		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Name</a>';
+		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Dabei seit</a>';
+		$col_lastact = '<b>zuletzt aktiv</b>';
+		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP Registrierung</a>';
+		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">letzte IP</a>';
+		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Rechte</a>';
 	break;
 	case 5:
 		$sql = 'SELECT * FROM user ORDER by user_registration_ip DESC';
 		$col_id = '<a href="'.parse_link('p=stats&order=1').'">ID</a>';
-		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Nome</a>';
-		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Registrazione</a>';
-		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">Attivo il</a>';
-		$col_regip = '<b>IP registrazione</b>';
-		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">Ultimo IP</a>';
-		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Permessi</a>';
+		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Name</a>';
+		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Dabei seit</a>';
+		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">zuletzt aktiv</a>';
+		$col_regip = '<b>IP Registrierung</b>';
+		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">letzte IP</a>';
+		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Rechte</a>';
 	break;
 	case 6:
 		$sql = 'SELECT * FROM user ORDER by last_ip ASC';
 		$col_id = '<a href="'.parse_link('p=stats&order=1').'">ID</a>';
-		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Nome</a>';
-		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Registrazione</a>';
-		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">Attivo il</a>';
-		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP registrazione</a>';
-		$col_lastip = '<b>Ultimo IP</b>';
-		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Permessi</a>';
+		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Name</a>';
+		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Dabei seit</a>';
+		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">zuletzt aktiv</a>';
+		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP Registrierung</a>';
+		$col_lastip = '<b>letzte IP</b>';
+		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Rechte</a>';
 	break;
 	case 7:
 		$sql = 'SELECT * FROM user ORDER by user_auth_level ASC';
 		$col_id = '<a href="'.parse_link('p=stats&order=1').'">ID</a>';
-		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Nome</a>';
-		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Registrazione</a>';
-		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">Attivo il</a>';
-		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP registrazione</a>';
-		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">Ultimo IP</a>';
-		$col_rights = '<b>Permessi</b>';
+		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Name</a>';
+		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Dabei seit</a>';
+		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">zuletzt aktiv</a>';
+		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP Registrierung</a>';
+		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">letzte IP</a>';
+		$col_rights = '<b>Rechte</b>';
 	break;
 	default:
 		$sql = 'SELECT * FROM user ORDER by user_id ASC';
 		$col_id = '<b>ID</b>';
-		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Nome</a>';
-		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Registrazione</a>';
-		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">Attivo il</a>';
-		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP registrazione</a>';
-		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">Ultimo IP</a>';
-		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Permessi</a>';
+		$col_name = '<a href="'.parse_link('p=stats&order=2').'">Name</a>';
+		$col_regtime = '<a href="'.parse_link('p=stats&order=3').'">Dabei seit</a>';
+		$col_lastact = '<a href="'.parse_link('p=stats&order=4').'">zuletzt aktiv</a>';
+		$col_regip = '<a href="'.parse_link('p=stats&order=5').'">IP Registrierung</a>';
+		$col_lastip = '<a href="'.parse_link('p=stats&order=6').'">letzte IP</a>';
+		$col_rights = '<a href="'.parse_link('p=stats&order=7').'">Rechte</a>';
 	break;
 }
 
@@ -137,12 +137,12 @@ $oneWeek = (7 * 24 * 60 * 60);
 while($supporter = $db->fetchrow($qry)) 
 {
 
-$rights='Utente';
+$rights='Benutzer';
 if ($supporter['user_auth_level']==2) $rights='Support';
 if ($supporter['user_auth_level']==3) $rights='Multihunter';
 
 
-/* Utente rimasto attivo pochissimo dopo ia registrazione */
+/* Utente rimasto attivo pochissimo dopo ia Dabei seit */
 if($supporter['last_active']<=$supporter['user_registration_time']+3600)
 	$main_html .= '<tr bgcolor=crimson>';
 else if($today - $supporter['last_active'] > $oneWeek)

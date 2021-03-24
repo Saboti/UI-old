@@ -40,7 +40,7 @@ $main_html .= '
   </tr>
 </table>
 <br><br>
-Al momento non sei autenticato.<br>Per accedere a questa sezione, &egrave; necessario avere accesso al tuo account.<br>
+Du bist momentan nicht eingeloggt.<br>Um auf diesen Bereich zugreifen zu können musst du in deinen Account eingeloggt sein.<br>
 
 <form name="login" method="post" action="index.php?p=account" onSubmit="return this.submit_b.disabled = true;">
 <table border="0" cellpadding="2" cellspacing="2" width="350">
@@ -48,7 +48,7 @@ Al momento non sei autenticato.<br>Per accedere a questa sezione, &egrave; neces
     <td colspan=2>'.$message.'</td>
   </tr>
   <tr>
-    <td width="25%">Galassia:</td>
+    <td width="25%">Galaxie:</td>
     <td width="75%">
       <select name="galaxy">
         <option value="0" selected="selected">'.GALAXY1_NAME.'</option>
@@ -57,11 +57,11 @@ Al momento non sei autenticato.<br>Per accedere a questa sezione, &egrave; neces
     </td>
   </tr>
   <tr>
-    <td width="25%">Nome utente:</td>
+    <td width="25%">Benutzername:</td>
     <td width="75%"><input style="width: 125px;" type="text" name="name" value="'.$_POST['name'].'"></td>
   </tr>
   <tr>
-    <td width="25%">Password:</td>
+    <td width="25%">Passwort:</td>
     <td width="75%"><input style="width: 125px;" type="password" name="password" value=""></td>
   </tr>
   <tr>
