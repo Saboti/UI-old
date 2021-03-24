@@ -251,7 +251,7 @@ $main_html .= '
 <table border="0" cellpadding="0" cellspacing="0" width="600" align="center">
   <tr>
     <td valign="top" align="center" width="300">
-      <span class="sub_caption">Server Web/DB (STFC)</span><br><br>
+      <span class="sub_caption">Server Web/DB (STGW)</span><br><br>
 
       <table border="0" cellpadding="2" cellspacing="2" width="270" class="border_grey">
         <tr>
@@ -373,7 +373,7 @@ $main_html .= '
               <tr><td height="10"></td></tr>
               <tr>
                 <td width="170" class="desc_row">'.$locale['view_galaxy'].'</td>
-                <td width="100" class="value_row"><a href="https://stfc.saboti.de/game/maps/images/galaxy_detail.png" target=_blank><i>'.$locale['click'].'</i></a></td>
+                <td width="100" class="value_row"><a href="'.$config['game_url'].'/maps/images/galaxy_detail.png" target=_blank><i>'.$locale['click'].'</i></a></td>
               </tr>
               <tr><td height="10"></td></tr>
               <tr>
@@ -445,7 +445,7 @@ $main_html .= '
               <tr><td height="10"></td></tr>
               <tr>
                 <td width="170" class="desc_row">'.$locale['view_galaxy'].'</td>
-                <td width="100" class="value_row"><a href="http://www.stfc.it/game2/maps/images/galaxy_detail.png" target=_blank><i>'.$locale['click'].'</i></a></td>
+                <td width="100" class="value_row"><a href="'.$config['game2_url'].'maps/images/galaxy_detail.png" target=_blank><i>'.$locale['click'].'</i></a></td>
               </tr>
               <tr><td height="10"></td></tr>
               <tr>
