@@ -18046,3 +18046,643 @@ Affected 0 resourcetrades<br>
 <b>5</b> Fleets of ships found.<br>
 <font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0341 secs</font><br><br>
 <b>Finished Scheduler in <font color=#009900>0.8141 secs</font><br>Executed Queries: <font color=#ff0000>134</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:06:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0006 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 4</font><font color=#0000ff>) in </font><font color=#009900>0.048 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0043 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0036 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0006 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.005 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0037 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0363 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0007 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 7</font><font color=#0000ff>) in </font><font color=#009900>0.1093 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.412 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0049 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.03 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0027 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0006 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0022 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0808 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0022 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0315 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.8293 secs</font><br>Executed Queries: <font color=#ff0000>139</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:09:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0006 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 4</font><font color=#0000ff>) in </font><font color=#009900>0.0528 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0032 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0041 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0034 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0437 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0007 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0886 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3168 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0169 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0598 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0011 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0244 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.6728 secs</font><br>Executed Queries: <font color=#ff0000>133</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:12:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0341 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0019 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0016 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 18</font><font color=#0000ff>) in </font><font color=#009900>0.0038 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0025 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0293 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0848 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3373 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0033 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0204 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0015 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0012 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0639 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0012 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.025 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.6517 secs</font><br>Executed Queries: <font color=#ff0000>134</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:15:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0006 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0416 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0027 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0065 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0045 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0034 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0427 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0007 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.1035 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3364 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0027 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0201 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0016 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0009 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0766 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0012 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0262 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.7274 secs</font><br>Executed Queries: <font color=#ff0000>132</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:18:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 4</font><font color=#0000ff>) in </font><font color=#009900>0.0331 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0021 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0018 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0037 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0025 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0019 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0291 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0788 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3496 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0036 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0287 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0017 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0681 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0253 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.6763 secs</font><br>Executed Queries: <font color=#ff0000>133</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:21:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 4</font><font color=#0000ff>) in </font><font color=#009900>0.0419 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0017 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0033 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0024 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0019 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0328 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0954 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3136 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0033 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0181 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0687 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0012 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0239 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.6556 secs</font><br>Executed Queries: <font color=#ff0000>133</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:24:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0403 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0027 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0025 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 20</font><font color=#0000ff>) in </font><font color=#009900>0.0048 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0023 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0384 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.1045 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3657 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0028 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0206 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0015 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0739 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0326 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.7411 secs</font><br>Executed Queries: <font color=#ff0000>136</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:27:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0036 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0317 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0019 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0037 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0019 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 20</font><font color=#0000ff>) in </font><font color=#009900>0.0044 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0018 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0298 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0908 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3388 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0158 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0012 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0623 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0012 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0248 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.6512 secs</font><br>Executed Queries: <font color=#ff0000>136</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:30:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 4</font><font color=#0000ff>) in </font><font color=#009900>0.036 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0036 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0029 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0021 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0306 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0974 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3535 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0029 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0365 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0018 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0817 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0015 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0266 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.7221 secs</font><br>Executed Queries: <font color=#ff0000>133</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Scheduler at 25.03.21 14:33:01</b><br>
+<font color=#0000ff>Starting <b>Extra-Optimal Range Upgrade Planet Step</b>...</font><br>
+<font color=#0000ff>Executed <b>Extra-Optimal Range Upgrade Planet Step</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Building Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Building Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Academy Scheduler v4-redear</b>...</font><br>
+<font color=#0000ff>Executed <b>Academy Scheduler v4-redear</b> (</font><font color=#ff0000>queries: 4</font><font color=#0000ff>) in </font><font color=#009900>0.0389 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shiprepair Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shiprepair Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipscrap Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipscrap Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0066 secs</font><br><br>
+<font color=#0000ff>Starting <b>Shipyard Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Shipyard Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Research Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Research Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resourcetrade Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>Resourcetrade Scheduler</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Rewards</b>...</font><br>
+<font color=#0000ff>Executed <b>Future Humans Rewards</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ramona comes over - oh women are so wonderful</b>...</font><br>
+<font color=#0000ff>Executed <b>Ramona comes over - oh women are so wonderful</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0035 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine is coming - oh borg are not so beautiful</b>...</font><br>
+<font color=#0000ff>Executed <b>SevenOfNine is coming - oh borg are not so beautiful</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0046 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower is coming - settlers are the real workforce</b>...</font><br>
+<font color=#0000ff>Executed <b>Mayflower is coming - settlers are the real workforce</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0025 secs</font><br><br>
+<font color=#0000ff>Starting <b>Destruction based on troop strength</b>...</font><br>
+(Affected 0 planets)<br>
+<font color=#0000ff>Executed <b>Destruction based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet insurrection set</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet insurrection set</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0329 secs</font><br><br>
+<font color=#0000ff>Starting <b>Planet revolution based on troop strength</b>...</font><br>
+<font color=#0000ff>Executed <b>Planet revolution based on troop strength</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recompute Static Planet Values</b>...</font><br>
+<font color=#0000ff>Executed <b>Recompute Static Planet Values</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0845 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Security Troops</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Security Troops</b> (</font><font color=#ff0000>queries: 21</font><font color=#0000ff>) in </font><font color=#009900>0.3363 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planets</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planets</b> (</font><font color=#ff0000>queries: 13</font><font color=#0000ff>) in </font><font color=#009900>0.0027 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Planet Attacked Data</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Planet Attacked Data</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0233 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Players</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Players</b> (</font><font color=#ff0000>queries: 8</font><font color=#0000ff>) in </font><font color=#009900>0.0018 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Alliance Points</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Alliance Points</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove non-existing alliances</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove non-existing alliances</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Update Ranking</b>...</font><br>
+<font color=#0000ff>Executed <b>Update Ranking</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0014 secs</font><br><br>
+<font color=#0000ff>Starting <b>Alliance Taxes</b>...</font><br>
+<font color=#0000ff>Executed <b>Alliance Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Ferengi Taxes</b>...</font><br>
+Start Payment<br>
+<font color=#0000ff>Executed <b>Ferengi Taxes</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove old Resourcetrade</b>...</font><br>
+Affected 0 resourcetrades<br>
+<font color=#0000ff>Executed <b>Remove old Resourcetrade</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>World Scheduler</b>...</font><br>
+<font color=#0000ff>Executed <b>World Scheduler</b> (</font><font color=#ff0000>queries: 3</font><font color=#0000ff>) in </font><font color=#009900>0.0879 secs</font><br><br>
+<font color=#0000ff>Starting <b>Remove inactive players</b>...</font><br>
+<font color=#0000ff>Executed <b>Remove inactive players</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0017 secs</font><br><br>
+<font color=#0000ff>Starting <b>Resolve ghost fleets</b>...</font><br>
+<b>5</b> Fleets of ships found.<br>
+<font color=#0000ff>Executed <b>Resolve ghost fleets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0332 secs</font><br><br>
+<b>Finished Scheduler in <font color=#009900>0.7027 secs</font><br>Executed Queries: <font color=#ff0000>133</font></b><br>

@@ -258,11 +258,11 @@ $config=$db->queryrow('SELECT * FROM config');
 $playercount=$db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_auth_level=1 AND user_active>0');
 $player_online = $db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
 
-/*Second galaxy */
+/*Second galaxy 
 $config2=$db2->queryrow('SELECT * FROM config');
 $playercount2=$db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_auth_level=1 AND user_active>0');
 $player_online2 = $db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
-
+*/
 
 $main_html.='
 <div class="caption">'.$locale['registration'].'</div>
