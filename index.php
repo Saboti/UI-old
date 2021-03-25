@@ -75,7 +75,7 @@ function send_mail($myname, $myemail, $contactname, $contactemail, $subject, $me
 
 
 $db = new sql($config['server'].":".$config['port'], $config['game_database'], $config['user'], $config['password']); // create sql-object for db-connection
-//$db2 = new sql($config['server'].":".$config['port'], $config['game_database2'], $config['user'], $config['password']);
+$db2 = new sql($config['server'].":".$config['port'], $config['game_database2'], $config['user'], $config['password']);
 //$db3 = new sql($config['server'].":".$config['port'], $config['game_database3'], $config['user'], $config['password']);
 
 $action = htmlspecialchars((!empty($_GET['a'])) ? $_GET['a'] : 'home');
