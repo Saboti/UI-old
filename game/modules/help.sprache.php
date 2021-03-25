@@ -3,10 +3,10 @@
 //Deutsch
 define ("GER_TEXT0", 'Hilfe');
 define ("GER_TEXT1", 'Anfrage%20f&uuml;r%20Hilfe');
-define ("GER_TEXT2", 'Wenn Sie der Meinung sind verloren, folgen Sie diesem Link zu schreiben, um den Support!');
+define ("GER_TEXT2", 'Wenn Sie weitere Fragen haben oder sonstigen Support ben&ouml;tigen, klicken Sie folgenden Link an um dem Support zu schreiben!');
 define ("GER_TEXT3", '* Die Hilfe-Dateien mit dem Namen <s>durchgestrichen</s> sind zurzeit nicht verf&uuml;gbar.');
 
-define ("GER_TEXT100", 'Verf&uuml;gbare Hilfe-Dateien: *');
+define ("GER_TEXT100", 'Verf&uuml;gbare Hilfe-Dateien:');
 define ("GER_TEXT101", 'FAQ');
 define ("GER_TEXT102", 'Geb&auml;ude');
 define ("GER_TEXT103", 'Forschungszentrum : Schiffskomponentenabteilung');
@@ -16,16 +16,16 @@ define ("GER_TEXT106", 'Schiffswerft : Besatzung f&uuml;r Schiffe');
 define ("GER_TEXT107", 'Schiffswerft : Baustatus');
 define ("GER_TEXT108", 'Akademie : Ausbildungsstatus');
 define ("GER_TEXT109", 'Akademie : Ausbildungsliste');
-define ("GER_TEXT110", '<s>Handelszentrum : Lieferstatus einsehen</s>');
-define ("GER_TEXT111", '<s>Handelszentrum : Truppen Kauf</s>');
-define ("GER_TEXT112", '<s>Handelszentrum : Truppen Verkauf</s>');
-define ("GER_TEXT113", '<s>Handelszentrum : Ressourcenmarkt');
-define ("GER_TEXT114", '<s>Handelszentrum : Auktion erstellen</s>');
-define ("GER_TEXT115", '<s>Handelszentrum : Auktionen einsehen</s>');
-define ("GER_TEXT116", '<s>Handelszentrum : Eigene auktionen</s>');
-define ("GER_TEXT117", '<s>Handelszentrum : Konto Auszahlung</s>');
-define ("GER_TEXT118", '<s>Handelszentrum : Auktionsschulden</s>');
-define ("GER_TEXT119", '<s>Handelszentrum : Schiffabhohl Stelle</s>');
+define ("GER_TEXT110", 'Handelszentrum : Lieferstatus einsehen');
+define ("GER_TEXT111", 'Handelszentrum : Truppen Kauf');
+define ("GER_TEXT112", 'Handelszentrum : Truppen Verkauf');
+define ("GER_TEXT113", 'Handelszentrum : Ressourcenmarkt');
+define ("GER_TEXT114", 'Handelszentrum : Auktion erstellen');
+define ("GER_TEXT115", 'Handelszentrum : Auktionen einsehen');
+define ("GER_TEXT116", 'Handelszentrum : Eigene auktionen');
+define ("GER_TEXT117", 'Handelszentrum : Konto Auszahlung');
+define ("GER_TEXT118", 'Handelszentrum : Auktionsschulden');
+define ("GER_TEXT119", 'Handelszentrum : Schiffabhohl Stelle');
 define ("GER_TEXT120", 'Planeten');
 define ("GER_TEXT121", 'Schiffe');
 

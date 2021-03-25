@@ -16,107 +16,107 @@ $game->out('
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/faq.htm.de\',\'STFC\',\'toolbar=no,width=750,height=600,resizable=no,scrollbars=yes\'));"><span class="sub_caption2">'.constant($game->sprache("TEXT101")).'</span></a>
+			<a href="JavaScript:void(window.open(\'help/faq.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=750,height=600,resizable=no,scrollbars=yes\'));"><span class="sub_caption2">'.constant($game->sprache("TEXT101")).'</span></a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/building_1.htm.de\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT102")).'</a>
+			<a href="JavaScript:void(window.open(\'help/building_1.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT102")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/research_catresearch.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT103")).'</a>
+			<a href="JavaScript:void(window.open(\'help/research_catresearch.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT103")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/research_localresearch.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT104")).'</a>
+			<a href="JavaScript:void(window.open(\'help/research_localresearch.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT104")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/shipyard_1.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT105")).'</a>
+			<a href="JavaScript:void(window.open(\'help/shipyard_1.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT105")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/shipyard_2.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT106")).'</a>
+			<a href="JavaScript:void(window.open(\'help/shipyard_2.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT106")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/shipyard_3.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT107")).'</a>
+			<a href="JavaScript:void(window.open(\'help/shipyard_3.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT107")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/academy_1.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT108")).'</a>
+			<a href="JavaScript:void(window.open(\'help/academy_1.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT108")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/academy_2.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT109")).'</a>
+			<a href="JavaScript:void(window.open(\'help/academy_2.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT109")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_viewstatus.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT110")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_viewstatus.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT110")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_buy_truppen.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT111")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_buy_truppen.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT111")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_sold_truppen.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT112")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_sold_truppen.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT112")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_ress.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT113")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_ress.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT113")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_createauction.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT114")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_createauction.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT114")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_viewauction.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT115")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_viewauction.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT115")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_viewownauction.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT116")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_viewownauction.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT116")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/konto.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT117")).'</a>
+			<a href="JavaScript:void(window.open(\'help/konto.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT117")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/trade_debts.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT118")).'</a>
+			<a href="JavaScript:void(window.open(\'help/trade_debts.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT118")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/ship_avis.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT119")).'</a>
+			<a href="JavaScript:void(window.open(\'help/ship_avis.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT119")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/planetlist.htm.de\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT120")).'</a>
+			<a href="JavaScript:void(window.open(\'help/planetlist.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT120")).'</a>
 		</td>
 		</tr>
 		<tr>
 		<td>
-			<a href="JavaScript:void(window.open(\'help/ships.htm.de\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT121")).'</a>
+			<a href="JavaScript:void(window.open(\'help/ships.htm.'.$game->player['language'].'\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("TEXT121")).'</a>
 		</td>
 		</tr>
 		</table>
@@ -203,7 +203,7 @@ $game->out('
 	</tr>
 	<tr>
 	<td colspan="2">
-	<br><br>'.constant($game->sprache("TEXT3")).'
+	<!--<br><br>'.constant($game->sprache("TEXT3")).'-->
 	</td>
 	</tr>
 	</table>

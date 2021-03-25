@@ -1,21 +1,21 @@
 <?PHP
 
-$guide_html = '<p align="justify">Questa &egrave; una piccola guida ai fondamenti del gioco &quot;Star Trek: Frontline Combat&quot; (pi&ugrave;
-brevemente STFC), lo scrittore spera possa essere utile al giocatore inesperto per capire e controllare al meglio ogni aspetto del gioco.</p>
-<span class="caption">INDICE</span>
+$guide_html = '<p align="justify">Dies ist eine kleine Anleitung zu den Grundlagen des Spiels "Star Trek - Galaxy War" (kurz STGW). 
+Der Autor hofft, dass es für den Anf&auml;nger nützlich sein wird, jeden Aspekt des Spiels besser zu verstehen und zu kontrollieren.</p>
+<span class="caption">INDEX</span>
 <ul>
-<li><a href="'.parse_link('a=database&view=guide&page=1').'">IL GIOCO</a></li>
-<li><a href="'.parse_link('a=database&view=guide&page=2').'">I PIANETI</li>
-<li><a href="'.parse_link('a=database&view=guide&page=3').'">LE STRUTTURE</li>
-<li><a href="'.parse_link('a=database&view=guide&page=4').'">LE RICERCHE PLANETARIE</li>
-<li><a href="'.parse_link('a=database&view=guide&page=5').'">LE NAVI STELLARI</li>
-<li><a href="'.parse_link('a=database&view=guide&page=6').'">I PROGETTI NAVALI</li>
-<li><a href="'.parse_link('a=database&view=guide&page=7').'">I COMPONENTI NAVI</li>
-<li><a href="'.parse_link('a=database&view=guide&page=8').'">LE FLOTTE (Parte prima: la creazione)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=9').'">LE FLOTTE (Parte seconda: spostarsi col men&ugrave; Flotte)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=10').'">LE FLOTTE (Parte terza: spostarsi col men&ugrave; Tattico)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=11').'">LE FLOTTE (Parte quarta: i comandi)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=12').'">LE FLOTTE (Parte quinta: i comandi dall&#146;orbita)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=1').'">Das Spiel</a></li>
+<li><a href="'.parse_link('a=database&view=guide&page=2').'">Die Planeten</li>
+<li><a href="'.parse_link('a=database&view=guide&page=3').'">Strukturen</li>
+<li><a href="'.parse_link('a=database&view=guide&page=4').'">Planetare Forschung</li>
+<li><a href="'.parse_link('a=database&view=guide&page=5').'">Sternen Kreuzer</li>
+<li><a href="'.parse_link('a=database&view=guide&page=6').'">Schiff Templates</li>
+<li><a href="'.parse_link('a=database&view=guide&page=7').'">Schiff Komponenten</li>
+<li><a href="'.parse_link('a=database&view=guide&page=8').'">Flotten (Erstellung)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=9').'">Flotten (bewegen mit Flotten Men&uuml;)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=10').'">Flotten (bewegen mit Taktik Men&uuml;)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=11').'">Flotten (Kommandos)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=12').'">Flotten (Kommandos im Orbit)</li>
 </ul>
 </p>';
 

@@ -358,3 +358,27 @@ Unimatrix Zero Sphere count is: 12<br>
 <font color=#0000ff>Starting <b>Clearing invalid war declarations</b>...</font><br>
 <font color=#0000ff>Executed <b>Clearing invalid war declarations</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
 <b>Finished FixAll-Script in <font color=#009900>0.0688 secs</font><br>Executed Queries: <font color=#ff0000>51</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting FixAll-Script at 25.03.21 15:05:02</b><br>
+<font color=#0000ff>Starting <b>Recalculate resources</b>...</font><br>
+<font color=#0000ff>Executed <b>Recalculate resources</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0323 secs</font><br><br>
+<font color=#0000ff>Starting <b>Recalculate security forces</b>...</font><br>
+0 of 6 planets now have adjusted values<br>
+<font color=#0000ff>Executed <b>Recalculate security forces</b> (</font><font color=#ff0000>queries: 19</font><font color=#0000ff>) in </font><font color=#009900>0.0024 secs</font><br><br>
+<font color=#0000ff>Starting <b>Unimatrix Zero Maintenance</b>...</font><br>
+Unimatrix Zero Tact Cube count is: 1<br>
+Unimatrix Zero Standard Cube count is: 4<br>
+Unimatrix Zero Sphere count is: 12<br>
+<font color=#0000ff>Executed <b>Unimatrix Zero Maintenance</b> (</font><font color=#ff0000>queries: 6</font><font color=#0000ff>) in </font><font color=#009900>0.0007 secs</font><br><br>
+<font color=#0000ff>Starting <b>borg_npc_target Maintenance</b>...</font><br>
+<font color=#0000ff>Executed <b>borg_npc_target Maintenance</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>User SlowStats Update</b>...</font><br>
+<font color=#0000ff>Executed <b>User SlowStats Update</b> (</font><font color=#ff0000>queries: 11</font><font color=#0000ff>) in </font><font color=#009900>0.0043 secs</font><br><br>
+<font color=#0000ff>Starting <b>Buildings / Research level fix</b>...</font><br>
+<font color=#0000ff>Executed <b>Buildings / Research level fix</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0008 secs</font><br><br>
+<font color=#0000ff>Starting <b>Rioters planets take over by the settlers</b>...</font><br>
+<font color=#0000ff>Executed <b>Rioters planets take over by the settlers</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.007 secs</font><br><br>
+<font color=#0000ff>Starting <b>Logbook cleaning</b>...</font><br>
+<font color=#0000ff>Executed <b>Logbook cleaning</b> (</font><font color=#ff0000>queries: 9</font><font color=#0000ff>) in </font><font color=#009900>0.0013 secs</font><br><br>
+<font color=#0000ff>Starting <b>Clearing invalid war declarations</b>...</font><br>
+<font color=#0000ff>Executed <b>Clearing invalid war declarations</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<b>Finished FixAll-Script in <font color=#009900>0.0726 secs</font><br>Executed Queries: <font color=#ff0000>51</font></b><br>
