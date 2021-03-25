@@ -147,7 +147,7 @@ function message($type, $message, $add = false) {
 			echo '
 				<html>
 				<head>
-				<title>Frontline Combat :: System Announcement</title>
+				<title>Galaxy War :: System Announcement</title>
 				<style type="text/css">
 				<!--
 				a:link    { font-family: Arial,serif; font-size: 10px; text-decoration: none; color: #CCCCCC; }
@@ -168,7 +168,7 @@ function message($type, $message, $add = false) {
 
 				<table bgcolor="#000025" width="500" align="center" cellspacing="4" cellpadding="4" style="border: 1px solid #C0C0C0;">
 				<tr>
-				<td><span style="font-size: 14px; font-weight: bold;">Frontline Combat :: System Announcement</span></td>
+				<td><span style="font-size: 14px; font-weight: bold;">Galaxy War :: System Announcement</span></td>
 				</tr>
 				</table>
 				<table bgcolor="#000025" width="500" align="center" cellspacing="4" cellpadding="4" style="border-left: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0;">
@@ -200,7 +200,7 @@ function message($type, $message, $add = false) {
                     $add = &$db;
                 }
 
-                echo '<span style="font-size: 20px; font-family: Verdana, Arial, Helvetica, sans-serif;"><b>Frontline Combat :: Database Error</b></span><hr>'.
+                echo '<span style="font-size: 20px; font-family: Verdana, Arial, Helvetica, sans-serif;"><b>Galaxy War :: Database Error</b></span><hr>'.
                 '<span style="font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;">'.$message.'<br><br>'.$add->error['message'].' ('.$add->error['number'].')<br><br>'.$add->error['sql'].'</span>';
 
                 $file = ERROR_LOG_FILE;
@@ -266,7 +266,7 @@ function display_view_navigation($module, $current_view, $views) {
 function HelpPopup($name) {
 	global $game;
 
-	return '[<a href="JavaScript:void(window.open(\'help/'.$name.'.htm\',\'STFC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("HELP")).'</a>]';
+	return '[<a href="JavaScript:void(window.open(\'help/'.$name.'.htm\',\'STGC\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));">'.constant($game->sprache("HELP")).'</a>]';
 }
 
 // #############################################################################
@@ -1069,9 +1069,9 @@ class game {
 
 	function sprache($nummer){
 		if(!defined($this->player['language']."_".$nummer) || ($this->player['language']."_".$nummer)== " "){
-			// 11/02/08 - AC: Fallback language is now english
-			//return "GER_".$nummer;
-			return "ENG_".$nummer;
+			// 11/02/08 - AC: Fallback language is now German
+			return "GER_".$nummer;
+			//return "ENG_".$nummer;
 		}else{
 			return $this->player['language']."_".$nummer;
 		}
@@ -1104,10 +1104,10 @@ class game {
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <title>'.GetTabbyAction($_GET['a']).' - Star Trek: Frontline Combat 2</title>
+  <title>'.GetTabbyAction($_GET['a']).' - Star Trek - Galaxy War</title>
   <meta name="Content-Language" content="'.$this->player['language'].'">
-  <meta name="description" content="ST: Frontline Combat is a free browser based multiplayer game, take the role of different races and peoples of the universe and rewrite history.">
-  <meta name="keywords" content="star trek, startrek, galaxy, conquest, universe, game, gratis, kostenlos, spiel, multiplayer, strategy, strategie, onlinegame, bbg, free, browser, based, galaxie, universum, klingon, klingonen, federation, f&ouml;deration">
+  <meta name="description" content="STGW is a free browser based multiplayer game, take the role of different races and peoples of the universe and rewrite history.">
+  <meta name="keywords" content="star trek, startrek, galaxy, war, conquest, universe, game, gratis, kostenlos, spiel, multiplayer, strategy, strategie, onlinegame, bbg, free, browser, based, galaxie, universum, klingon, klingonen, federation, f&ouml;deration">
 
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="pragma" content="no-cache">
@@ -1127,7 +1127,7 @@ class game {
 		if (file_exists('stgc2_'.$this->player['language'].'.js'))
 			$stgcjs = 'stgc2_'.$this->player['language'].'.js';
 		else
-			$stgcjs = 'stgc2_ENG.js';
+			$stgcjs = 'stgc2_GER.js';
 
 		echo '
   <script type="text/javascript" language="JavaScript" src="'.$this->player['user_jspath'].$stgcjs.'"></script>
