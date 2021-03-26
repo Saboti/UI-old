@@ -959,16 +959,16 @@ $loc_strings = array(
 
 
 $langs = array(
-        'en-US',// default
         'de',
+	'en-US',// default
 	'it',
 );
 
 $user_lang = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) : 'en';
 
-// Check if user language is currently supported otherwise fallback to english
+// Check if user language is currently supported otherwise fallback to german
 if (!in_array($user_lang, $langs)) {
-    $user_lang = 'en';
+    $user_lang = 'de';
 }
 
 $locale = $loc_strings[$user_lang];

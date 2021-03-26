@@ -54,7 +54,7 @@ if(!isset($_GET['hypersure'])) {
 $game->out('<b>Beginning galaxy big crunch...</b><br>');
 
 // First of all stop the tick execution and the game:
-$sql = 'UPDATE config SET tick_stopped = 1,game_stopped = 1';
+$sql = 'UPDATE config SET tick_stopped = 1,game_stopped = 1,stop_message = "Reset"';
 
 if(!$db->query($sql)) {
     message(DATABASE_ERROR, 'Cannot stop tick execution!');
@@ -150,7 +150,7 @@ $game->out('done.<br>');
 // ###########################################################################
 // Recreate admin user's stuff
 
-$game->out('Creating STFC admin user...');
+$game->out('Creating STGW admin user...');
 
 // We could use some default values here...
 $sql = "INSERT INTO `user` (`user_id`, `user_active`, `user_name`, `user_loginname`, `user_password`,
@@ -179,22 +179,22 @@ $sql = "INSERT INTO `user` (`user_id`, `user_active`, `user_name`, `user_loginna
                             `user_options`, `plz`, `country`, `num_hits`, `num_sitting`, `language`, `tutorial`,
                             `last_alliance_kick`, `user_trade`, `message_basement`, `trade_tick`, `notepad_width`,
                             `notepad_cols`, `skin_farbe`) VALUES
-                           (10, 1, 'STFC-Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', '".$config['admin_email']."', 3, 'Developer', 0, 0,
+                           (10, 1, 'STGW-Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', '".$config['admin_email']."', 3, 'Developer', 0, 0,
                            '".DEFAULT_GFX_PATH."', 'skin1/', '', 1, '', 0, '', 3557,
                            0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1343032585, '10.1.8.37',
                            9, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '',
                            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
                            1489, 0, 0, 0, 0, 0, 273, 1335786338, 9, '', '', '', '', '-', 0, 2, 2, 1,
-                           'Spazio libero', 'Spazio libero', 'Spazio libero', 'Spazio libero', 'Spazio libero', '', '', '', '', '',
+                           'Freier Platz', 'Freier Platz', 'Freier Platz', 'Freier Platz', 'Freier Platz', '', '', '', '', '',
                            1343028872, 1276633833, '', 'tmpsec/sec0558eba1efd5812e49a30c7f75acb37e.gif', 0, 1, '',
                            'a:9:{s:15:\"planetlist_show\";i:0;s:16:\"planetlist_order\";i:0;s:22:\"alliance_status_member\";i:2;s:16:\"redalert_options\";i:0;s:10:\"show_trade\";i:1;s:6:\"type_2\";i:1;s:6:\"type_0\";i:1;s:6:\"type_3\";i:1;s:6:\"type_1\";i:1;}',
                            '74586', 'DE', 114, 0, 'GER', 0, 8566, 3, '', 0, 200, 13, '')";
 
 if(!$db->query($sql)) {
-    message(DATABASE_ERROR, 'Cannot create STFC-Admin user!');
+    message(DATABASE_ERROR, 'Cannot create STGW-Admin user!');
 }
 
-$game->out('done.<br>Creating STFC admin star system...');
+$game->out('done.<br>Creating STGW admin star system...');
 
 $sql = 'INSERT INTO `starsystems` (
             `system_id`, `system_name`, `sector_id`,
@@ -218,10 +218,10 @@ $sql = 'INSERT INTO `starsystems` (
             1)';
 
 if(!$db->query($sql)) {
-    message(DATABASE_ERROR, 'Cannot create STFC-Admin starsystem!');
+    message(DATABASE_ERROR, 'Cannot create STGW-Admin starsystem!');
 }
 
-$game->out('done.<br>Creating STFC admin planet...');
+$game->out('done.<br>Creating STGW admin planet...');
 
 $sql = 'INSERT INTO `planets` (
             `planet_id`, `planet_name`, `system_id`, `sector_id`,
@@ -247,10 +247,10 @@ $sql = 'INSERT INTO `planets` (
             "")';
 
 if(!$db->query($sql)) {
-    message(DATABASE_ERROR, 'Cannot create STFC-Admin planet!');
+    message(DATABASE_ERROR, 'Cannot create STGW-Admin planet!');
 }
 
-$game->out('done.<br>Creating STFC admin user template...');
+$game->out('done.<br>Creating STGW admin user template...');
 
 $file = $config['game_url'].'/modules/tools/world/default_template2.html';
 if(($template = file_get_contents($file)) === false) {
@@ -262,11 +262,11 @@ $sql =  'INSERT INTO `user_templates` (`user_id`, `user_template`) VALUES
                                      (10, "'.addslashes($template).'")';
 
 if(!$db->query($sql)) {
-    message(DATABASE_ERROR, 'Cannot create STFC-Admin user template!');
+    message(DATABASE_ERROR, 'Cannot create STGW-Admin user template!');
 }
 
 // This templates are needed by tool encourage_user
-$game->out('done.<br>Creating STFC admin ship templates...');
+$game->out('done.<br>Creating STGW admin ship templates...');
 
 $sql = "INSERT INTO ship_templates (
             `id`, `owner`, `timestamp`, `name`,
@@ -337,7 +337,7 @@ $sql = "INSERT INTO ship_templates (
             439, 0);";
 
 if(!$db->query($sql)) {
-    message(DATABASE_ERROR, 'Cannot create STFC-Admin ship templates!');
+    message(DATABASE_ERROR, 'Cannot create STGW-Admin ship templates!');
 }
 
 // ###########################################################################

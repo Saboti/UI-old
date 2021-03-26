@@ -433,3 +433,35 @@ Writing Settler Heavy Cruiser!<br>
 Writing Settler Orbital!<br>
 <font color=#0000ff>Executed <b>Mayflower basic system</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0026 secs</font><br><br>
 <b>Finished Install BOTs in <font color=#009900>0.0248 secs</font><br>Executed Queries: <font color=#ff0000>26400</font></b><br>
+<br><b>-------------------------------------------------------------</b><br><b>Starting Install BOTs at 26.03.21 11:37:11</b><br>
+<font color=#0000ff>Starting <b>Ramona basic system</b>...</font><br>
+Ramona is created<br>
+<b>Ramona needs a new body</b><br>
+New planet<br>
+Better values for the Planet<br>
+Update BOT ship templates<br>
+<font color=#0000ff>Executed <b>Ramona basic system</b> (</font><font color=#ff0000>queries: 16</font><font color=#0000ff>) in </font><font color=#009900>0.0047 secs</font><br><br>
+<font color=#0000ff>Starting <b>PW change</b>...</font><br>
+Now there are only One-Night-Stands, no longer relations<br>
+<font color=#0000ff>Executed <b>PW change</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>SevenOfNine basic system</b>...</font><br>
+We need to create SevenOfNine<br>
+<b>SevenOfNine needs new body</b><br>
+Create new planet<br>
+Give best values to the planet<br>
+Ship templates built<br>
+<font color=#0000ff>Executed <b>SevenOfNine basic system</b> (</font><font color=#ff0000>queries: 20</font><font color=#0000ff>) in </font><font color=#009900>0.0048 secs</font><br><br>
+<font color=#0000ff>Starting <b>PW change</b>...</font><br>
+Now there are only One-Night-Stands, no longer relations<br>
+<font color=#0000ff>Executed <b>PW change</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<font color=#0000ff>Starting <b>Future Humans Setup&Maintenance</b>...</font><br>
+Template created with id 11<br>
+<font color=#0000ff>Executed <b>Future Humans Setup&Maintenance</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<font color=#0000ff>Starting <b>Mayflower basic system</b>...</font><br>
+We need to create TheSettlers!<br>
+Writing Settler Cargo Ship!<br>
+Writing Settler Cruiser Ship!<br>
+Writing Settler Heavy Cruiser!<br>
+Writing Settler Orbital!<br>
+<font color=#0000ff>Executed <b>Mayflower basic system</b> (</font><font color=#ff0000>queries: 14</font><font color=#0000ff>) in </font><font color=#009900>0.0019 secs</font><br><br>
+<b>Finished Install BOTs in <font color=#009900>0.0128 secs</font><br>Executed Queries: <font color=#ff0000>26399</font></b><br>
