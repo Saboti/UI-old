@@ -15,12 +15,19 @@ Installation:
 4. edit game/include/global.php and set the Path to config.inc.php in the Top
 5. copy config.script.php.dist to config.script.php in the Schedduler Folder and edit the Settings and Paths
 6. Add a crontab to Scheduler: (e.g. below)
+
 @daily php /var/www/stgw/Scheduler/daily.php > /var/www/stgw/Scheduler/log/daily.log
+
 */3 * * * * php /var/www/stgw/Scheduler/main.php > /var/www/stgw/Scheduler/log/scheduler.log
+
 */1 * * * * php /var/www/stgw/Scheduler/moves_start.php > /var/www/stgw/Scheduler/log/moves.log
+
 5 * * * * php /var/www/stgw/Scheduler/fix_all.php > /var/www/stgw/Scheduler/log/fix_all.log
+
 0 */6 * * * php /var/www/stgw/Scheduler/six_hours.php > /var/www/stgw/Scheduler/log/sixhours.log
+
 35 * * * * php /var/www/stgw/Scheduler/sigcreate.php > /var/www/stgw/Scheduler/log/signatures.log
+
 7. Add Planets! (e.g.)
 php Scheduler/populate_world.php -> to spawn 25 planets per quadrant
 php Scheduler/populate_world_1600.php -> in order to spawn 125 planets per quadrant
