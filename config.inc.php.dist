@@ -18,7 +18,7 @@ $config['admin_email'] = 'xxxxxxxxxxxx';
 
 define ('ERROR_LOG_FILE', '/var/www/xxxx/UI/game/logs/error_log.htm');
 define ('ADMIN_LOG_FILE', '/var/www/xxxxx/UI/game/logs/admin_log.htm');
-define('DEFAULT_GFX_PATH', '/stfc_gfx/');
-define('PROXY_GFX_PATH', '/stfc_gfx/');
+define('DEFAULT_GFX_PATH', '/stgw_gfx/');
+define('PROXY_GFX_PATH', '/stgw_gfx/');
 define('JSCRIPT_PATH', '/game/');
 ?>
