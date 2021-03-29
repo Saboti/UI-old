@@ -85,11 +85,11 @@ $meta_descr = 'STGW is a free browser based multi-player game by playing the rol
 $main_html = '';
 
 if(strstr($action, '.')) {
-    $main_html = '<br><br><center><span style="font-size: 20px;">La pagina selezionata "'.$action.'" non esiste.</span></center><br><br>';
+    $main_html = '<br><br><center><span style="font-size: 20px;">Die ausgew&auml;hlte Seite "'.$action.'" existiert nicht.</span></center><br><br>';
 }
 
 if(!file_exists('pages/'.$action.'.php')) {
-    $main_html = '<br><br><center><span style="font-size: 20px;">La pagina selezionata "'.$action.'" non esiste.</span></center><br><br>';
+    $main_html = '<br><br><center><span style="font-size: 20px;">Die ausgew&auml;hlte Seite "'.$action.'" existiert nicht.</span></center><br><br>';
 }
 else
     include('pages/'.$action.'.php');

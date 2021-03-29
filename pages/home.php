@@ -29,7 +29,7 @@ $sql = ' SELECT *
          FROM page_news
          ORDER BY date DESC
          LIMIT 0, 2';
-        
+
 if(($q_news = $db->query($sql)) === false) {
     $news_html = $locale['nonews'].'<br><br><img src="./gfx/header_newsitem.jpg"><br><br>';
 }
@@ -39,7 +39,7 @@ else {
     while($news = $db->fetchrow($q_news)) {
         $news_day = (int)gmdate('d', $news['date']);
         $today = (int)gmdate('d', time());
-        
+
         if($news_day == $today) {
             $date_str = 'Today, '.gmdate('H:i', $news['date']);
         }
@@ -89,11 +89,11 @@ $main_html .= '
     <td width="250" valign="top">
       <table width="250" border="0" cellpadding="2" cellspacing="2">
         <tr><td width="250" height="30"></td></tr>
-        <tr>
+        <!--<tr>
           <td width="250" align="left" class="home_bar"><img src="./gfx/bar.jpg" alt="empty" border=0></td>
-        </tr>
+        </tr>-->
         <tr>
-          <!--<td width="250" align="left"><img src="./gfx/defiant.jpg" alt="defiant" border=0></td>-->
+          <td width="250" align="left">'.$news_html.'</td>
           <td width="250" align="left"><img src="./gfx/galaxy_front.jpg" alt="galaxy" border=0></td>
         </tr>
       </table>
