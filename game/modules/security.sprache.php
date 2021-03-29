@@ -22,7 +22,7 @@
 */
 
 //Deutsch
-define ("GER_TEXT0", 'STFC Sicherheitscode:');
+define ("GER_TEXT0", 'STGW Sicherheitscode:');
 
 define ("GER_TEXT1", 'Der angegebene Sicherheitscode war korrekt.<br>');
 
@@ -43,7 +43,7 @@ define ("GER_TEXT7", 'Du hast den falschen Kreis angeklickt, es erfolgt nun eine
 define ("GER_TEXT8", 'Bitte klicke den Kreis an, der nicht vollst&auml;ndig geschlossen ist:');
 
 //English
-define ("ENG_TEXT0", 'STFC Security Code:');
+define ("ENG_TEXT0", 'STGW Security Code:');
 
 define ("ENG_TEXT1", 'The specified security code was correctly.<br>');
 
