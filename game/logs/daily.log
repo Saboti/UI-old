@@ -170,3 +170,51 @@
 <font color=#0000ff>Starting <b>Clean temporary security images</b>...</font><br>
 <font color=#0000ff>Executed <b>Clean temporary security images</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
 <b>Finished Daily script in <font color=#009900>0.6351 secs</font><br>Executed Queries: <font color=#ff0000>7</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Daily script at 27.03.21 00:00:01</b><br>
+<font color=#0000ff>Starting <b>Reset New Registration Count</b>...</font><br>
+<font color=#0000ff>Executed <b>Reset New Registration Count</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0112 secs</font><br><br>
+<font color=#0000ff>Starting <b>Sitting abuse check</b>...</font><br>
+<font color=#0000ff>Executed <b>Sitting abuse check</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Create galaxy map</b>...</font><br>
+<font color=#0000ff>Executed <b>Create galaxy map</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0687 secs</font><br><br>
+<font color=#0000ff>Starting <b>Slimming ship movements</b>...</font><br>
+<font color=#0000ff>Executed <b>Slimming ship movements</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0006 secs</font><br><br>
+<font color=#0000ff>Starting <b>Optimize tables</b>...</font><br>
+<font color=#0000ff>Executed <b>Optimize tables</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0813 secs</font><br><br>
+<font color=#0000ff>Starting <b>Compress log files</b>...</font><br>
+<font color=#0000ff>Executed <b>Compress log files</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.3281 secs</font><br><br>
+<font color=#0000ff>Starting <b>Clean temporary security images</b>...</font><br>
+<font color=#0000ff>Executed <b>Clean temporary security images</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.0002 secs</font><br><br>
+<b>Finished Daily script in <font color=#009900>0.5226 secs</font><br>Executed Queries: <font color=#ff0000>7</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Daily script at 28.03.21 00:00:01</b><br>
+<font color=#0000ff>Starting <b>Reset New Registration Count</b>...</font><br>
+<font color=#0000ff>Executed <b>Reset New Registration Count</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0025 secs</font><br><br>
+<font color=#0000ff>Starting <b>Sitting abuse check</b>...</font><br>
+<font color=#0000ff>Executed <b>Sitting abuse check</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0011 secs</font><br><br>
+<font color=#0000ff>Starting <b>Create galaxy map</b>...</font><br>
+<font color=#0000ff>Executed <b>Create galaxy map</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.1118 secs</font><br><br>
+<font color=#0000ff>Starting <b>Slimming ship movements</b>...</font><br>
+<font color=#0000ff>Executed <b>Slimming ship movements</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0008 secs</font><br><br>
+<font color=#0000ff>Starting <b>Optimize tables</b>...</font><br>
+<font color=#0000ff>Executed <b>Optimize tables</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.126 secs</font><br><br>
+<font color=#0000ff>Starting <b>Compress log files</b>...</font><br>
+<font color=#0000ff>Executed <b>Compress log files</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.4279 secs</font><br><br>
+<font color=#0000ff>Starting <b>Clean temporary security images</b>...</font><br>
+<font color=#0000ff>Executed <b>Clean temporary security images</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.0004 secs</font><br><br>
+<b>Finished Daily script in <font color=#009900>0.6958 secs</font><br>Executed Queries: <font color=#ff0000>7</font></b><br>
+<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting Daily script at 29.03.21 00:00:01</b><br>
+<font color=#0000ff>Starting <b>Reset New Registration Count</b>...</font><br>
+<font color=#0000ff>Executed <b>Reset New Registration Count</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0008 secs</font><br><br>
+<font color=#0000ff>Starting <b>Sitting abuse check</b>...</font><br>
+<font color=#0000ff>Executed <b>Sitting abuse check</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.001 secs</font><br><br>
+<font color=#0000ff>Starting <b>Create galaxy map</b>...</font><br>
+<font color=#0000ff>Executed <b>Create galaxy map</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.097 secs</font><br><br>
+<font color=#0000ff>Starting <b>Slimming ship movements</b>...</font><br>
+<font color=#0000ff>Executed <b>Slimming ship movements</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0121 secs</font><br><br>
+<font color=#0000ff>Starting <b>Optimize tables</b>...</font><br>
+<font color=#0000ff>Executed <b>Optimize tables</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0724 secs</font><br><br>
+<font color=#0000ff>Starting <b>Compress log files</b>...</font><br>
+<font color=#0000ff>Executed <b>Compress log files</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.3812 secs</font><br><br>
+<font color=#0000ff>Starting <b>Clean temporary security images</b>...</font><br>
+<font color=#0000ff>Executed <b>Clean temporary security images</b> (</font><font color=#ff0000>queries: 0</font><font color=#0000ff>) in </font><font color=#009900>0.0003 secs</font><br><br>
+<b>Finished Daily script in <font color=#009900>0.5887 secs</font><br>Executed Queries: <font color=#ff0000>7</font></b><br>
