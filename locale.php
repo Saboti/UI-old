@@ -382,7 +382,7 @@ $loc_strings = array(
         'available_places' => 'Freie Slots:',
         'online_players' => 'Online Spieler:',
         'galaxy1_desc' => 'Die "'.GALAXY1_NAME.'" Galaxie hat einen 3 Minuten Tick Intervall.',
-        'galaxy2_desc' => 'The "'.GALAXY2_NAME.'" galaxy is the basic setup with less available races and diplomacy is just a dream.',
+        'galaxy2_desc' => 'The "'.GALAXY2_NAME.'" Developer Galaxie',
 
         'galaxy_registration' => '(2/2) Anmeldung in der Galaxie',
         'player_info' => 'Spieler Informationen',
@@ -525,13 +525,13 @@ $loc_strings = array(
 
         'mail_message_congrats' => 'Ziel erreicht!',
         'mail_message_reg1a' => 'Deine Anmeldung bei Star Trek - Galaxy War (',
-        'mail_message_reg1b' => 'Galaxy) Galaxie war erfolgreich!',
-        'mail_message_reg2' => 'Um deine Anmeldung abzuschlissen, folgenden Link klicken:',
+        'mail_message_reg1b' => 'Galaxie) war erfolgreich!',
+        'mail_message_reg2' => 'Um deine Anmeldung abzuschlie&szlig;en, folgenden Link klicken:',
         'mail_message_reg3' => 'Sollte die Anmeldung nicht gewollt sein. Dies Email einfach nicht beachten.',
-        'mail_message_reg4' => 'Ohne erfolge aktivierung werden deine Daten nach 48 stunden aus der Datenbank entfernt.',
-        'mail_message_sig_line1' => 'Lebe und gedeihe lang',
+        'mail_message_reg4' => 'Ohne erfolgte aktivierung werden deine Daten nach 48 stunden aus der Datenbank entfernt.',
+        'mail_message_sig_line1' => 'Lebe lang und in Frieden',
         'mail_message_sig_line2' => 'das STGW Team',
-        'mail_subject_reg' => 'Star Trek - Galaxy War - Anmeldung beendet',
+        'mail_subject_reg' => 'Star Trek - Galaxy War - Anmeldung',
         'there_are' => 'Es ist',
         'on' => 'von',
 
@@ -545,7 +545,7 @@ $loc_strings = array(
          <ul>
          <li>aus dem Spiel, indem Sie eine Nachricht an den Support senden, indem Sie der Rubrik "Hilfe" folgen</li>
          <li>aus dem Forum, per PM (Personal Message) an einen oder mehrere der Administratoren und / oder Moderatoren</li>
-         <li>per E-Mail, indem Sie eine detaillierte Beschreibung zu "admin &lt;at&gt; stfc2 &lt;dot&gt; ch" senden</li>.
+         <li>per E-Mail, indem Sie eine detaillierte Beschreibung zu "admin &lt;at&gt; st-gw &lt;dot&gt; de" senden</li>.
          </ul>',
 
          // activate.php strings

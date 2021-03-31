@@ -112,6 +112,22 @@ $main_html .= '
     </td>
   </tr>
 </table>
+<!-- Partner -->
+<table width="660" border="0">
+        <tr>
+          <td align="center" with="750" height="10"><span style="color: #6D87AC; font-size:12px; font-weight:bold">
+            Partner
+          </td>
+        </tr>
+        <tr>
+          <td align="center" with="750" height="40">
+            <a href="https://www.stuniverse.de" target="_blank">
+               <img src="https://www.stuniverse.de/assets/main/banner.png" alt="stuniverse" boarder="0" height="40" width="400">
+            </a>
+          </td>
+        <tr>
+</table>
+<!-- Ende Partner -->
 ';
 
 ?>

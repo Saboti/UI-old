@@ -572,7 +572,7 @@ if(isset($_POST['submit'])) {
     $mail_message .= $locale['mail_message_reg2'].NL.$activation_link."\n\n".$locale['mail_message_reg3'].NL;
     $mail_message .= $locale['mail_message_reg4'].NL.NL.$locale['mail_message_sig_line1'].NL;
     $mail_message .= $locale['mail_message_sig_line2'].NL.NL.'Impressum: https://st-gw.de/index.php?a=imprint';
-    send_mail("STFC2 Mailer",$config['admin_email'],$_POST['user_name'],$_REQUEST['user_email'],$locale['mail_subject_reg'],$mail_message);
+    send_mail('STGW Mailer', 'noreply@st-gw.de', $_POST['user_name'], $_REQUEST['user_email'], $locale['mail_subject_reg'], $mail_message);
 
     // Update NewRegister
 

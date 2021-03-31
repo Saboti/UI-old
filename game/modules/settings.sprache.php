@@ -86,7 +86,7 @@ define ("GER_TEXT30", '* Verf&uuml;gbar nach ca. 30 Minuten');
 
 define ("GER_TEXT31", 'Tutorial Modus:');
 
-define ("GER_TEXT32", 'STFC-Userkarte');
+define ("GER_TEXT32", 'STGW-Userkarte');
 
 define ("GER_TEXT32a", 'ansehen');
 
@@ -400,7 +400,7 @@ define ("ENG_TEXT30", '* Updated every about 30 minutes');
 
 define ("ENG_TEXT31", 'Tutorial mode:');
 
-define ("ENG_TEXT32", 'STFC-User show');
+define ("ENG_TEXT32", 'STGW-User show');
 
 define ("ENG_TEXT32a", 'view');
 
