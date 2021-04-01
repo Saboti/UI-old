@@ -1,7 +1,8 @@
-<html>
-<head>
-  <title>Star Trek - Galaxy War - Frequently Asked Questions</title>
+<?PHP
 
+$title_html = 'FAQ';
+$meta_descr = 'Heufige Fragen';
+$main_html='
 <style type="text/css">
 <!-- A:link {FONT-SIZE: 11px; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans; TEXT-DECORATION: none}
 A:visited {FONT-SIZE: 11px; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans; TEXT-DECORATION: none}
@@ -11,16 +12,18 @@ A.nav:link {FONT-WEIGHT: bold; FONT-SIZE: 10px}
 A.nav:visited {FONT-WEIGHT: bold; FONT-SIZE: 10px}
 A.nav:hover {FONT-WEIGHT: bold; FONT-SIZE: 10px}
 A.nav:active {FONT-WEIGHT: bold; FONT-SIZE: 10px}
-TD {FONT-SIZE: 12px; FONT-FAMILY: Arial, Luxi Sans; COLOR: #c0c0c0;  bgcolor=#cccccc}
+TD {FONT-SIZE: 11px; FONT-FAMILY: Arial, Luxi Sans; COLOR: #c0c0c0;  bgcolor=#cccccc}
 input[type=checkbox] { border-style: none;}
 INPUT[type=submit], INPUT[type=text], INPUT[type=password] {BORDER-RIGHT: #959595 1px solid; BORDER-TOP: #959595 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #959595 1px solid; COLOR: #959595; BORDER-BOTTOM: #959595 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #000000}
 TEXTAREA {BORDER-RIGHT: #959595 1px solid; BORDER-TOP: #959595 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #959595 1px solid; COLOR: #959595; BORDER-BOTTOM: #959595 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #000000}
 SELECT {BORDER-RIGHT: #959595 1px solid; BORDER-TOP: #959595 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #959595 1px solid; COLOR: #959595; BORDER-BOTTOM: #959595 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #000000}
-SPAN.caption {FONT-WEIGHT: bold; FONT-SIZE: 19pt; COLOR: #e0e0e0; FONT-FAMILY: Arial, Luxi Sans; }
+SPAN.caption {FONT-WEIGHT: bold; FONT-SIZE: 19pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
 SPAN.sub_caption {FONT-WEIGHT: bold; FONT-SIZE: 15pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
 SPAN.sub_caption2 {FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
 SPAN.text_large {FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
 SPAN.text_medium {FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
+SPAN.highlight { color: #FFFF00; font-weight: bold; text-decoration: none; }
+SPAN.highlight_link { color: #FFFF00; font-weight: bold; text-decoration: underline; }
 BODY {MARGIN: 0px; SCROLLBAR-ARROW-COLOR: #ccccff; SCROLLBAR-BASE-COLOR: #131c46; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; }
 TEXTAREA {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; SCROLLBAR-ARROW-COLOR: #ccccff; PADDING-TOP: 0px; SCROLLBAR-BASE-COLOR: #131c46;}
 
@@ -43,16 +46,24 @@ table.border_blue         { border: 1px solid #000000; }
 table.style_inner         { border: 1px solid #000000; background-color:#131c47;}
 table.style_outer         { border: 1px solid #000000; background-color:#283359;}
 
-table.style_msgunread         { border: 1px solid #000000; background-color:#ff3359;}
-table.style_msgread            { border: 1px solid #000000; background-color:#2833ff;}
+td.style_msgunread         { border: 0px; background-color:#ff3359;}
+td.style_msgread            { border: 0px; background-color:#131c47;}
 
+fieldset { border: 1px solid #c0c0c0; }
+hr { border: 1px solid #c0c0c0; }
 
 -->
 
 </style>
-</head>
+<!-- Middle -->
+<table cellspacing="0" cellpadding="0" width="650" align="center" border="0">
+<tbody>
+<tr>
+<td width="650"><br>
+<center></center>
+<br>
 
-<body bgcolor="#000000" text="#DDDDDD"  background="/gfx/bg_stars1.gif">
+<center>[<b>FAQ</b>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
 <div align="center"><span class="caption">FAQ</span></div>
 <table width="95%" cellpadding="2" cellspacing="5" align="center">
 <tr>
@@ -78,7 +89,7 @@ table.style_msgread            { border: 1px solid #000000; background-color:#28
 	</tr>
 	<tr>
 		<td valign="top" align="justify"><b>Wie kann ich unbewohnte Planeten kolonisieren und warum ist diese Funktion deaktiviert?</b></td>
-		<td valign="top" align="justify">Ab 200 Punkten (einige Rassen wie die Ferengi ben&ouml;tigen 250 Punkte) hast Du die M&ouml;glichkeit ein Template für ein Kolonisationsschiff zu erstellen. 
+		<td valign="top" align="justify">Ab 200 Punkten (einige Rassen wie die Ferengi ben&ouml;tigen 250 Punkte) hast Du die M&ouml;glichkeit ein Template fÃ¼r ein Kolonisationsschiff zu erstellen. 
 		Damit kannst Du dann Planeten kolonisieren.<br>
 		<b><u>TIPP: Es ist ratsam einen Scout voraus zu schicken um sicher zu stellen, dass in der Umlaufbahn des Zielplaneten keine feindlichen Schiffe sind.</u></b></td>
 	</tr>
@@ -87,7 +98,7 @@ table.style_msgread            { border: 1px solid #000000; background-color:#28
 		<td valign="top" align="justify">Um einen fremden, bewohnten, Planeten zu erobern musst Du zuerst die m&ouml;gliche vorhandene Planetare Verteidigung ausschalten. 
 		Diese kann aus kleinen und grossen Orbitalgesch&uuml;tzen und ebenso Kampfschiffen bestehen. Danach kannst Du mit der Bombardierung der Planetenoberfl&auml;che fortfahren um eine weitere Schw&auml;chung 
 		der Abwehr auf dem Boden zu erreichen. Bedenke dabei, dass nicht nur Truppen und Arbeiter auf dem Planeten get&ouml;tet werden sondern auch Geb&auml;udestrukturen zerst&ouml;rt werden die Du m&uuml;hsam 
-		wieder aufbauen musst. Alternativ kannst Du ohne Bombardierung den Planeten &uuml;bernehmen. Hierfür solltest Du ausreichend Truppen mitnehmen und Dich auf einen erbitterten Bodenkampf einstellen.</td>
+		wieder aufbauen musst. Alternativ kannst Du ohne Bombardierung den Planeten &uuml;bernehmen. HierfÃ¼r solltest Du ausreichend Truppen mitnehmen und Dich auf einen erbitterten Bodenkampf einstellen.</td>
 	</tr>
 	<tr>
 		<td valign="top" align="justify"><b>Ich habe einen Raumhafen und die Schiffswerft, Templates habe ich mir auch erstellt aber ich kann keine Schiffe bauen, warum?</b></td>
@@ -160,6 +171,13 @@ table.style_msgread            { border: 1px solid #000000; background-color:#28
 	</td>
 </tr>
 </table>
-</body>
-</html>
+
+</center>
+</td>
+</tr>
+</table>
+
+<!-- Middle End -->
+';
+?>
 

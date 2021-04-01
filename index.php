@@ -109,7 +109,7 @@ else
 
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="pragma" content="no-cache">
-  <meta name="title" content="Star Trek: Galaxy War">
+  <meta name="title" content="Star Trek - Galaxy War">
   <meta name="author" content="Florian Brede & Philipp Schmidt">
   <meta name="copyright" content="Paramount Pic., Brede, Schmidt">
   <meta name="ROBOTS" content="INDEX,NOFOLLOW">
@@ -240,12 +240,13 @@ window.attachEvent("onload", expandone)
   <tr>
     <td width=750 bgcolor="#131C46">&nbsp;
       <a class="nav" href="<?php echo parse_link() ?>"><img src="gfx/home.jpg" alt="home" border=0 onMouseOver="this.src='gfx/homeh.jpg';" onMouseOut="this.src='gfx/home.jpg';"></a> &nbsp;
-      <a class="nav" href="<?php echo parse_link('a=login') ?>"><img src="gfx/login.jpg" alt="login" border=0 onMouseOver="this.src='gfx/loginh.jpg';" onMouseOut="this.src='gfx/login.jpg';"></a> &nbsp;&nbsp;
-      <a class="nav" href="<?php echo parse_link('a=register') ?>"><img src="gfx/register.jpg" alt="register" border=0 onMouseOver="this.src='gfx/registerh.jpg';" onMouseOut="this.src='gfx/register.jpg';"></a> &nbsp;&nbsp;
-      <a class="nav" href="<?php echo parse_link('a=stats') ?>"><img src="gfx/stats.jpg" alt="stats" border=0 onMouseOver="this.src='gfx/statsh.jpg';" onMouseOut="this.src='gfx/stats.jpg';"></a> &nbsp;&nbsp;
-      <a class="nav" href="https://st-gw.de/wiki/" target=_blank><img src="gfx/faq.jpg" alt="faq" border=0 onMouseOver="this.src='gfx/faqh.jpg';" onMouseOut="this.src='gfx/faq.jpg';"></a>
+      <a class="nav" href="<?php echo parse_link('a=login') ?>"><img src="gfx/login.jpg" alt="login" border=0 onMouseOver="this.src='gfx/loginh.jpg';" onMouseOut="this.src='gfx/login.jpg';"></a> &nbsp;
+      <a class="nav" href="<?php echo parse_link('a=register') ?>"><img src="gfx/register.jpg" alt="register" border=0 onMouseOver="this.src='gfx/registerh.jpg';" onMouseOut="this.src='gfx/register.jpg';"></a> &nbsp;
+      <a class="nav" href="<?php echo parse_link('a=stats') ?>"><img src="gfx/stats.jpg" alt="stats" border=0 onMouseOver="this.src='gfx/statsh.jpg';" onMouseOut="this.src='gfx/stats.jpg';"></a> &nbsp;
+      <a class="nav" href="<?php echo parse_link('a=faq') ?>"><img src="gfx/faq.jpg" alt="faq" border=0 onMouseOver="this.src='gfx/faqh.jpg';" onMouseOut="this.src='gfx/faq.jpg';"></a>
       <a class="nav" href="https://st-gw.de/forum/" target=_blank><img src="gfx/forum.jpg" alt="forum" border=0 onMouseOver="this.src='gfx/forumh.jpg';" onMouseOut="this.src='gfx/forum.jpg';"></a>
-      <a class="nav" href="<?php echo parse_link('a=imprint') ?>"><img src="gfx/impressum.jpg" alt="impressum" border=0 onMouseOver="this.src='gfx/impressumh.jpg';" onMouseOut="this.src='gfx/impressum.jpg';"></a> &nbsp;&nbsp;
+      <a class="nav" href="https://discord.gg/CqMqhV2c" target=_blank><img src="gfx/chat.jpg" alt="chat" border=0 onMouseOver="this.src='gfx/chath.jpg';" onMouseOut="this.src='gfx/chat.jpg';"></a>
+      <a class="nav" href="<?php echo parse_link('a=imprint') ?>"><img src="gfx/impressum.jpg" alt="impressum" border=0 onMouseOver="this.src='gfx/impressumh.jpg';" onMouseOut="this.src='gfx/impressum.jpg';"></a> &nbsp;
       <a class="nav" href="https://github.com/saboti" target=_blank><img src="gfx/developer.jpg" alt="Development" border=0 onMouseOver="this.src='gfx/developerh.jpg';" onMouseOut="this.src='gfx/developer.jpg';"></a>
     </td>
   </tr>
