@@ -22,7 +22,7 @@
 
 
 
-include_once('/var/www/stgw/UI/config.inc.php');
+include_once('/var/www/stgw-dev/UI/config.inc.php');
 
 // Line break
 

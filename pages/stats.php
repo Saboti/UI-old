@@ -219,7 +219,7 @@ $alliance_ingame = $db->queryrow('SELECT COUNT(alliance_id) AS num FROM alliance
 $pp_ingame = $db->queryrow('SELECT COUNT(ud_id) AS num FROM user_diplomacy WHERE accepted=1');
 $pa_ingame = $db->queryrow('SELECT COUNT(ad_id) AS num FROM alliance_diplomacy');
 
-/* 2nd galaxy game stats */
+/* 2nd galaxy game stats
 $player_count2 = $db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_active=1 AND user_auth_level=1');
 $player_newreg2 = $db2->queryrow('SELECT new_register AS num FROM config');
 $player_online2 = $db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20).' AND user_auth_level=1');
@@ -228,7 +228,7 @@ $planets_ingame2 = $db2->queryrow('SELECT COUNT(planet_id) AS num, SUM(planet_po
 $alliance_ingame2 = $db2->queryrow('SELECT COUNT(alliance_id) AS num FROM alliance');
 $pp_ingame2 = $db2->queryrow('SELECT COUNT(ud_id) AS num FROM user_diplomacy WHERE accepted=1');
 $pa_ingame2 = $db2->queryrow('SELECT COUNT(ad_id) AS num FROM alliance_diplomacy');
-
+*/
 
 
 
@@ -427,7 +427,7 @@ $main_html .= '
         </tr>
       </table>
       <br>
-
+<!--
       <span class="sub_caption">'.$locale['galaxy'].' '.GALAXY2_NAME.'</span><br><br>
 
       <table border="0" cellpadding="2" cellspacing="2" width="270" class="border_grey">
@@ -497,7 +497,7 @@ $main_html .= '
             </table>
           </td>
         </tr>
-      </table>
+      </table> -->
 
     </td>
   </tr>

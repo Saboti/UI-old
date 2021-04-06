@@ -331,7 +331,7 @@ $loc_strings = array(
     // German strings
     'de' => array(
         // home.php strings
-        'nonews' => 'Keine Neuigkeitn verf&uuml;gbar',
+        'nonews' => 'Keine Neuigkeiten verf&uuml;gbar',
         'noreports' => 'Keine Reporte vorhanden',
         'today' => 'Heute',
         'yesterday' => 'gestern',
@@ -483,11 +483,11 @@ $loc_strings = array(
         'male' => 'M&auml;nlich',
         'female' => 'Weiblich',
         'zipcode' => 'PLZ:',
-        'country' => 'Land:',
+        'country' => 'Sprache:',
         'country_it' => 'Italien',
-        'country_en' => 'England',
-        'country_us' => 'USA',
-        'country_de' => 'Deutschland',
+        'country_en' => 'english',
+        'country_us' => 'english',
+        'country_de' => 'deutsch',
         'country_at' => '&Ouml;sterreich',
         'country_ch' => 'Schweiz',
         'country_fr' => 'Frankreich',
@@ -505,7 +505,7 @@ $loc_strings = array(
         'registration_ok2' => 'erfolgreich',
         'registration_successfully' => 'Die Anmeldung war erfolgreich!<br \><br \>
          Ein Email mit einem Aktivierungslink wurde soeben an dein Adresse versendet.<br \>
-         <b>Die Nachricht kann als Spam markier sein. Bei Verz&ouml;gerung bitte auch den Spam Ordner kontrollieren.</b>',
+         <b>Die Nachricht kann als Spam markiert sein. Bei Verz&ouml;gerung bitte auch den Spam Ordner kontrollieren.</b>',
         'registration_disabled' => 'Anmeldung im Moment gesperrt.',
         'registration_impossible' => 'Anmeldung im Moment nicht m&ouml;glich.',
         'of' => 'von',

@@ -149,8 +149,9 @@ function display_registration($data = array(), $message = '', $galaxy) {
     $races = $galaxy == 0 ? 12 : 5;
     for($race = 0; $race < $races;$race++)
     {
-        // Skip Ferengi, Borg, Q, Krenim
+        // Skip Ferengi, Borg, Q, Krenim|warum?
         if($race > 4 && $race < 9 || $race == 10) continue;
+        //if($race > 5 && $race < 8 ) continue;
         
         $main_html .= NL.'            <option value="'.$race.'"'.( ($race_selected == $race) ? ' selected="selected"' : '' ).'>'.$locale['race'.$race].'</option>';
     }       
@@ -167,8 +168,9 @@ function display_registration($data = array(), $message = '', $galaxy) {
     $dropnum = 0;
     for($race = 0; $race < $races;$race++)
     {
-        // Skip Ferengi, Borg, Q and Krenim
+        // Skip Ferengi, Borg, Q and Krenim|warum?
         if($race > 4 && $race < 9 || $race == 10) continue;
+        //if($race > 5 && $race < 8 ) continue;
         
         $main_html .= NL.'          <div id="dropmsg'.$dropnum.'" class="dropcontent"><br>'.$locale['race'.$race.'_desc'].NL.'          </div>';
         $dropnum++;
@@ -177,7 +179,7 @@ function display_registration($data = array(), $message = '', $galaxy) {
     $main_html .= '</td></tr>
 
         <tr><td height="20"></td></tr>
-
+<!--
         <tr>
           <td colspan="2"><span class="sub_caption2">'.$locale['personal_info'].'</span></td>
         </tr>
@@ -206,12 +208,13 @@ function display_registration($data = array(), $message = '', $galaxy) {
           <td>'.$locale['zipcode'].'</td>
           <td><input style="width: 90px;" class="field" type="text" name="plz" value="'.$data['plz'].'"> </td>
         </tr>
+-->
         <tr>
           <td>'.$locale['country'].'</td>
           <td>
           <select name="country">
-              <option value="XX"'.( ($data['country'] == 'XX') ? ' selected="selected"' : '' ).'>'.$locale['not_indicated'].'</option>
-<!--              <option value="IT"'.( ($data['country'] == 'IT') ? ' selected="selected"' : '' ).'>'.$locale['country_it'].'</option>
+<!--              <option value="XX"'.( ($data['country'] == 'XX') ? ' selected="selected"' : '' ).'>'.$locale['not_indicated'].'</option>
+              <option value="IT"'.( ($data['country'] == 'IT') ? ' selected="selected"' : '' ).'>'.$locale['country_it'].'</option>
               <option value="UK"'.( ($data['country'] == 'UK') ? ' selected="selected"' : '' ).'>'.$locale['country_en'].'</option> -->
               <option value="US"'.( ($data['country'] == 'US') ? ' selected="selected"' : '' ).'>'.$locale['country_us'].'</option>
               <option value="DE"'.( ($data['country'] == 'DE') ? ' selected="selected"' : '' ).'>'.$locale['country_de'].'</option>
@@ -458,6 +461,7 @@ if(isset($_POST['submit'])) {
         return true;
     }
 
+/*
     if( (!empty($_POST['user_birthday_day'])) && (!empty($_POST['user_birthday_month'])) && (!empty($_POST['user_birthday_year'])) ) {
         $day = abs((int)$_POST['user_birthday_day']);
         $month = abs((int)$_POST['user_birthday_month']);
@@ -495,14 +499,14 @@ if(isset($_POST['submit'])) {
         display_registration($_POST, $locale['error_invalid_gender'],$galaxy);
         return true;
     }
-
+*/
 
     if ($_POST['country']!='DE' && $_POST['country']!='AT' && $_POST['country']!='CH' &&
         $_POST['country']!='IT' && $_POST['country']!='UK' && $_POST['country']!='US' &&
         $_POST['country']!='FR') $_POST['country']='XX';
 
     /* 13/03/08 - AC: Select user language */
-    $lang = ''; // Default is english
+    $lang = 'GER'; // Default is german
     if($_POST['country']!='XX')
     {
         switch($_POST['country'])
@@ -522,7 +526,7 @@ if(isset($_POST['submit'])) {
         }
     }
 
-    $_POST['plz']=(int)$_POST['plz'];
+//    $_POST['plz']=(int)$_POST['plz'];
 
 
 
@@ -540,8 +544,9 @@ if(isset($_POST['submit'])) {
 
     $gfxpath=DEFAULT_GFX_PATH;
 
-    $sql = 'INSERT INTO user (user_active, user_name, user_loginname, user_password, user_email, user_auth_level, user_race, user_gfxpath, user_skinpath, user_registration_time, user_registration_ip, user_birthday, user_gender, plz, country, language,user_signature, user_notepad, user_message_sig, user_options, message_basement)
-            VALUES (2, "'.$_POST['user_name'].'", "'.$_POST['login_name'].'", "'.md5($_POST['user_password']).'", "'.$_POST['user_email'].'", 1, '.$_POST['user_race'].', "'.$gfxpath.'", "skin'.$skin_data['skin_id'].'/", '.time().', "'.$_SERVER['REMOTE_ADDR'].'", "'.$birthday_str.'", "'.$_POST['user_gender'].'", '.$_POST['plz'].', "'.$_POST['country'].'", "'.$lang.'","","","","","")';
+    $sql = 'INSERT INTO user (user_active, user_name, user_loginname, user_password, user_email, user_auth_level, user_race, user_gfxpath, user_skinpath, user_registration_time, user_registration_ip, language,user_signature, user_notepad, user_message_sig, user_options, message_basement)
+            VALUES (2, "'.$_POST['user_name'].'", "'.$_POST['login_name'].'", "'.md5($_POST['user_password']).'", "'.$_POST['user_email'].'", 1, '.$_POST['user_race'].', "'.$gfxpath.'", "skin'.$skin_data['skin_id'].'/", '.time().', "'.$_SERVER['REMOTE_ADDR'].'", "'.$lang.'","","","","","")';
+    //      VALUES (2, "'.$_POST['user_name'].'", "'.$_POST['login_name'].'", "'.md5($_POST['user_password']).'", "'.$_POST['user_email'].'", 1, '.$_POST['user_race'].', "'.$gfxpath.'", "skin'.$skin_data['skin_id'].'/", '.time().', "'.$_SERVER['REMOTE_ADDR'].'", "'.$birthday_str.'", "'.$_POST['user_gender'].'", '.$_POST['plz'].', "'.$_POST['country'].'", "'.$lang.'","","","","","")';
 
     if(!$mydb->query($sql)) {
         die('Database error - Could not insert user data');
@@ -566,7 +571,7 @@ if(isset($_POST['submit'])) {
     }
 
     $activation_key = md5( pow($user_id,2) );
-    $activation_link = 'https://st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
+    $activation_link = 'https://dev.st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
     $mail_message  = $locale['mail_message_congrats'].' '.$_POST['user_name'].'!'.NL;
     $mail_message .= $locale['mail_message_reg1a'].' '.$galaxyname.' '.$locale['mail_message_reg1b'].NL;
     $mail_message .= $locale['mail_message_reg2'].NL.$activation_link."\n\n".$locale['mail_message_reg3'].NL;

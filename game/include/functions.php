@@ -1979,7 +1979,7 @@ echo'
 				echo '
 				<html>
 				<head>
-				<title>Frontline Combat :: Choosing Quadrant</title>
+				<title>Galaxy War :: Choosing Quadrant</title>
 				<style type="text/css">
 				<!--
 				a:link    { font-family: Arial,serif; font-size: 10px; text-decoration: none; color: #CCCCCC; }
@@ -2003,7 +2003,7 @@ echo'
 				<div id="overDiv" style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></div>
 				<table bgcolor="#000025" width="500" align="center" cellspacing="4" cellpadding="4" style="border: 1px solid #C0C0C0;">
 				<tr>
-					<td><span style="font-size: 14px; font-weight: bold;">Frontline Combat :: System-Announcement</span></td>
+					<td><span style="font-size: 14px; font-weight: bold;">Galaxy War :: System-Announcement</span></td>
 				</tr>
 				</table>
 				<table bgcolor="#000025" width="500" align="center" cellspacing="4" cellpadding="4" style="border-left: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0;">
