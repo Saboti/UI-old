@@ -577,6 +577,7 @@ text-align:left;
           <td width=150 valign=top bgcolor=#cccccc>
             <span class="header3">Tools:</span><br>
             <a href="index.php?p=news">News schreiben</a><br>
+           <a href="index.php?p=frontpage_news">Frontpage News schreiben</a><br>
             <a href="index.php?p=polls">Poll erstellen</a><br><br>
             <a href="index.php?p=messages">Nachrichtensystem</a><br>
             <a href="index.php?p=bulkmail">Massen E-Mail</a><br>

@@ -69,17 +69,18 @@ class maps {
 				$this->str_points = 'Punkte:';
 				$this->str_name = 'Name:';
 				$this->str_class = 'Klasse:';
-				$this->str_range = 'Range:';
-				$this->str_outrange = 'Outside optimal range';
+				$this->str_range = 'Entfernung:';
+				$this->str_outrange = 'Außerhalb der optimalen Reichweite';
 				$this->str_uninhabited = 'unbewohnt';
-                $this->str_fleet_player = 'Fleet ';
-                $this->str_ships = 'ship/s';
-                $this->str_res = 'Resources: ';
-                $this->str_met = 'Metals';
-                $this->str_mins = 'Minerals';
-                $this->str_dilh = 'Dilithium';
-                $this->str_unch = 'Unexplored';
-                $this->str_priv = 'Private';
+                		$this->str_fleet_player = 'Flotte ';
+                		$this->str_ships = 'Schiff/e';
+		                $this->str_res = 'Ressourcen: ';
+		                $this->str_met = 'Metalle';
+		                $this->str_mins = 'Mineralien';
+		                $this->str_dilh = 'Latinum';
+		                $this->str_unch = 'Unerforscht';
+		                $this->str_priv = 'Privat';
+           			$this->str_info = 'Keine Informationen';
 			break;
 			case 'ENG':
 				$this->str_sector = 'Sector';
@@ -93,14 +94,15 @@ class maps {
 				$this->str_range = 'Range:';
 				$this->str_outrange = 'Outside optimal range';
 				$this->str_uninhabited = 'uninhabited';
-                $this->str_fleet_player = 'Fleet ';
-                $this->str_ships = 'ship/s';
-                $this->str_res = 'Resources: ';
-                $this->str_met = 'Metals';
-                $this->str_mins = 'Minerals';
-                $this->str_dilh = 'Dilithium';
-                $this->str_unch = 'Unexplored';
-                $this->str_priv = 'Private';
+		                $this->str_fleet_player = 'Fleet ';
+		                $this->str_ships = 'ship/s';
+		                $this->str_res = 'Resources: ';
+		                $this->str_met = 'Metals';
+		                $this->str_mins = 'Minerals';
+		                $this->str_dilh = 'Latinum';
+		                $this->str_unch = 'Unexplored';
+		                $this->str_priv = 'Private';
+				$this->str_info = 'No information';
 			break;
 			case 'ITA':
 				$this->str_sector = 'Settore';
@@ -114,14 +116,14 @@ class maps {
 				$this->str_range = 'Distanza:';
 				$this->str_outrange = 'Fuori portata ottimale';
 				$this->str_uninhabited = 'disabitato';
-                $this->str_fleet_player = 'Flotta ';
-                $this->str_ships = 'unit&agrave;';
-                $this->str_res = 'Risorse: ';
-                $this->str_met = 'Metalli';
-                $this->str_mins = 'Minerali';
-                $this->str_dilh = 'Dilitio';
-                $this->str_unch = 'Inesplorato';
-                $this->str_priv = 'Privato';
+		                $this->str_fleet_player = 'Flotta ';
+		                $this->str_ships = 'unit&agrave;';
+		                $this->str_res = 'Risorse: ';
+		                $this->str_met = 'Metalli';
+		                $this->str_mins = 'Minerali';
+		                $this->str_dilh = 'Dilitio';
+		                $this->str_unch = 'Inesplorato';
+		                $this->str_priv = 'Privato';
 			break;
 		}
         }
@@ -752,7 +754,7 @@ class maps {
             }
             else {
                 $map_html .= '<area href="'.parse_link('a=tactical_cartography&planet_id='.encode_planet_id($planet['planet_id'])).'" shape="circle" coords="'.(int)$planet_x.', '.(int)$planet_y.', '.$PLANETS_DATA[$current_type][8].'"';
-                $map_html .= ' onmouseover="return overlib(\'<b><i>&#171;Nessuna Informazione&#187;</i></b>\', CAPTION, \''.$this->str_details.'\', WIDTH, 300, '.OVERLIB_STANDARD.');" onmouseout="return nd();">';
+                $map_html .= ' onmouseover="return overlib(\'<b><i>&#171;'.$this->str_info.'&#187;</i></b>\', CAPTION, \''.$this->str_details.'\', WIDTH, 300, '.OVERLIB_STANDARD.');" onmouseout="return nd();">';
             }
 
             $rect_colors = array();

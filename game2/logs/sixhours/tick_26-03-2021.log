@@ -1,8 +1,0 @@
-<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting SixHours-Script at 26.03.21 12:00:01</b><br>
-Finished SixHours-Script in 0.0476 secs<br>Tick has been stopped (Unlock in table "config")<br>
-<br><br><br><b>-------------------------------------------------------------</b><br><b>Starting SixHours-Script at 26.03.21 18:00:02</b><br>
-<font color=#0000ff>Starting <b>Recalculate colony ship limits</b>...</font><br>
-<font color=#0000ff>Executed <b>Recalculate colony ship limits</b> (</font><font color=#ff0000>queries: 1</font><font color=#0000ff>) in </font><font color=#009900>0.0005 secs</font><br><br>
-<font color=#0000ff>Starting <b>Check miners on Borg planets</b>...</font><br>
-<font color=#0000ff>Executed <b>Check miners on Borg planets</b> (</font><font color=#ff0000>queries: 2</font><font color=#0000ff>) in </font><font color=#009900>0.0007 secs</font><br><br>
-<b>Finished SixHours-Script in <font color=#009900>0.0491 secs</font><br>Executed Queries: <font color=#ff0000>4</font></b><br>

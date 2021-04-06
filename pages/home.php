@@ -88,13 +88,13 @@ $main_html .= '
   <tr valign="top">
     <td width="250" valign="top">
       <table width="250" border="0" cellpadding="2" cellspacing="2">
-        <tr><td width="250" height="30"></td></tr>
+        <!--<tr><td width="250" height="30"></td></tr>-->
         <!--<tr>
           <td width="250" align="left" class="home_bar"><img src="./gfx/bar.jpg" alt="empty" border=0></td>
         </tr>-->
-        <tr>
           <td width="250" align="left">'.$news_html.'</td>
-          <td width="250" align="left"><img src="./gfx/galaxy_front.jpg" alt="galaxy" border=0></td>
+          <!--<td width="250" align="left"><img src="./gfx/galaxy_front.jpg" alt="galaxy" border=0></td>-->
+	  <td width="250" align="left"><iframe src="https://discord.com/widget?id=825439267249324043&theme=dark" width="250" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></td>
         </tr>
       </table>
     </td>
@@ -131,3 +131,4 @@ $main_html .= '
 ';
 
 ?>
+

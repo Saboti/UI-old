@@ -245,7 +245,7 @@ window.attachEvent("onload", expandone)
       <a class="nav" href="<?php echo parse_link('a=stats') ?>"><img src="gfx/stats.jpg" alt="stats" border=0 onMouseOver="this.src='gfx/statsh.jpg';" onMouseOut="this.src='gfx/stats.jpg';"></a> &nbsp;
       <a class="nav" href="<?php echo parse_link('a=faq') ?>"><img src="gfx/faq.jpg" alt="faq" border=0 onMouseOver="this.src='gfx/faqh.jpg';" onMouseOut="this.src='gfx/faq.jpg';"></a>
       <a class="nav" href="https://st-gw.de/forum/" target=_blank><img src="gfx/forum.jpg" alt="forum" border=0 onMouseOver="this.src='gfx/forumh.jpg';" onMouseOut="this.src='gfx/forum.jpg';"></a>
-      <a class="nav" href="https://discord.gg/CqMqhV2c" target=_blank><img src="gfx/chat.jpg" alt="chat" border=0 onMouseOver="this.src='gfx/chath.jpg';" onMouseOut="this.src='gfx/chat.jpg';"></a>
+<!--      <a class="nav" href="https://discord.gg/CqMqhV2c" target=_blank><img src="gfx/chat.jpg" alt="chat" border=0 onMouseOver="this.src='gfx/chath.jpg';" onMouseOut="this.src='gfx/chat.jpg';"></a>-->
       <a class="nav" href="<?php echo parse_link('a=imprint') ?>"><img src="gfx/impressum.jpg" alt="impressum" border=0 onMouseOver="this.src='gfx/impressumh.jpg';" onMouseOut="this.src='gfx/impressum.jpg';"></a> &nbsp;
       <a class="nav" href="https://github.com/saboti" target=_blank><img src="gfx/developer.jpg" alt="Development" border=0 onMouseOver="this.src='gfx/developerh.jpg';" onMouseOut="this.src='gfx/developer.jpg';"></a>
     </td>

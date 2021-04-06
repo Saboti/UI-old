@@ -142,7 +142,7 @@ define ("GER_TEXT57", 'freier Slot');
 
 define ("GER_TEXT58", 'Speichern');
 
-define ("GER_TEXT59", 'Bitte melde dies im <a href="https://forum.stfc2.ch">Bugforum von BB</a> unter Angabe der Seite, von der du gekommen bist bzw. was du tun wolltest.<br><br>Achte jedoch bitte darauf, dass zu genau derselben Aktion nicht schon ein Thread existiert!');
+define ("GER_TEXT59", 'Bitte melde dies im <a href="https://st-gw.de/forum">Forum von ST-GW im Bereich Bugs</a> unter Angabe der Seite, von der du gekommen bist bzw. was du tun wolltest.<br><br>Achte jedoch bitte darauf, dass zu genau derselben Aktion nicht schon ein Thread existiert!');
 
 define ("GER_TEXT60", 'Galaxie');
 

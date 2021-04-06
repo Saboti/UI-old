@@ -211,13 +211,13 @@ function display_registration($data = array(), $message = '', $galaxy) {
           <td>
           <select name="country">
               <option value="XX"'.( ($data['country'] == 'XX') ? ' selected="selected"' : '' ).'>'.$locale['not_indicated'].'</option>
-              <option value="IT"'.( ($data['country'] == 'IT') ? ' selected="selected"' : '' ).'>'.$locale['country_it'].'</option>
-              <option value="UK"'.( ($data['country'] == 'UK') ? ' selected="selected"' : '' ).'>'.$locale['country_en'].'</option>
+<!--              <option value="IT"'.( ($data['country'] == 'IT') ? ' selected="selected"' : '' ).'>'.$locale['country_it'].'</option>
+              <option value="UK"'.( ($data['country'] == 'UK') ? ' selected="selected"' : '' ).'>'.$locale['country_en'].'</option> -->
               <option value="US"'.( ($data['country'] == 'US') ? ' selected="selected"' : '' ).'>'.$locale['country_us'].'</option>
               <option value="DE"'.( ($data['country'] == 'DE') ? ' selected="selected"' : '' ).'>'.$locale['country_de'].'</option>
-              <option value="AT"'.( ($data['country'] == 'AT') ? ' selected="selected"' : '' ).'>'.$locale['country_at'].'</option>
+<!--              <option value="AT"'.( ($data['country'] == 'AT') ? ' selected="selected"' : '' ).'>'.$locale['country_at'].'</option>
               <option value="CH"'.( ($data['country'] == 'CH') ? ' selected="selected"' : '' ).'>'.$locale['country_ch'].'</option>
-              <option value="FR"'.( ($data['country'] == 'FR') ? ' selected="selected"' : '' ).'>'.$locale['country_fr'].'</option>
+              <option value="FR"'.( ($data['country'] == 'FR') ? ' selected="selected"' : '' ).'>'.$locale['country_fr'].'</option> -->
           </select>
           </td>
         </tr>
@@ -258,11 +258,11 @@ $config=$db->queryrow('SELECT * FROM config');
 $playercount=$db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_auth_level=1 AND user_active>0');
 $player_online = $db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
 
-/*Second galaxy */ 
+/*Second galaxy 
 $config2=$db2->queryrow('SELECT * FROM config');
 $playercount2=$db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_auth_level=1 AND user_active>0');
 $player_online2 = $db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
-
+*/
 
 $main_html.='
 <div class="caption">'.$locale['registration'].'</div>
@@ -282,7 +282,7 @@ $main_html.='
             <u>'.$locale['online_players'].'</u> '.$player_online['num'].'<br><br>
             '.$locale['galaxy1_desc'].'<br>
           </td>
-          <td width="350" align="center">
+<!--          <td width="350" align="center">
             <span class="sub_caption">'.GALAXY2_NAME.'</span><br>
             <a href="index.php?a=register&galaxy=1"><img src="'.GALAXY2_IMG.'" border="0" alt="'.GALAXY2_NAME.'"></a><br>
             <u>'.$locale['version'].'</u> STFC2<br>
@@ -290,7 +290,7 @@ $main_html.='
             <u>'.$locale['available_places'].'</u> '.($config2['max_player']-$playercount2['num']).'/'.$config2['max_player'].'<br>
             <u>'.$locale['online_players'].'</u> '.$player_online2['num'].'<br><br>
             '.$locale['galaxy2_desc'].'<br>
-          </td>
+          </td> -->
         </tr>
       </table>
     </td>
@@ -318,7 +318,7 @@ switch($galaxy)
     default:
         $mydb = $db;
         $galaxyname = GALAXY1_NAME;
-        $galaxyimg = GALAXY2_BG;
+        $galaxyimg = GALAXY1_BG;
     break;
 }
 
