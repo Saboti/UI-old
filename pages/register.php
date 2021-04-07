@@ -23,21 +23,6 @@
 
 
 
-/*function send_mail($myname, $myemail, $contactname, $contactemail, $subject, $message) {
-  $headers = "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/plain; charset=iso-8859-1\n";
-  $headers .= "X-Priority: 1\n";
-  $headers .= "X-MSMail-Priority: High\n";
-  $headers .= "X-Mailer: php\n";
-  $headers .= "From: \"".$myname."\" <".$myemail.">\n";
-  return(mail("\"".$contactname."\" <".$contactemail.">", $subject, $message, $headers));
-}*/
-
-
-
-
-
-
 
 function display_success($galaxy,$bg) {
     global $main_html,$locale;
@@ -179,48 +164,12 @@ function display_registration($data = array(), $message = '', $galaxy) {
     $main_html .= '</td></tr>
 
         <tr><td height="20"></td></tr>
-<!--
-        <tr>
-          <td colspan="2"><span class="sub_caption2">'.$locale['personal_info'].'</span></td>
-        </tr>
-
-        <tr><td height="10"></td></tr>
-
-        <tr>
-          <td>'.$locale['birthdate'].'</td>
-          <td><input type="text" style="width: 30px;" name="user_birthday_day" maxlength="2" value="'.$data['user_birthday_day'].'">&nbsp;.&nbsp;<input type="text" class="field" style="width: 30px;" name="user_birthday_month" maxlength="2" value="'.$data['user_birthday_month'].'">&nbsp;.&nbsp;<input type="text" class="field" style="width: 50px;" name="user_birthday_year" maxlength="4" value="'.$data['user_birthday_year'].'"> ('.$locale['birthdate_format'].')</td>
-        </tr>
-
-        <tr><td height="5"></td></tr>
-
-        <tr>
-          <td>'.$locale['gender'].'</td>
-          <td>
-            <select name="user_gender">
-              <option value="-"'.( ($gender_selected == '-') ? ' selected="selected"' : '' ).'>'.$locale['not_indicated'].'</option>
-              <option value="m"'.( ($gender_selected == 'm') ? ' selected="selected"' : '' ).'>'.$locale['male'].'</option>
-              <option value="f"'.( ($gender_selected == 'f') ? ' selected="selected"' : '' ).'>'.$locale['female'].'</option>
-            </select>
-          </td>
-        </tr>
-        <tr><td height="12"></td></tr>  
-        <tr>
-          <td>'.$locale['zipcode'].'</td>
-          <td><input style="width: 90px;" class="field" type="text" name="plz" value="'.$data['plz'].'"> </td>
-        </tr>
--->
         <tr>
           <td>'.$locale['country'].'</td>
           <td>
           <select name="country">
-<!--              <option value="XX"'.( ($data['country'] == 'XX') ? ' selected="selected"' : '' ).'>'.$locale['not_indicated'].'</option>
-              <option value="IT"'.( ($data['country'] == 'IT') ? ' selected="selected"' : '' ).'>'.$locale['country_it'].'</option>
-              <option value="UK"'.( ($data['country'] == 'UK') ? ' selected="selected"' : '' ).'>'.$locale['country_en'].'</option> -->
               <option value="US"'.( ($data['country'] == 'US') ? ' selected="selected"' : '' ).'>'.$locale['country_us'].'</option>
               <option value="DE"'.( ($data['country'] == 'DE') ? ' selected="selected"' : '' ).'>'.$locale['country_de'].'</option>
-<!--              <option value="AT"'.( ($data['country'] == 'AT') ? ' selected="selected"' : '' ).'>'.$locale['country_at'].'</option>
-              <option value="CH"'.( ($data['country'] == 'CH') ? ' selected="selected"' : '' ).'>'.$locale['country_ch'].'</option>
-              <option value="FR"'.( ($data['country'] == 'FR') ? ' selected="selected"' : '' ).'>'.$locale['country_fr'].'</option> -->
           </select>
           </td>
         </tr>
@@ -261,12 +210,6 @@ $config=$db->queryrow('SELECT * FROM config');
 $playercount=$db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_auth_level=1 AND user_active>0');
 $player_online = $db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
 
-/*Second galaxy 
-$config2=$db2->queryrow('SELECT * FROM config');
-$playercount2=$db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_auth_level=1 AND user_active>0');
-$player_online2 = $db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
-*/
-
 $main_html.='
 <div class="caption">'.$locale['registration'].'</div>
 <table align="center" border="0" cellpadding="2" cellspacing="2" width="700" class="border_grey">
@@ -285,15 +228,6 @@ $main_html.='
             <u>'.$locale['online_players'].'</u> '.$player_online['num'].'<br><br>
             '.$locale['galaxy1_desc'].'<br>
           </td>
-<!--          <td width="350" align="center">
-            <span class="sub_caption">'.GALAXY2_NAME.'</span><br>
-            <a href="index.php?a=register&galaxy=1"><img src="'.GALAXY2_IMG.'" border="0" alt="'.GALAXY2_NAME.'"></a><br>
-            <u>'.$locale['version'].'</u> STFC2<br>
-            <u>'.$locale['running_since'].'</u> '.round($config2['tick_id']/480,0).' '.$locale['days'].'<br>
-            <u>'.$locale['available_places'].'</u> '.($config2['max_player']-$playercount2['num']).'/'.$config2['max_player'].'<br>
-            <u>'.$locale['online_players'].'</u> '.$player_online2['num'].'<br><br>
-            '.$locale['galaxy2_desc'].'<br>
-          </td> -->
         </tr>
       </table>
     </td>
@@ -461,46 +395,6 @@ if(isset($_POST['submit'])) {
         return true;
     }
 
-/*
-    if( (!empty($_POST['user_birthday_day'])) && (!empty($_POST['user_birthday_month'])) && (!empty($_POST['user_birthday_year'])) ) {
-        $day = abs((int)$_POST['user_birthday_day']);
-        $month = abs((int)$_POST['user_birthday_month']);
-        $year = abs((int)$_POST['user_birthday_year']);
-
-        if($day > 31) {
-            display_registration($_POST, $locale['error_invalid_birthday'],$galaxy);
-            return true;
-        }
-
-        if($month > 12) {
-            display_registration($_POST, $locale['error_invalid_birthmonth'],$galaxy);
-            return true;
-        }
-
-        if(strlen($year) != 4) $year = 1900 + $year;
-
-        if($year < 1904) {
-            display_registration($_POST, $locale['error_invalid_birthyear'],$galaxy);
-            return true;
-        }
-
-        if($year > 2011) {
-            display_registration($_POST, $locale['error_invalid_birthyear'],$galaxy);
-            return true;
-        }
-
-        $birthday_str = $day.'.'.$month.'.'.$year;
-    }
-    else {
-        $birthday_str = '';
-    }
-
-    if(!in_array($_POST['user_gender'], array('-', 'm', 'f'))) {
-        display_registration($_POST, $locale['error_invalid_gender'],$galaxy);
-        return true;
-    }
-*/
-
     if ($_POST['country']!='DE' && $_POST['country']!='AT' && $_POST['country']!='CH' &&
         $_POST['country']!='IT' && $_POST['country']!='UK' && $_POST['country']!='US' &&
         $_POST['country']!='FR') $_POST['country']='XX';
@@ -526,9 +420,6 @@ if(isset($_POST['submit'])) {
         }
     }
 
-//    $_POST['plz']=(int)$_POST['plz'];
-
-
 
     //
     // Everything went fine, create the new user
@@ -546,7 +437,6 @@ if(isset($_POST['submit'])) {
 
     $sql = 'INSERT INTO user (user_active, user_name, user_loginname, user_password, user_email, user_auth_level, user_race, user_gfxpath, user_skinpath, user_registration_time, user_registration_ip, language,user_signature, user_notepad, user_message_sig, user_options, message_basement)
             VALUES (2, "'.$_POST['user_name'].'", "'.$_POST['login_name'].'", "'.md5($_POST['user_password']).'", "'.$_POST['user_email'].'", 1, '.$_POST['user_race'].', "'.$gfxpath.'", "skin'.$skin_data['skin_id'].'/", '.time().', "'.$_SERVER['REMOTE_ADDR'].'", "'.$lang.'","","","","","")';
-    //      VALUES (2, "'.$_POST['user_name'].'", "'.$_POST['login_name'].'", "'.md5($_POST['user_password']).'", "'.$_POST['user_email'].'", 1, '.$_POST['user_race'].', "'.$gfxpath.'", "skin'.$skin_data['skin_id'].'/", '.time().', "'.$_SERVER['REMOTE_ADDR'].'", "'.$birthday_str.'", "'.$_POST['user_gender'].'", '.$_POST['plz'].', "'.$_POST['country'].'", "'.$lang.'","","","","","")';
 
     if(!$mydb->query($sql)) {
         die('Database error - Could not insert user data');

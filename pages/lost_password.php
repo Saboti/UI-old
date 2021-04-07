@@ -21,17 +21,6 @@
 */
 
 
-/*function send_mail($myname, $myemail, $contactname, $contactemail, $subject, $message) {
-  $headers = "MIME-Version: 1.0\n";
-  $headers .= "Content-type: text/plain; charset=iso-8859-1\n";
-  $headers .= "X-Priority: 1\n";
-  $headers .= "X-MSMail-Priority: High\n";
-  $headers .= "X-Mailer: php\n";
-  $headers .= "From: \"".$myname."\" <".$myemail.">\n";
-  return(mail("\"".$contactname."\" <".$contactemail.">", $subject, $message, $headers));
-}*/
-
-
 
 function generate_random_string($n_chars) {
     $chars = range('a', 'z');
@@ -107,7 +96,6 @@ if (isset($_POST['galaxy']))
 }
 
 $player_online = $db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
-$player_online2 = $db2->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
 
 $user_name = (!empty($_POST['user_name'])) ? $_POST['user_name'] : '';
 $user_loginname = (!empty($_POST['user_loginname'])) ? $_POST['user_loginname'] : '';
@@ -143,7 +131,6 @@ $main_html .= '
           <td>
             <select name="galaxy">
               <option value="0">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option>
-              <option value="1">'.GALAXY2_NAME.' ['.$player_online2['num'].' online]</option>
             </select>
           </td>
         </tr>
