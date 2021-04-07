@@ -1,4 +1,7 @@
+game/ERROR_LOG_FILE
 config.inc.php
 game/tmpsec/
 game/maps/
 game/logs/
+game/sig_tmp/
+supportcenter/actionlog
