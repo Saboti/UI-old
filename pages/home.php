@@ -41,10 +41,10 @@ else {
         $today = (int)gmdate('d', time());
 
         if($news_day == $today) {
-            $date_str = 'Today, '.gmdate('H:i', $news['date']);
+            $date_str = $locale['today'].', '.gmdate('H:i', $news['date']);
         }
         elseif($news_day == ($today - 1)) {
-            $date_str = 'Yesterday, '.gmdate('H:i', $news['date']);
+            $date_str = $locale['yesterday'].', '.gmdate('H:i', $news['date']);
         }
         else {
             $date_str = gmdate('d.m.y', $news['date']);
@@ -84,50 +84,15 @@ else {
 }
 
 $main_html .= '
-<table width="660" border="0" cellpadding="2" cellspacing="2">
-  <tr valign="top">
-    <td width="250" valign="top">
-      <table width="250" border="0" cellpadding="2" cellspacing="2">
-        <!--<tr><td width="250" height="30"></td></tr>-->
-        <!--<tr>
-          <td width="250" align="left" class="home_bar"><img src="./gfx/bar.jpg" alt="empty" border=0></td>
-        </tr>-->
-          <td width="250" align="left">'.$news_html.'</td>
-          <!--<td width="250" align="left"><img src="./gfx/galaxy_front.jpg" alt="galaxy" border=0></td>-->
-	  <td width="250" align="left"><iframe src="https://discord.com/widget?id=825439267249324043&theme=dark" width="250" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></td>
-        </tr>
-      </table>
-    </td>
-    <td width="380" height="320">
-      <table border="0">
-        <!--<tr>
-          <td width="380" height="60" class="home_logo"></td>
-        </tr>-->
-        <tr>
-          <td><span style="color: #6D87AC; font-size:12px"><br>
-          '.$locale['welcome'].'</span>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- Partner -->
-<table width="660" border="0">
-        <tr>
-          <td align="center" with="750" height="10"><span style="color: #6D87AC; font-size:12px; font-weight:bold">
-            Partner
-          </td>
-        </tr>
-        <tr>
-          <td align="center" with="750" height="40">
-            <a href="https://www.stuniverse.de" target="_blank">
-               <img src="https://www.stuniverse.de/assets/main/banner.png" alt="stuniverse" boarder="0" height="40" width="400">
-            </a>
-          </td>
-        <tr>
-</table>
-<!-- Ende Partner -->
+	<header>
+		<h1>Willkommen bei ST-GW</h1>
+	</header>
+	<p>'.$locale['welcome'].'</p>
+	<br>
+        <header>
+                <h1>News</h1>
+        </header>
+	<p>'.$news_html.'</p>
 ';
 
 ?>

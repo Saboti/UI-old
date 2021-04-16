@@ -233,96 +233,80 @@ $mysqlinfo = $tmp /*substr($tmp, 0, strpos($tmp, "-"))*/;
 $title_html = $locale['stats_title'];
 $meta_descr = $locale['stats_descr'];
 $main_html .= '
-<div class="caption">'.$locale['stats'].'</div>
-
-<table border="0" cellpadding="0" cellspacing="0" width="600" align="center">
-  <tr>
-    <td valign="top" align="center" width="300">
-      <span class="sub_caption">Server Web/DB (STGW)</span><br><br>
-
-      <table border="0" cellpadding="2" cellspacing="2" width="270" class="border_grey">
-        <tr>
-          <td width="100%">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0">
-              <tr>
-                <td width="130" class="desc_row">CPUs:</td>
-                <td width="140" class="value_row">'.$cpu['model'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">Core:</td>
-                <td class="value_row">'.$cpu['cores'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['cpu_usage'].'</td>
-                <td class="value_row">'.$loadavg[0].'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">'.$locale['total_ram'].'</td>
-                <td class="value_row">'.round($results['ram']['total']/1024, 2).' MB</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['free_ram'].'</td>
-                <td class="value_row">'.round($results['ram']['free']/1024, 2).' MB</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">Uptime:</td>
-                <td class="value_row">'.$uptime.'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">'.$locale['php_version'].'</td>
-                <td class="value_row">'.phpversion().'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">'.$locale['sql_version'].'</td>
-                <td class="value_row">'.$mysqlinfo.'</td>
-              </tr>
-               <tr><td height="10"></td></tr>
-               <tr><td height="10"></td></tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-
-      <br>
-      <br>
-
-      <span class="sub_caption">'.$locale['racial_statistics'].'<br>'.GALAXY1_NAME.'</span><br><br>
-
-      <table border="0" cellpadding="2" cellspacing="2" width="270" class="border_grey">
-        <tr>
-          <td width="100%">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0">';
-
+        <header>
+                <h1>'.$locale['stats'].'</h1>
+        </header>
+        <p>
+                <table class="lcars-table lcars-husk-color standard-header">
+			<thead>
+				<tr><th>Server Web/DB (STGW)</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>CPUs:</td><td>'.$cpu['model'].'</td><td></td></tr>
+				<tr><td>Core:</td><td>'.$cpu['cores'].'</td><td></td></tr>
+				<tr><td>'.$locale['cpu_usage'].'</td><td>'.$loadavg[0].'</td></tr>
+				<tr><td>'.$locale['total_ram'].'</td><td>'.round($results['ram']['total']/1024, 2).' MB</td></tr>
+				<tr><td>'.$locale['free_ram'].'</td><td>'.round($results['ram']['free']/1024, 2).' MB</td></tr>
+				<tr><td>Uptime:</td><td>'.$uptime.'</td></tr>
+				<tr><td>'.$locale['php_version'].'</td><td>'.phpversion().'</td></tr> 
+				<tr><td>'.$locale['sql_version'].'</td><td>'.$mysqlinfo.'</td></tr>
+			</tbody>
+		</table>
+		<br>
+		<br>
+		<br>
+                <table class="lcars-table lcars-husk-color standard-header">
+                        <thead>
+                                <tr><th>'.$locale['galaxy'].' '.GALAXY1_NAME.'</th></tr>
+                </thead>
+                <tbody>
+                        <tr><td>'.$locale['round_start'].'</td><td>26.03.2021</td></tr>
+                        <tr><td>'.$locale['round_end'].'</td><td>--.--.----</td></tr>
+                        <tr><td>'.$locale['view_galaxy'].'</td><td><a href="'.$config['game_url'].'/maps/images/galaxy_detail.png" target=_blank><i>'.$locale['click'].'</i></a></td></tr>
+                        <tr><td>'.$locale['active_players'].'</td><td>'.$player_count['num'].'</td></tr>
+                        <tr><td>'.$locale['registered_today'].'</td><td>'.$player_newreg['num'].'</td></tr>
+                        <tr><td>'.$locale['online_players'].'</td><td>'.$player_online['num'].'</td></tr>
+                        <tr><td>'.$locale['players_treaties'].'</td><td>'.$pp_ingame['num'].'</td></tr>
+                        <tr><td>'.$locale['founded_alliances'].'</td><td>'.$alliance_ingame['num'].'</td></tr>
+                        <tr><td>'.$locale['alliances_treaties'].'</td><td>'.$pa_ingame['num'].'</td></tr>
+                        <tr><td>'.$locale['solar_systems'].'</td><td>'.$systems_ingame['num'].'</td></tr>
+                        <tr><td>'.$locale['planets'].'</td><td>'.$planets_ingame['num'].'</td></tr>
+                        <tr><td>'.$locale['sum_of_all_points'].'</td><td>'.$planets_ingame['points_sum'].'</td></tr>
+                        <tr><td>'.$locale['points_by_player'].'</td><td>'.round( ($planets_ingame['points_sum'] / $player_count['num']), 2).'</td></tr>
+                        <tr><td>'.$locale['points_by_planet'].'</td><td>'.round( ($planets_ingame['points_sum'] / $planets_ingame['num']), 2).'</td></tr>
+                </tbody>
+                </table>
+		<br>
+		<br>
+		<br>
+		<table class="lcars-table lcars-husk-color standard-header">
+                        <thead>
+                                <tr><th>'.$locale['racial_statistics'].' - '.GALAXY1_NAME.'</th></tr>
+                        </thead>
+			<tbody>
+				<tr><td>';
 for($r = 0; $r < 12;$r++)
 {
     // Skip Borg and Q
     if($r > 5 && $r < 8) continue;
     
     $main_html .= NL.'              <tr>';
-    $main_html .= NL.'                <td width="130" class="desc_row">'.$locale['race'.$r].':</td>';
-    $main_html .= NL.'                <td width="140" class="value_row">'.$race['racecount_'.$r].' ('.$race['racepercent_'.$r].'%)</td>';
+    $main_html .= NL.'                <td>'.$locale['race'.$r].':</td>';
+    $main_html .= NL.'                <td>'.$race['racecount_'.$r].' ('.$race['racepercent_'.$r].'%)</td>';
     $main_html .= NL.'              </tr>';
 }       
 $main_html .= '
-              <tr><td height="10"></td></tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-
-      <br>
-
-      <span class="sub_caption">'.$locale['affiliate_planets'].'<br>'.GALAXY1_NAME.'</span><br><br>
-
-      <table border="0" cellpadding="2" cellspacing="2" width="270" class="border_grey">
-        <tr>
-          <td width="100%">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0">';
-
+			</tbody>
+		</table>
+                <br>
+                <br>
+                <br>
+		<table class="lcars-table lcars-husk-color standard-header">
+                        <thead>
+                                <tr><th class="lcars-u-3">'.$locale['affiliate_planets'].' - '.GALAXY1_NAME.'</th></tr>
+                        </thead>
+                        <tbody>
+			        <tr><td>';
 for($r = 0; $r < 12;$r++)
 {
     // Skip Borg and Q
@@ -335,89 +319,9 @@ for($r = 0; $r < 12;$r++)
 }       
 
 $main_html .= '
-              <tr><td height="10"></td></tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-
-    <td valign="top" align="center" width="300">
-      <span class="sub_caption">'.$locale['galaxy'].' '.GALAXY1_NAME.'</span><br><br>
-
-      <table border="0" cellpadding="2" cellspacing="2" width="270" class="border_grey">
-        <tr>
-          <td width="100%">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0">
-              <tr>
-                <td width="170" class="desc_row">'.$locale['round_start'].'</td>
-                <td width="100" class="value_row">26.03.2021</td>
-              </tr>
-              <!--<tr>
-                <td width="170" class="desc_row">'.$locale['round_end'].'</td>
-                <td width="100" class="value_row">--.--.----</td>
-              </tr>-->
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td width="170" class="desc_row">'.$locale['view_galaxy'].'</td>
-                <td width="100" class="value_row"><a href="'.$config['game_url'].'/maps/images/galaxy_detail.png" target=_blank><i>'.$locale['click'].'</i></a></td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td width="170" class="desc_row">'.$locale['active_players'].'</td>
-                <td width="100" class="value_row">'.$player_count['num'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['registered_today'].'</td>
-                <td class="value_row">'.$player_newreg['num'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['online_players'].'</td>
-                <td class="value_row">'.$player_online['num'].'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">'.$locale['players_treaties'].'</td>
-                <td class="value_row">'.$pp_ingame['num'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['founded_alliances'].'</td>
-                <td class="value_row">'.$alliance_ingame['num'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['alliances_treaties'].'</td>
-                <td class="value_row">'.$pa_ingame['num'].'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">'.$locale['solar_systems'].'</td>
-                <td class="value_row">'.$systems_ingame['num'].'</td>
-              <tr>
-                <td class="desc_row">'.$locale['planets'].'</td>
-                <td class="value_row">'.$planets_ingame['num'].'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-              <tr>
-                <td class="desc_row">'.$locale['sum_of_all_points'].'</td>
-                <td class="value_row">'.$planets_ingame['points_sum'].'</td>
-              </tr>
-              <tr>
-                <td class="desc_row">'.$locale['points_by_player'].'</td>
-                <td class="value_row">'.round( ($planets_ingame['points_sum'] / $player_count['num']), 2).'</td>
-              <tr>
-                <td class="desc_row">'.$locale['points_by_planet'].'</td>
-                <td class="value_row">'.round( ($planets_ingame['points_sum'] / $planets_ingame['num']), 2).'</td>
-              </tr>
-              <tr><td height="10"></td></tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <br>
-    </td>
-  </tr>
-</table>
-<br>
+			</tbody>
+		</table>
+	</p>
 ';
 
 ?>

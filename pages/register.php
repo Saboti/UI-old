@@ -81,121 +81,61 @@ function display_registration($data = array(), $message = '', $galaxy) {
     }
 
     $main_html .= '
-<form name="register" method="post" action="index.php?a=register" onSubmit="return this.submit_b.disabled = true;">
-<table align="center" border="0" cellpadding="2" cellspacing="2" width="700" class="border_grey">
-  <tr>
-    <td width="100%" align="center">
-    <center><span class="sub_caption">'.$locale['galaxy_registration'].' "'.$galaxyname.'":</span><br>
-    <span class="sub_caption2">'.$message.'</span></center>
+        <header>
+                <h1>Anmelden</h1>
+        </header>
+	<form name="register" method="post" action="index.php?a=register" onSubmit="return this.submit_b.disabled = true;">
+	<p>
+	'.$locale['galaxy_registration'].' "'.$galaxyname.'":
+	<br>
+	'.$message.'
+	<br>
+	<table class="lcars-table scanning lcars-husk-color">
+		<tr><td class="lcars-u-2">'.$locale['player_name'].' *</td><td><input type="text" name="user_name" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_name'].'"></td><td></td></tr>
+                <tr><td>'.$locale['login'].' **</td><td><input type="text" name="login_name" class="lcars-text-input decorated lcars-husk-color" value="'.$data['login_name'].'"></td><td></td></tr>
+                <tr><td>'.$locale['password'].'</td><td><input type="password" name="user_password" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_password'].'" autocomplete="off"></td><td></td></tr>
+                <tr><td>'.$locale['password_verify'].'</td><td><input type="password" name="user_password2" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_password2'].'" autocomplete="off"></td><td></td></tr>
+                <tr><td>'.$locale['email'].'</td><td><input type="text" name="user_email" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_email'].'"></td><td></td></tr>
+                <tr><td>'.$locale['email_verify'].'</td><td><input type="text" name="user_email2" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_email2'].'"></td><td></td></tr>
+                <tr><td><br></td></tr>
+		<tr><td>'.$locale['race_selection'].'</td><td><select style="width: 150px;" name="user_race" onChange="expandone();">';
+		$races = $galaxy == 0 ? 12 : 5;
+		    for($race = 0; $race < $races;$race++)
+		    {
+		        // Skip Ferengi, Borg, Q, Krenim|warum?
+		        if($race > 4 && $race < 9 || $race == 10) continue;
+		        //if($race > 5 && $race < 8 ) continue;
+		        
+		        $main_html .= NL.'            <option value="'.$race.'"'.( ($race_selected == $race) ? ' selected="selected"' : '' ).'>'.$locale['race'.$race].'</option>';
+		    }       
 
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style=" background-image:url(\''.$galaxyimg.'\'); background-position:left; background-repeat:no-repeat;">
-        <tr>
-          <td colspan="2"><span class="sub_caption2">'.$locale['player_info'].'</span></td>
-        </tr>
-
-        <tr><td height="10"></td></tr>
-
-        <tr>
-          <td width="15%">'.$locale['player_name'].' *</td>
-          <td width="85%"><input style="width: 200px;" type="text" name="user_name" value="'.$data['user_name'].'"></td>
-        </tr>
-
-        <tr>
-          <td width="15%">'.$locale['login'].' **</td>
-          <td width="85%"><input style="width: 200px;" type="text" name="login_name" value="'.$data['login_name'].'"></td>
-        </tr>
-
-        <tr>
-          <td>'.$locale['password'].'</td>
-          <td><input style="width: 200px;" type="password" name="user_password" value="'.$data['user_password'].'" autocomplete="off"></td>
-        </tr>
-
-        <tr>
-          <td>'.$locale['password_verify'].'</td>
-          <td><input style="width: 200px;" type="password" name="user_password2" value="'.$data['user_password2'].'" autocomplete="off"></td>
-        </tr>
-
-        <tr>
-          <td>'.$locale['email'].'</td>
-          <td><input style="width: 200px;" type="text" name="user_email" value="'.$data['user_email'].'"></td>
-        </tr>
-
-        <tr>
-          <td>'.$locale['email_verify'].'</td>
-          <td><input style="width: 200px;" type="text" name="user_email2" value="'.$data['user_email2'].'"></td>
-        </tr>
-        
-        <tr><td height="10"></td></tr>
-
-        <tr>
-          <td>'.$locale['race_selection'].'</td>
-          <td>
-            <select style="width: 150px;" name="user_race" onChange="expandone();">';
-    $races = $galaxy == 0 ? 12 : 5;
-    for($race = 0; $race < $races;$race++)
-    {
-        // Skip Ferengi, Borg, Q, Krenim|warum?
-        if($race > 4 && $race < 9 || $race == 10) continue;
-        //if($race > 5 && $race < 8 ) continue;
-        
-        $main_html .= NL.'            <option value="'.$race.'"'.( ($race_selected == $race) ? ' selected="selected"' : '' ).'>'.$locale['race'.$race].'</option>';
-    }       
-
-    $main_html .= '
-            </select>
-        </td>
-        </tr>
-
-       <tr>
-        <td align="center">&nbsp;</td>
-        <td>';
-
-    $dropnum = 0;
-    for($race = 0; $race < $races;$race++)
-    {
-        // Skip Ferengi, Borg, Q and Krenim|warum?
-        if($race > 4 && $race < 9 || $race == 10) continue;
-        //if($race > 5 && $race < 8 ) continue;
-        
-        $main_html .= NL.'          <div id="dropmsg'.$dropnum.'" class="dropcontent"><br>'.$locale['race'.$race.'_desc'].NL.'          </div>';
-        $dropnum++;
-    }       
-
-    $main_html .= '</td></tr>
-
-        <tr><td height="20"></td></tr>
-        <tr>
-          <td>'.$locale['country'].'</td>
-          <td>
-          <select name="country">
-              <option value="US"'.( ($data['country'] == 'US') ? ' selected="selected"' : '' ).'>'.$locale['country_us'].'</option>
-              <option value="DE"'.( ($data['country'] == 'DE') ? ' selected="selected"' : '' ).'>'.$locale['country_de'].'</option>
-          </select>
-          </td>
-        </tr>
-
-        <tr><td height="20"></td></tr>
-
-        <tr>
-          <td colspan="2"><input style="border: none;" type="checkbox" name="confirm_agb" value="1"'.( ($agb_checked) ? ' checked="checked"' : '' ).'>&nbsp;'.$locale['term_of_use'].'<br>
-          <br><b>'.$locale['no_multiaccount'].' [<a href="javascript: void;" onmouseover="return overlib(\''.$locale['multiaccount_desc'].'\', CAPTION, \''.$locale['no_multiaccount'].':\', WIDTH, 400, FGCOLOR, \'#ffffff\', TEXTCOLOR, \'#ffffff\', FGBACKGROUND,\'http://www.stfc.it/stfc_gfx/skin1/bg_stars1.gif\', BGCOLOR, \'#33355E\', BORDER, 2, CAPTIONFONT, \'Arial\', CAPTIONSIZE, 2, TEXTFONT, \'Arial\', TEXTSIZE, 2);" onmouseout="return nd();">Info</a>]<br><a href=index.php?a=multis&galaxy='.$galaxy.'><u>'.$locale['multiaccount_title'].'</u></a></b></td>
-        </tr>
-
-        <tr><td height="20"></td></tr>
-        <tr>
-          <td colspan="2">
-             <input type=hidden name="submit" value="1">
-             <input type=hidden name="galaxy" value="'.$galaxy.'">
-             <input type="submit" name="submit_b" value="'.$locale['register'].'">
-             <br><br>
-             <i>'.$locale['stars_explanations'].'</i>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<br>
+		    $main_html .= '
+	            </select></td><td></td></tr>
+       		<tr><td>&nbsp;</td><td>';
+		    $dropnum = 0;
+		    for($race = 0; $race < $races;$race++)
+		    {
+		        // Skip Ferengi, Borg, Q and Krenim|warum?
+		        if($race > 4 && $race < 9 || $race == 10) continue;
+		        //if($race > 5 && $race < 8 ) continue;
+		        
+		        $main_html .= NL.'          <div id="dropmsg'.$dropnum.'" class="dropcontent"><br>'.$locale['race'.$race.'_desc'].NL.'          </div>';
+		        $dropnum++;
+		    }       
+		
+		    $main_html .= '</td></tr>
+		<tr><td>'.$locale['country'].'</td><td><select name="country"><option value="US"'.( ($data['country'] == 'US') ? ' selected="selected"' : '' ).'>'.$locale['country_us'].'</option><option value="DE"'.( ($data['country'] == 'DE') ? ' selected="selected"' : '' ).'>'.$locale['country_de'].'</option></select></td><td></td></tr>
+	</table>
+        <table class="lcars-table scanning lcars-husk-color">
+                <tr><td><br></td></tr>
+		<tr><td class="lcars-u-5"><input style="border: none;" type="checkbox" name="confirm_agb" value="1"'.( ($agb_checked) ? ' checked="checked"' : '' ).'>&nbsp;'.$locale['term_of_use'].'</td>
+		<tr><td><br></td></tr>
+		<tr><td class="lcars-u-3"><b>'.$locale['no_multiaccount'].' [<a href="javascript: void;" onmouseover="return overlib(\''.$locale['multiaccount_desc'].'\', CAPTION, \''.$locale['no_multiaccount'].':\', WIDTH, 400, FGCOLOR, \'#ffffff\', TEXTCOLOR, \'#ffffff\', FGBACKGROUND,\'https://st-gw.de/stfc_gfx/skin1/bg_stars1.gif\', BGCOLOR, \'#33355E\', BORDER, 2, CAPTIONFONT, \'Arial\', CAPTIONSIZE, 2, TEXTFONT, \'Arial\', TEXTSIZE, 2);" onmouseout="return nd();">Info</a>]</b></td>
+		<tr><td class="lcars-u-2"><a href=index.php?a=multis&galaxy='.$galaxy.'><u>'.$locale['multiaccount_title'].'</u></a></td></tr>
+                <tr><td><br></td></tr>
+        	<tr><td><input type=hidden name="submit" value="1"><input type=hidden name="galaxy" value="'.$galaxy.'"><input class="lcars-element rounded" type="submit" name="submit_b" value="'.$locale['register'].'"><br><br><i>'.$locale['stars_explanations'].'</i></td></tr>
+	</table>
+	</p>
 </form>
    ';
 }
@@ -211,28 +151,27 @@ $playercount=$db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE user_au
 $player_online = $db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE last_active > '.(time() - 60 * 20));
 
 $main_html.='
-<div class="caption">'.$locale['registration'].'</div>
-<table align="center" border="0" cellpadding="2" cellspacing="2" width="700" class="border_grey">
-  <tr>
-    <td width="100%" align="center">
-      <span class="sub_caption">'.$locale['galaxy_selection'].'</span><br>
+        <header>
+                <h1>'.$locale['registration'].'</h1>
+        </header>
 
-      <table border=0 cellpadding=2 cellspacing=2>
-        <tr>
-          <td width="350" align="center">
-            <span class="sub_caption">'.GALAXY1_NAME.'</span><br>
-            <a href="index.php?a=register&galaxy=0"><img src="'.GALAXY1_IMG.'" border="0" alt="'.GALAXY1_NAME.'"></a><br>
-            <u>'.$locale['version'].'</u> STFC2<br>
-            <u>'.$locale['running_since'].'</u> '.round($config['tick_id']/480,0).' '.$locale['days'].'<br>
-            <u>'.$locale['available_places'].'</u> '.($config['max_player']-$playercount['num']).'/'.$config['max_player'].'<br>
-            <u>'.$locale['online_players'].'</u> '.$player_online['num'].'<br><br>
-            '.$locale['galaxy1_desc'].'<br>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>';
+				<p>
+					'.$locale['galaxy_selection'].'	'.GALAXY1_NAME.'
+					<br>
+					<br>
+					<a href="index.php?a=register&galaxy=0"><img src="'.GALAXY1_IMG.'" border="0" alt="'.GALAXY1_NAME.'"></a>
+					<br>
+					<br>
+					<table class="lcars-table scanning-fast lcars-husk-color">
+						<tr><td>'.$locale['version'].'</td><td>STFC2</td></tr>
+						<tr><td>'.$locale['running_since'].'</td><td>'.round($config['tick_id']/480,0).' '.$locale['days'].'</td></tr>
+						<tr><td>'.$locale['available_places'].'</td><td>'.($config['max_player']-$playercount['num']).'/'.$config['max_player'].'</td></tr>
+						<tr><td>'.$locale['online_players'].'</td><td>'.$player_online['num'].'</td></tr>
+					</table>
+					<br>
+					'.$locale['galaxy1_desc'].'
+				</p>
+';
 }
 else
 {
@@ -461,7 +400,7 @@ if(isset($_POST['submit'])) {
     }
 
     $activation_key = md5( pow($user_id,2) );
-    $activation_link = 'https://dev.st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
+    $activation_link = 'https://st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
     $mail_message  = $locale['mail_message_congrats'].' '.$_POST['user_name'].'!'.NL;
     $mail_message .= $locale['mail_message_reg1a'].' '.$galaxyname.' '.$locale['mail_message_reg1b'].NL;
     $mail_message .= $locale['mail_message_reg2'].NL.$activation_link."\n\n".$locale['mail_message_reg3'].NL;

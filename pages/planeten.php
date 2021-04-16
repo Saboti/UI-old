@@ -3,58 +3,6 @@
 $title_html = 'Planeten Datenbank';
 $meta_descr = 'Uebersicht über alle Planeten';
 $main_html='
-<style type="text/css">
-<!-- A:link {FONT-SIZE: 11px; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans; TEXT-DECORATION: none}
-A:visited {FONT-SIZE: 11px; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans; TEXT-DECORATION: none}
-A:hover {FONT-SIZE: 11px; COLOR: #ffd700; FONT-FAMILY: Arial, Luxi Sans; TEXT-DECORATION: none}
-A:active {FONT-SIZE: 11px; COLOR: #ffd700; FONT-FAMILY: Arial, Luxi Sans; TEXT-DECORATION: none}
-A.nav:link {FONT-WEIGHT: bold; FONT-SIZE: 10px}
-A.nav:visited {FONT-WEIGHT: bold; FONT-SIZE: 10px}
-A.nav:hover {FONT-WEIGHT: bold; FONT-SIZE: 10px}
-A.nav:active {FONT-WEIGHT: bold; FONT-SIZE: 10px}
-TD {FONT-SIZE: 11px; FONT-FAMILY: Arial, Luxi Sans; COLOR: #c0c0c0;  bgcolor=#cccccc}
-input[type=checkbox] { border-style: none;}
-INPUT[type=submit], INPUT[type=text], INPUT[type=password] {BORDER-RIGHT: #959595 1px solid; BORDER-TOP: #959595 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #959595 1px solid; COLOR: #959595; BORDER-BOTTOM: #959595 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #000000}
-TEXTAREA {BORDER-RIGHT: #959595 1px solid; BORDER-TOP: #959595 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #959595 1px solid; COLOR: #959595; BORDER-BOTTOM: #959595 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #000000}
-SELECT {BORDER-RIGHT: #959595 1px solid; BORDER-TOP: #959595 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #959595 1px solid; COLOR: #959595; BORDER-BOTTOM: #959595 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #000000}
-SPAN.caption {FONT-WEIGHT: bold; FONT-SIZE: 19pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
-SPAN.sub_caption {FONT-WEIGHT: bold; FONT-SIZE: 15pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
-SPAN.sub_caption2 {FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
-SPAN.text_large {FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
-SPAN.text_medium {FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #c0c0c0; FONT-FAMILY: Arial, Luxi Sans}
-SPAN.highlight { color: #FFFF00; font-weight: bold; text-decoration: none; }
-SPAN.highlight_link { color: #FFFF00; font-weight: bold; text-decoration: underline; }
-BODY {MARGIN: 0px; SCROLLBAR-ARROW-COLOR: #ccccff; SCROLLBAR-BASE-COLOR: #131c46; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; }
-TEXTAREA {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; SCROLLBAR-ARROW-COLOR: #ccccff; PADDING-TOP: 0px; SCROLLBAR-BASE-COLOR: #131c46;}
-
-input.button, input.button_nosize, input.field, input.field_nosize, textarea, select
-                          { color: #959595; font-family: Arial, Luxi Sans, Helvetica, sans-serif; font-size: 11px; background-color: #000000; border: 1px solid #959595; }
-body, textarea {
-      scrollbar-base-color:#000000;
-      scrollbar-3dlight-color:#000000;
-      scrollbar-arrow-color:#D8D8D8;
-      scrollbar-darkshadow-color:#000000;
-      scrollbar-face-color:#000000;
-      scrollbar-highlight-color:#000000;
-      scrollbar-shadow-color:#000000;
-      scrollbar-track-color:#2C2C2C;
-  }
-
-table.border_grey         { border: 1px solid #000000; }
-table.border_grey2        { border-top: 1px solid 000000; border-right: 1px solid 000000; border-bottom: 1px solid #000000; }
-table.border_blue         { border: 1px solid #000000; }
-table.style_inner         { border: 1px solid #000000; background-color:#131c47;}
-table.style_outer         { border: 1px solid #000000; background-color:#283359;}
-
-td.style_msgunread         { border: 0px; background-color:#ff3359;}
-td.style_msgread            { border: 0px; background-color:#131c47;}
-
-fieldset { border: 1px solid #c0c0c0; }
-hr { border: 1px solid #c0c0c0; }
-
--->
-
-</style>
 <!-- Middle -->
 <table cellspacing="0" cellpadding="0" width="650" align="center" border="0">
 <tbody>

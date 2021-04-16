@@ -26,49 +26,22 @@ $player_online = $db->queryrow('SELECT COUNT(user_id) AS num FROM user WHERE las
 $title_html = $locale['login_title'];
 $meta_descr = $locale['login_descr'];
 $main_html .= '
-<form name="login_form" method="post" action="" onSubmit="return document.login_form.action = document.login_form.galaxy[document.login_form.galaxy.selectedIndex].value;">
-<div class="caption">'.$locale['login'].'</div>
-<table align="center" border="0" cellpadding="2" cellspacing="2" width="320" class="border_grey">
-  <tr>
-    <td width="100%">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="30%">'.$locale['user_login'].'</td>
-          <td width="70%"><input type="text" name="user_name" size="30" class="field"></td>
-        </tr>
-        <tr>
-          <td>'.$locale['password'].'</td>
-          <td><input type="password" name="user_password" size="30" class="field" autocomplete="off"></td>
-        </tr>
-        <tr>
-          <td>'.$locale['galaxy'].'</td>
-          <td>
-            <select name="galaxy">
-              <option value="./game/index.php" selected="selected">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option>
-            </select>
-          </td>
-        </tr>
-        <tr><td height="5">&nbsp;</td></tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td><input type="checkbox" name="proxy_mode" value="1">&nbsp;'.$locale['using_proxy'].' *</td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td colspan=2>
-      * <i>'.$locale['proxy_note'].'</i>
-    </td>
-  </tr>
-</table>
+        <header>
+                <h1>Einloggen</h1>
+        </header>
+				<p>
+					<form name="login_form" method="post" action="" onSubmit="return document.login_form.action = document.login_form.galaxy[document.login_form.galaxy.selectedIndex].value;">
+					<table class="lcars-table scanning lcars-husk-color">
+						<tr><td>'.$locale['user_login'].'</td><td><input type="text" name="user_name" class="lcars-text-input decorated lcars-husk-color"/></td><td></td></tr>
+						<tr><td>'.$locale['password'].'</td><td><input type="password" name="user_password" class="lcars-text-input decorated lcars-husk-color"/></td><td></td></tr>
+						<tr><td>'.$locale['galaxy'].'</td><td><select name="galaxy"><option value="./game/index.php" selected="selected">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option></select></td><td></td></tr>
+					</table>
+					<br>
+					[ <a href="index.php?a=lost_password">'.$locale['lost_password'].'</a> ]<br><br>
+					<input class="lcars-element rounded" type="submit" name="stgc_login" value="'.$locale['submit'].'">
+					</form>
+				</p>
 
-<br>
-<center>
-[ <a href="index.php?a=lost_password">'.$locale['lost_password'].'</a> ]<br><br>
-<input class="button" type="submit" name="stgc_login" value="'.$locale['submit'].'">
-</center>
-</form>
 ';
 
 ?>

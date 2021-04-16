@@ -109,6 +109,7 @@ if(isset($_POST['set_planet']))
 
 // #############################################################################
 // Security Code
+/*
 if( ($game->TIME - $game->player['last_secimage'] > 3600 * 1.5) && ($game->player['content_secimage'] == '') ) {
     if($game->player['user_auth_level'] == STGC_DEVELOPER) {
         $sql = 'UPDATE user
@@ -140,6 +141,8 @@ if( ($game->TIME - $game->player['last_secimage'] > 3600 * 1.5) && ($game->playe
         echo "<script language=\"Javascript\" type=\"text/javascript\">window.open('secimage_popup.php', '_secimage', 'HEIGHT=225,resizable=yes,WIDTH=400');</script>";
     }
 }
+
+*/
 
 // #############################################################################
 // Load modules check
@@ -183,7 +186,7 @@ if($game->SITTING_MODE) {
     }
 }
 
-
+/*
 if($game->player['content_secimage'] != '' && $game->TIME >= $game->player['timeout_secimage']) {
     include('modules/security.php');
 }
@@ -193,11 +196,11 @@ else
     {
         message(GENERAL, 'Sicherheitsbruch', '$action = \''.$action.'\'');
     }
-
+*/
     $game->current_module = $action;
     if (file_exists('modules/'.$action.'.sprache.php')) include('modules/'.$action.'.sprache.php');
         include('modules/'.$action.'.php');
-}
+//}
 
 
 // #############################################################################

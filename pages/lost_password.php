@@ -102,48 +102,24 @@ $user_loginname = (!empty($_POST['user_loginname'])) ? $_POST['user_loginname'] 
 $user_email = (!empty($_POST['user_email'])) ? $_POST['user_email'] : '';
 
 $main_html .= '
-<form method="post" action="index.php?a=lost_password">
-<div class="caption">'.$locale['password_recovery'].'</div>
-<table align="center" border="0" cellpadding="2" cellspacing="2" width="380" class="border_grey">
-  <tr>
-    <td width="100%" align="center">
-      <b>'.$locale['lost_password_warning'].'</b><br>
-      '.(@$message).'<br>
-
-      <table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td width="30%">'.$locale['player_name'].'</td>
-          <td width="70%"><input type="text" name="user_name" size="30" class="field" value="'.$user_name.'"></td>
-        </tr>
-
-        <tr>
-          <td width="30%">'.$locale['login'].':</td>
-          <td width="70%"><input type="text" name="user_loginname" size="30" class="field" value="'.$user_loginname.'"></td>
-        </tr>
-
-        <tr>
-          <td>'.$locale['email'].'</td>
-          <td><input type="text" name="user_email" size="30" class="field" value="'.$user_email.'"></td>
-        </tr>
-
-        <tr>
-          <td>'.$locale['galaxy'].'</td>
-          <td>
-            <select name="galaxy">
-              <option value="0">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option>
-            </select>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<br>
-<center>
-[ <a href="index.php?a=login">'.$locale['back_to_login'].'</a> ]<br><br>
-<input class="button" type="submit" name="stgc_password" value="'.$locale['password_request'].'">
-</center>
-</form>
+        <header>
+                <h1>'.$locale['password_recovery'].'</h1>
+        </header>
+	<p>
+		<form method="post" action="index.php?a=lost_password">
+		<b>'.$locale['lost_password_warning'].'</b>
+		<br>
+		<br>
+		<table class="lcars-table scanning lcars-husk-color">
+			<tr><td>'.$locale['player_name'].'</td><td><input type="text" name="user_name" class="lcars-text-input decorated lcars-husk-color" value="'.$user_name.'"/></td><td></td></tr>
+			<tr><td>'.$locale['login'].'</td><td><input type="text" name="user_loginname" class="lcars-text-input decorated lcars-husk-color" value="'.$user_loginname.'"/></td><td></td></tr>
+			<tr><td>'.$locale['email'].'</td><td><input type="text" name="user_email" class="lcars-text-input decorated lcars-husk-color" value="'.$user_email.'"/></td><td></td></tr>
+			<tr><td>'.$locale['galaxy'].'</td><td><select name="galaxy"><option value="0">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option></td><td></td></tr>
+		</table>
+		<br>
+		[ <a href="index.php?a=login">'.$locale['back_to_login'].'</a> ]<br><br>
+		<input class="lcars-element rounded lcars-u-2-1" type="submit" name="stgc_password" value="'.$locale['password_request'].'">
+		</form>
 ';
 
 ?>

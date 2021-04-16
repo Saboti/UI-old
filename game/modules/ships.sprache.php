@@ -43,7 +43,7 @@ define ("GER_TEXT9",'Status:');
 
 define ("GER_TEXT10",'Crew:');
 
-define ("GER_TEXT11",'Geba&uuml;de datum:');
+define ("GER_TEXT11",'Baudatum:');
 
 define ("GER_TEXT12",'Klassen Details');
 

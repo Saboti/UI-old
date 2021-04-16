@@ -23,46 +23,19 @@
 $title_html = 'Star Trek: Frontline Combat - Credits';
 $meta_descr = 'STFC: Pagina relativa ai credits del gioco, con i nomi ed i nick degli operatori ed i contatti email.';
 $main_html='
-<div class="caption">Impressum</div>
-<table align="center" border="0" cellpadding="2" cellspacing="2" width="320" class="border_grey">
-  <tr>
-    <td width="100%" valign="top" align="center">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td colspan=2>&nbsp;</td>
-        </tr>
-        <tr>
-          <td width="30%">Name:</td>
-          <td width="70%">Tobias Mundinger</td>
-        </tr>
-        <tr>
-          <td width="30%">Nickname:</td>
-          <td width="70%">Saboti</td>
-        </tr>
-        <!--<tr>
-          <td width="30%">Town</td>
-          <td width="70%">Genoa</td>
-        </tr>
-        <tr>
-          <td width="30%">ZIP</td>
-          <td width="70%">16100</td>
-        </tr>-->
-        <tr>
-          <td colspan=2>&nbsp;</td>
-        </tr>
-        <tr>
-          <td colspan=2 align="center"><a href="mailto:'.$config['admin_email'].'"><u>Kontakt</u></a></td>
-        </tr>
-        <tr>
-          <td colspan=2>&nbsp;</td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<br>
-<center><span style="font-size:10pt">Star Trek&trade; is a registered trademark of Paramount Pictures.<br>
+        <header>
+                <h1>Impressum</h1>
+        </header>
+				<p>
+					<table class="lcars-table scanning lcars-husk-color">
+						<tr><td>Name:</td><td>Tobias Mundinger</td><td></td></tr>
+						<tr><td>Nickname:</td><td>Saboti</td><td></td></tr>
+						<tr><td>Kontakt:</td><td><a href="mailto:'.$config['admin_email'].'">E-Mail</a></td><td></td></tr>
+					</table>
+				</p>
+	</br>
+	<div class="lcars-text-box lcars-u-5">Star Trek&trade; is a registered trademark of Paramount Pictures.<br>
 This site is strictly non-profit.<br>No copyright infringement is intended.<br>
-All other Content is copyrighted by the siteowner,<br>unless otherwise noted.<br>&copy;2008-2014</span></center>
+All other Content is copyrighted by the siteowner,<br>unless otherwise noted.
 ';
 ?>

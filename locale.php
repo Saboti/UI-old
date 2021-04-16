@@ -334,7 +334,7 @@ $loc_strings = array(
         'nonews' => 'Keine Neuigkeiten verf&uuml;gbar',
         'noreports' => 'Keine Reporte vorhanden',
         'today' => 'Heute',
-        'yesterday' => 'gestern',
+        'yesterday' => 'Gestern',
         'welcome_old' => 'Star Trek - Galaxy War, ist ein kostenloses Multiplayerspiel im Star Trek&trade;
           Universum. Zum Spielen wird nur ein Browser ben&ouml;tigt.<br><br>
           ST-GW ist ein Echtzeit Aufbau und Taktik Spiel aus dem Genere der Strategie.<br><br>
@@ -342,8 +342,7 @@ $loc_strings = array(
           vielen mehr.<br> Nachdem deine Welt erstellt wurde, kolonisiere neue Welten um deine Macht zu steigern.
           Baue Handelsschiffe wie auch Kampfschiffe um das Universum mit anderen spielern zu erkunden und zu bek&auml;mpfen.
           Ernkunde Bereiche im Universum in denen noch kein anderer jemals war!',
-        'welcome' => 'Willkommen bei STGW<br><br>
-          Star Trek - Galaxy War ist ein kostenloses Multiplayerspiel im Star Trek(tm)
+        'welcome' => 'Star Trek - Galaxy War ist ein kostenloses Multiplayerspiel im Star Trek(tm)
           Universum, für das nichts weiter als ein Webbrowser benötigt wird.<br>
           Es läuft in Echtzeit und ist ein Mix aus dem Genre Strategie, Aufbau und Taktik.<br><br>
           Werde Teil eines einzigartigen Universums, wähle Deine Lieblingsrasse, forsche, treibe Handel,
