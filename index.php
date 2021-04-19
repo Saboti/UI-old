@@ -131,143 +131,139 @@ else {
         <li class="icon solid fa-link"><a href="https://www.stuniverse.de">Star Trek Universe</a></li>
 -->
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name=viewport content="width=device-width, initial-scale=0.7">
-  <title><?php echo $title_html; ?></title>
-  <link rel="stylesheet" href="css/lcars.css">
-  <style>
-  p, h1, h2, h3 {
-    margin-top: 1em;
-  }
-
-  pre {
-    display: inline;
-    white-space: pre-line;
-    word-wrap: break-word;
-  }
-
-  table.localCustomFunWithCaptions caption {
-    margin-left: -.5em;
-    margin-bottom: .5em;
-    text-align: right;
-    border-right: .8em solid;
-    border-left: 32rem solid;
-    border-radius: .5em;
-    padding-right: .33em;
-    padding-bottom: -.15em;
-  }
-  #audio_class_summary {
-	  font-size:.9rem;
-  }
-  </style>
-  <style type="text/css">
-    .dropcontent{display:none;}
-  </style>
+<title><?php echo $title_html; ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<link rel="stylesheet" type="text/css" href="css/lcars-classic-min.css">
+<!--<link rel="stylesheet" href="css/lcars.css">-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="lcars-app-container">
-
-		<!-- HEADER ==================================================== -->
-
-		<div id="header" class="lcars-row header">
-
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-bottom lcars-golden-tanoi-bg"></div>
-
-			<!-- BAR WITH TITLE -->
-			<div class="lcars-bar horizontal">
-				<div class="lcars-title right">Star Trek - Galaxy War</div>
+<div class="wrap">
+	<div class="left-frame-top">
+		<div class="panel-1"><a href="">LCARS</a></div>
+		<div class="panel-2">02<span class="hop">-262000</span></div>
+	</div>
+	<div class="right-frame-top">
+		<div class="banner">
+			Star Trek &#149; Galaxy War
+		</div>
+			<div class="data-cascade-button-group">
+				<div class="cascade-wrapper">
+					<div class="data-cascade">
+						<div class="row-1"> <div class="grid">101</div> <div class="grid-2">7109</div> <div class="grid">1966</div> <div class="grid">1221</div> <div class="grid">2020</div> <div class="grid-4">1444</div> <div class="grid-2">102</div> <div class="grid-2">1103</div> <div class="grid-2">1935</div> <div class="grid-1">1940</div> <div class="grid-1">708</div> <div class="grid-1">M113</div> <div class="grid-3">1956</div> <div class="grid-3">1209</div> </div> <div class="row-2"> <div class="grid">102</div> <div class="grid-2">8102</div> <div class="grid">1987</div> <div class="grid">044</div> <div class="grid">0051</div> <div class="grid-4">607</div> <div class="grid-2">1976</div> <div class="grid-2">1031</div> <div class="grid-2">1984</div> <div class="grid-1">1954</div> <div class="grid-1">1103</div> <div class="grid-1">415</div> <div class="grid-3">1045</div> <div class="grid-3">1864</div> </div> <div class="row-3"> <div class="grid">103</div> <div class="grid-2">714</div> <div class="grid">1993</div> <div class="grid">0222</div> <div class="grid">052</div> <div class="grid-4">1968</div> <div class="grid-2">514</div> <div class="grid-2">746</div> <div class="grid-2">56</div> <div class="grid-1">47</div> <div class="grid-1">716</div> <div class="grid-1">8719</div> <div class="grid-3">417</div> <div class="grid-3">602</div> </div> <div class="row-4"> <div class="grid">104</div> <div class="grid-2">6104</div> <div class="grid">1995</div> <div class="grid">322</div> <div class="grid">89</div> <div class="grid-4">1931</div> <div class="grid-2">1701</div> <div class="grid-2">51</div> <div class="grid-2">29</div> <div class="grid-1">218</div> <div class="grid-1">908</div> <div class="grid-1">2114</div> <div class="grid-3">85</div> <div class="grid-3">3504</div> </div> <div class="row-5"> <div class="grid">105</div> <div class="grid-2">08</div> <div class="grid">2001</div> <div class="grid">713</div> <div class="grid">079</div> <div class="grid-4">1940</div> <div class="grid-2">LV</div> <div class="grid-2">426</div> <div class="grid-2">105</div> <div class="grid-1">10</div> <div class="grid-1">1206</div> <div class="grid-1">1979</div> <div class="grid-3">402</div> <div class="grid-3">795</div> </div> <div class="row-6"> <div class="grid">106</div> <div class="grid-2">31</div> <div class="grid">2017</div> <div class="grid">429</div> <div class="grid">65</div> <div class="grid-4">871</div> <div class="grid-2">1031</div> <div class="grid-2">541</div> <div class="grid-2">656</div> <div class="grid-1">764</div> <div class="grid-1">88</div> <div class="grid-1">001</div> <div class="grid-3">27</div> <div class="grid-3">05</div> </div>
+					</div>
+				</div>
+			<div class="button-col-1">
+				<div class="button" id="top-left"><a href="<?php echo parse_link() ?>">Home</a></div>
+				<div class="button" id="bottom-left"><a href="<?php echo parse_link('a=menu') ?>">Menu</a></div>
 			</div>
-
-			<!-- ROUNDED EDGE DECORATED -->
-			<div class="lcars-bar horizontal right-end decorated"></div>
+			<div class="button-col-2">
+				<div class="button" id="top-right"><a href="<?php echo parse_link('a=register') ?>">Anmelden</a></div>
+				<div class="button" id="bottom-right"><a href="<?php echo parse_link('a=login') ?>">Einloggen</a></div>
+			</div>
+		</div> 
+		<div class="top-corner-bg">
+			<div class="top-corner"></div>
 		</div>
-
-		<!-- SIDE MENU ================================================= -->
-
-		<div id="left-menu" class="lcars-column start-space lcars-u-1" style="text-transform: uppercase;">
-			<a href="<?php echo parse_link() ?>"><div class="lcars-element button lcars-chestnut-rose-bg">Home</div></a>
-			<a href="<?php echo parse_link('a=login') ?>"><div class="lcars-element button lcars-pale-canary-bg">Einloggen</div></a>
-			<a href="<?php echo parse_link('a=register') ?>"><div class="lcars-element button lcars-mariner-bg">Anmelden</div></a>
-			<a href="<?php echo parse_link('a=stats') ?>"><div class="lcars-element button">Statistiken</div></a>
-			<a href="<?php echo parse_link('a=faq') ?>"><div class="lcars-element button lcars-danub-bg">FAQ/Hilfe</div></a>
-			<a href="https://st-gw.de/forum/" target="_blank"><div class="lcars-element button lcars-pale-canary-bg">Forum</div></a>
-			<a href="<?php echo parse_link('a=imprint') ?>"><div class="lcars-element button lcars-melrose-bg">Impressum</div></a>
-			<a href="https://github.com/saboti" target="_blank"><div class="lcars-element button">Developer</div></a>
-			<!-- FILLER -->
-			<div class="lcars-bar lcars-u-1"></div>
+		<div class="bar-panel">
+			<div class="bar-1"></div>
+			<div class="bar-2"></div>
+			<div class="bar-3"></div>
+			<div class="bar-4"></div>
+			<div class="bar-5"></div>
 		</div>
-
-		<!-- FOOTER ==================================================== -->
-
-		<div id="footer" class="lcars-row ">
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-top lcars-golden-tanoi-bg"></div>
-			<!-- BAR -->
-			<div class="lcars-bar horizontal both-divider bottom"></div>
-			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+	</div>
+</div> 
+<div class="wrap" id="gap">
+	<div class="left-frame">
+		<div>
+			<div class="panel-3">03<span class="hop">-111968</span></div>
+			<div class="panel-4">04<span class="hop">-041969</span></div>
+			<div class="panel-5">05<span class="hop">-1701D</span></div>
+			<div class="panel-6">06<span class="hop">-071984</span></div>
+			<div class="panel-7">07<span class="hop">-081940</span></div>
+			<div class="panel-8">08<span class="hop">-47148</span></div>
+			<div class="panel-9">09<span class="hop">-081966</span></div>
 		</div>
+		<div>
+			<div class="panel-10">10<span class="hop">-31</span></div>
+			<div class="panel-11"><a href="">LCARS</a></div>
+		</div>
+	</div>
+	<div class="right-frame">
+		<div class="bar-panel">
+		<div class="bar-6"></div>
+		<div class="bar-7"></div>
+		<div class="bar-8"></div>
+		<div class="bar-9"></div>
+		<div class="bar-10"></div>
+		</div>
+		<div class="corner-bg">
+			<div class="corner"></div>
+		</div>
+		<div class="content">
 
-		<!-- MAIN CONTAINER -->
-		<div id="container">
-			<!-- COLUMN LAYOUT -->
-			<div class="lcars-column lcars-u-5">
+			<!-- Start your content here. -->
 
-				<?php echo $main_html; ?>
+			<?php echo $main_html; ?>
+
+			<!-- End content area. -->
+
+			<div class="lcars-bar-slice-top"></div>
+			<div class="lcars-bar">
+				<div class="lcars-bar-inner">
+					<div class="lcars-bar-cutout"></div>
+				</div>
+				</div>
+			<div class="lcars-bar-slice-bottom"></div>
+			<div class="footer">
+				<p class="go-center">LCARS Inspired Website Template by <a href="https://www.thelcars.com">www.TheLCARS.com</a>.</p>
 			</div>
 		</div>
 	</div>
-
-<audio id="audDummy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
-<script src="js/lcars_audio.js"></script>
-
+</div>
 <script>
-        //All "booted" up notification.
-        //Many browsers won't play this next sound because the user hasn't "blessed" the action with a UI click yet.
-        document.addEventListener("DOMContentLoaded", function(event) {
-                lcarsAudio.Ready();
-        });
+document.addEventListener("touchstart", function() {},false);
 
-        //Cosmetic-ish behavior: scroll to gets hidden by top row body frame, so we need to scroll back slighly to have the actual heading element for each section visible after an in-page navigation.
-        function locationHashChanged() {
-                if (location.hash.substr(-8) == "_section") {
-                        console.info("in-page nav detected.");
-                        setTimeout(function(){window.scrollBy(0,-100)}, 100);
-                }
+        function contractall(){
+        if (document.getElementById){
+        var inc=0
+        while (document.getElementById("dropmsg"+inc)){
+        document.getElementById("dropmsg"+inc).style.display="none"
+        inc++
         }
-        window.onhashchange = locationHashChanged;
-
-	function contractall(){
-	if (document.getElementById){
-	var inc=0
-	while (document.getElementById("dropmsg"+inc)){
-	document.getElementById("dropmsg"+inc).style.display="none"
-	inc++
-	}
-	}
-	}
+        }
+        }
 
 
-	function expandone(){
-	if (document.getElementById){
-	var selectedItem=document.register.user_race.selectedIndex
-	contractall()
-	document.getElementById("dropmsg"+selectedItem).style.display="block"
-	}
-	}
+        function expandone(){
+        if (document.getElementById){
+        var selectedItem=document.register.user_race.selectedIndex
+        contractall()
+        document.getElementById("dropmsg"+selectedItem).style.display="block"
+        }
+        }
 
-	if (window.addEventListener)
-	window.addEventListener("load", expandone, false)
-	else if (window.attachEvent)
-	window.attachEvent("onload", expandone)
+        if (window.addEventListener)
+        window.addEventListener("load", expandone, false)
+        else if (window.attachEvent)
+        window.attachEvent("onload", expandone)
 
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
 </script>
 <script type="text/JavaScript" src="overlib.js"></script>
-
 </body>
 </html>
-

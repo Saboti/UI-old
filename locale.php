@@ -343,7 +343,7 @@ $loc_strings = array(
           Baue Handelsschiffe wie auch Kampfschiffe um das Universum mit anderen spielern zu erkunden und zu bek&auml;mpfen.
           Ernkunde Bereiche im Universum in denen noch kein anderer jemals war!',
         'welcome' => 'Star Trek - Galaxy War ist ein kostenloses Multiplayerspiel im Star Trek(tm)
-          Universum, für das nichts weiter als ein Webbrowser benötigt wird.<br>
+          Universum, für das nichts weiter als ein Webbrowser benötigt wird.
           Es läuft in Echtzeit und ist ein Mix aus dem Genre Strategie, Aufbau und Taktik.<br><br>
           Werde Teil eines einzigartigen Universums, wähle Deine Lieblingsrasse, forsche, treibe Handel,
           führe Kriege und verbünde dich mit Gleichgesinnten.<br><br>

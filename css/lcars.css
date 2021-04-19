@@ -418,12 +418,13 @@ body {
 .lcars-app-container #container {
   margin-top: 0.25rem;
   margin-left: 0.25rem;
-  padding-left: 9.5rem;
+  padding-left: 1rem /*9.5rem*/;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-image: url("https://st-gw.de/gfx/bg_stars1.gif");
 }
 .lcars-row {
   display: inline-flex;
