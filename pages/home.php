@@ -84,15 +84,16 @@ else {
 }
 
 $main_html .= '
-	<header>
-		<h1>Willkommen bei ST-GW</h1>
-	</header>
+	<h1>Willkommen bei ST-GW</h1>
 	<p>'.$locale['welcome'].'</p>
 	<br>
-        <header>
-                <h1>News</h1>
-        </header>
+	<hr>
+        <h1>News</h1>
 	<p>'.$news_html.'</p>
+	<hr>
+	<h1>Partner</h1>
+	<img src="https://www.stuniverse.de/assets/main/banner.png" class="pics">
+	</div>
 ';
 
 ?>
