@@ -3,19 +3,13 @@
 $title_html = 'Planeten Datenbank';
 $meta_descr = 'Uebersicht über alle Planeten';
 $main_html='
-<!-- Middle -->
-<table cellspacing="0" cellpadding="0" width="650" align="center" border="0">
-<tbody>
-<tr>
-<td width="650"><br>
-<center></center>
-<br>
-<center>[<a href="index.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<b>Planeten Datenbank</b>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
+<h1>FAQ</h1>
+[<a href="index.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<b>Planeten Datenbank</b>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="A">A</a></td>
@@ -62,10 +56,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="B">B</a></td>
@@ -112,10 +106,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="C">C</a></td>
@@ -162,10 +156,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="D">D</a></td>
@@ -212,10 +206,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="E">E</a></td>
@@ -262,10 +256,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="F">F</a></td>
@@ -312,10 +306,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="G">G</a></td>
@@ -362,10 +356,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="H">H</a></td>
@@ -412,10 +406,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="I">I</a></td>
@@ -462,10 +456,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="J">J</a></td>
@@ -512,10 +506,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="K">K</a></td>
@@ -562,10 +556,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="L">L</a></td>
@@ -612,10 +606,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="M">M</a></td>
@@ -662,10 +656,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="N">N</a></td>
@@ -712,10 +706,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="O">O</a></td>
@@ -762,10 +756,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="P">P</a></td>
@@ -812,10 +806,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="Q">Q</a></td>
@@ -862,10 +856,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="S">S</a></td>
@@ -912,10 +906,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="T">T</a></td>
@@ -962,10 +956,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="X">X</a></td>
@@ -1012,10 +1006,10 @@ $main_html='
 <br>
         
 
-<table width="450" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<table width="100%"  border="0" cellpadding="2" cellspacing="2" class="style_outer">
   <tr>
     <td>
-    <table width="450" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%"  border="1" cellpadding="3" cellspacing="3" class="style_inner">
       <tr>
         <td valign="top"><u>Klasse:</u></td>
         <td><a name="Y">Y</a></td>

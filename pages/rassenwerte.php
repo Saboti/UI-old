@@ -3,26 +3,19 @@
 $title_html = 'Rassenwerte';
 $meta_descr = 'Uebersicht über alle Planeten';
 $main_html='
-<!-- Middle -->
-<table cellspacing="0" cellpadding="0" width="650" align="center" border="0">
-<tbody>
-<tr>
-<td width="650"><br>
-<center></center>
-<br>
-<center>[<a href="index.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<b>Rassenwerte</b>]&nbsp;&nbsp;
-<br><br>
-    <table width="400" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer">
+<h1>FAQ</h1>
+[<a href="index.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<b>Rassenwerte</b>]&nbsp;&nbsp;<br><br>
+    <table width="100%" align="center" border="1" cellpadding="2" cellspacing="2" class="style_outer">
     <tr>
         <td align="center"><span class="sub_caption">Die Rassenwerte von STGW</span></td>
     </tr>
     
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3">
 
     <tr>
-        <td>Name der Rasse</td><td width="60" align="center"><a name="0">F&ouml;deration</a></td>
+        <td>Name der Rasse</td><td width="60" align="center" ><a name="0">F&ouml;deration</a></td>
     </tr>
             
 
@@ -185,7 +178,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="1">Romulaner</a></td>
@@ -351,7 +344,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="2">Klingonen</a></td>
@@ -517,7 +510,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="3">Cardassianer</a></td>
@@ -683,7 +676,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="4">Dominion</a></td>
@@ -849,7 +842,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="9">Hirogen</a></td>
@@ -1015,7 +1008,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="11">Kazon</a></td>
@@ -1181,7 +1174,7 @@ $main_html='
     </td></tr>
 
     <tr><td>
-    <table width="400" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
+    <table width="95%" align="center" border="0" cellpadding="3" cellspacing="3" class="style_inner">
 
     <tr>
         <td>Name der Rasse</td><td width="60" align="center"><a name="13">Siedler</a></td>

@@ -3,28 +3,20 @@
 $title_html = 'FAQ';
 $meta_descr = 'Heufige Fragen';
 $main_html='
-<!-- Middle -->
-<table cellspacing="0" cellpadding="0" width="650" align="center" border="0">
-<tbody>
-<tr>
-<td width="650"><br>
-<center></center>
-<br>
-
-<center>[<b>FAQ</b>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
-<div align="center"><span class="caption">FAQ</span></div>
-<table width="95%" cellpadding="2" cellspacing="5" align="center">
+<h1>FAQ</h1>
+[<b>FAQ</b>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
+<table width="100%" cellpadding="5" cellspacing="5">
 <tr>
 	<td align="justify">
-		Hier sind die Antworten auf die am meisten gestellten Fragen. Dieser Bereich kann st&auml;ndig aktualisiert werden. 
+		Hier sind die Antworten auf die am meisten gestellten Fragen. Dieser Bereich kann st&auml;ndig aktualisiert werden.<br>
 		Wenn Du weitere Anregungen hast schaue bitte in unser <a href="https://st-gw.de/forum/" target="blank"><b><u>Forum</u></b></a>, und gebe 
 		dort Deine Anregungen zur Erweiterung weiter. Vielen Dank.
 	</td>
 </tr>
 </table>
-<table border=0 cellpadding=2 cellspacing=2 width="95%" class="style_outer" align="center">
+<table border=0 cellpadding=2 cellspacing=2 width="100%">
 <tr><td>
-	<table class="style_inner" width="100%" align="center" border="0" cellpadding="5" cellspacing="5">
+	<table class="style_inner" width="100%" align="center" border="1" cellpadding="5" cellspacing="5">
 	<tr>
 	<td width="50%"><font size="3"><b>Fragen</b></font></td>
 	<td width="50%"><font size="3"><b>Antworten</b></font></td>
@@ -120,12 +112,10 @@ $main_html='
 </tr>
 </table>
 
-</center>
 </td>
 </tr>
 </table>
 
-<!-- Middle End -->
 ';
 ?>
 

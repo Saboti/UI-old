@@ -124,13 +124,6 @@ else {
 //Ende News
 
 ?>
-
-<!-- alt
-
-	<iframe src="https://discord.com/widget?id=825439267249324043&theme=dark" width="250" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <li class="icon solid fa-link"><a href="https://www.stuniverse.de">Star Trek Universe</a></li>
--->
-
 <!DOCTYPE html>
 <html>
 <head>

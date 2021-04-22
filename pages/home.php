@@ -92,7 +92,7 @@ $main_html .= '
 	<p>'.$news_html.'</p>
 	<hr>
 	<h1>Partner</h1>
-	<img src="https://www.stuniverse.de/assets/main/banner.png" class="pics">
+	<a href="https://www.stuniverse.de"><img src="https://www.stuniverse.de/assets/main/banner.png" class="pics"></a>
 	</div>
 ';
 
