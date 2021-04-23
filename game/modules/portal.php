@@ -94,6 +94,20 @@ function display_shoutbox() {
     ');
 }
 
+function display_discord() {
+    global $db, $game;
+
+    $game->out('
+      <table width="100%" border="0" cellpadding="1" cellspacing="1">
+        <tr>
+         <td width="100%">
+            <iframe src="https://titanembeds.com/embed/825439267249324043?css=241" height="600" width="100%"frameborder="0"></iframe>
+         </td>
+        </tr>
+      </table>
+    ');
+}
+
 
 
 function display_spenden() {
@@ -594,11 +608,14 @@ switch($portal_action) {
 <center>
 <span class="caption">'.constant($game->sprache("TEXT16")).'</span><br><br>');
         
-        display_shoutbox();
-        
+/*        display_shoutbox();*/
+/*discord von Tobias*/
+$game->out('<br>');
+	display_discord();
+/*Ende*/
         $game->out('
 <br><br>            
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr valign="top">
     <td width="49%">
         ');
@@ -616,9 +633,9 @@ switch($portal_action) {
     <td width="49%" valign="top" align="center">
         ');
                 
-        display_lastposts();
+        /*display_lastposts();
 
-        $game->out('<br>');
+        $game->out('<br>');*/
 
         display_galaxymap();
 
