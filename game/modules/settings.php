@@ -172,9 +172,9 @@ global $config;
         ');
         if ($game->player['language']=="GER")
         {
-           $game->out('<select name="user_language"><option value="GER" selected>'.constant($game->sprache("TEXT20")).'</option><option value="ENG">'.constant($game->sprache("TEXT21")).'</option><option value="ITA">'.constant($game->sprache("TEXT22")).'</option><option value="FRA">'.constant($game->sprache("TEXT23")).'</option><option value="SPA">'.constant($game->sprache("TEXT24")).'</option></select></td>'); 
+           $game->out('<select name="user_language"><option value="GER" selected>'.constant($game->sprache("TEXT20")).'</option><option value="ENG">'.constant($game->sprache("TEXT21")).'</option></select></td>'); 
         }
-        else if($game->player['language']=="ITA")
+/*        else if($game->player['language']=="ITA")
         {
            $game->out('<select name="user_language"><option value="GER">'.constant($game->sprache("TEXT20")).'</option><option value="ENG">'.constant($game->sprache("TEXT21")).'</option><option value="ITA" selected>'.constant($game->sprache("TEXT22")).'</option><option value="FRA">'.constant($game->sprache("TEXT23")).'</option><option value="SPA">'.constant($game->sprache("TEXT24")).'</option></select></td>');
         }
@@ -185,8 +185,8 @@ global $config;
         else if($game->player['language']=="SPA")
         {
            $game->out('<select name="user_language"><option value="GER">'.constant($game->sprache("TEXT20")).'</option><option value="ENG">'.constant($game->sprache("TEXT21")).'</option><option value="ITA">'.constant($game->sprache("TEXT22")).'</option><option value="FRA">'.constant($game->sprache("TEXT23")).'</option><option value="SPA" selected>'.constant($game->sprache("TEXT24")).'</option></select></td>');
-        }
-        else { $game->out('<select name="user_language"><option value="GER">'.constant($game->sprache("TEXT20")).'</option><option value="ENG" selected>'.constant($game->sprache("TEXT21")).'</option><option value="ITA">'.constant($game->sprache("TEXT22")).'</option><option value="FRA">'.constant($game->sprache("TEXT23")).'</option><option value="SPA">'.constant($game->sprache("TEXT24")).'</option></select></td>'); }
+        }*/
+        else { $game->out('<select name="user_language"><option value="GER">'.constant($game->sprache("TEXT20")).'</option><option value="ENG" selected>'.constant($game->sprache("TEXT21")).'</option>"</select></td>'); }
 
         $game->out('
         </tr>
@@ -198,12 +198,12 @@ global $config;
           <td width="100">'.constant($game->sprache("TEXT25")).'</td>
           <td width="300"><input style="width: 200px;" class="field" type="text" name="user_avatar" value="'.$data['user_avatar'].'"></td>
         </tr>
-
+<!--
         <tr>
           <td>'.constant($game->sprache("TEXT26")).'</td>
           <td><input style="width: 100px;" class="field" type="text" name="user_icq" value="'.$data['user_icq'].'"></Td>
         </tr>
-
+-->
         <tr>
           <td>'.constant($game->sprache("TEXT27")).'</td>
           <td><textarea name="user_signature" cols="45" rows="4">'.stripslashes($data['user_signature']).'</textarea></td>
@@ -222,7 +222,7 @@ global $config;
         <tr>
 	   <td>&nbsp;</td>
         </tr>
-
+<!--
         <tr>
           <td valign=top>'.constant($game->sprache("TEXT31")).'</td>
           <td><input type="checkbox" name="user_tutorial" value="1"'.( ($game->player['tutorial']==1) ? ' checked="checked"' : '' ).'> '.constant($game->sprache("TEXT29")).'</td>
@@ -255,7 +255,7 @@ global $config;
         </tr>
 
         <tr height="20"><td></td></tr>
-
+-->
         <tr>
           <td colspan="2"><b>'.constant($game->sprache("TEXT43")).'</b></td>
         </tr>
@@ -280,7 +280,10 @@ global $config;
           <td width="100" valign=top>'.constant($game->sprache("TEXT46")).'</td> <!-- HxB -->
           <td width="300" valign=top><input style="width: 70px;" class="field" type="text" name="notepad_cols" value="'.$game->player['notepad_cols'].'"> x <input style="width: 70px;" class="field" type="text" name="notepad_width" value="'.$game->player['notepad_width'].'"><br>(<b>'.constant($game->sprache("TEXT47")).'</b>)</td>
         </tr>
-<tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+	<tr>
           <td width="100" valign=top>'.constant($game->sprache("TEXT48")).'</td>
           <td width="300" valign=top><input size=7 class="field" type="text" name="skin_farbe" value="'.$game->player['skin_farbe'].'"> '.constant($game->sprache("TEXT49")).'</td>
         </tr>
@@ -1218,7 +1221,7 @@ switch($module) {
                 $_POST['country']!='SP') $_POST['country']='XX';
 
 
-            $sql = 'UPDATE user
+/*            $sql = 'UPDATE user
                     SET user_avatar = "'.addslashes($_POST['user_avatar']).'",
                         user_icq = "'.addslashes($_POST['user_icq']).'",
                         user_signature = "'.addslashes($_POST['user_signature']).'",
@@ -1232,7 +1235,21 @@ switch($module) {
                         user_enable_sig = '.(int)$_POST['user_enable_sig'].',
                         plz = "'.addslashes($_POST['plz']).'",
                         country = "'.$_POST['country'].'"
+                    WHERE user_id = '.$game->player['user_id'];*/
+
+            $sql = 'UPDATE user
+                    SET user_avatar = "'.addslashes($_POST['user_avatar']).'",
+                        user_signature = "'.addslashes($_POST['user_signature']).'",
+                        user_gfxpath = "'.str_replace('"',' ',$_POST['user_gfxpath']).'",
+                        user_skinpath = "'.str_replace('"',' ',$_POST['user_skinpath']).'",
+                        language = "'.$_POST['user_language'].'",
+                        tutorial = "'.$_POST['user_tutorial'].'",
+                        notepad_cols = "'.(int)$_POST['notepad_cols'].'",
+                        notepad_width = "'.(int)$_POST['notepad_width'].'",
+                        skin_farbe = "'.htmlspecialchars($_POST['skin_farbe']).'",
+                        user_enable_sig = '.(int)$_POST['user_enable_sig'].'
                     WHERE user_id = '.$game->player['user_id'];
+
 
             if(!$db->query($sql)) {
                 message(DATABASE_ERROR, 'Could not update user data');
