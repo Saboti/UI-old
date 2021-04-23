@@ -61,7 +61,7 @@ if(isset($_POST['submit'])) {
     }
     else
     {
-        $sql = 'UPDATE page_news SET header="'.$_POST['title'].'", message="'.addslashes($_POST['text']).'" WHERE id="'.((int)$_POST['id']).'"';
+        $sql = 'UPDATE page_news SET header="'.$_POST['title'].'", news="'.addslashes($_POST['text']).'" WHERE id="'.((int)$_POST['id']).'"';
 
         log_action('Page-News mit dem Titel "'.$_POST['title'].'" ge&auml;ndert');
 
@@ -98,6 +98,7 @@ if(isset($_POST['submit'])) {
 $id=0;
 $message='';
 $header='';
+$type=-1;
 if(isset($_REQUEST['id'])) {
 $sql = 'SELECT * FROM page_news WHERE id="'.((int)$_REQUEST['id']).'"';
 $new=$db->queryrow($sql);
@@ -228,7 +229,7 @@ Text:<br><textarea name="text" rows="15" cols="60">'.$message.'</textarea>
 
               <tr>
 
-                <td valign="top">'.stripslashes($news['message']).'</td>
+                <td valign="top">'.stripslashes($news['news']).'</td>
 
               </tr>
 
