@@ -11,47 +11,60 @@ function research_max_lev($planet) {
 	return $research_level;
 }
 
-$guide_html = '<span class="caption">LE RICERCHE TECNOLOGICHE</span>
+$guide_html = '<span class="caption">TECHNOLOGISCHE ERFORSCHUNG</span>
+<p align="left">
+Die zweite Methode, um Punkte Im Spiel zu sammeln, ist planetare technologische Forschung zu betreiben. Um auf diese Funktion zugreifen zu k&ouml;nnen
+muss sich aber das Hauptgeb&auml;ude/Propaganda-Zentrum  dazu jedoch mindestens auf Spielstufe 9 (der maximal m&ouml;glichen auf Nebekolonien) befinden. Erst
+dann kann ein Forschungszentrum &uuml;berhaupt gebaut werden. </p>
+
 <p align="justify">
-Il secondo metodo per ottenere punti &egrave; portare avanti delle ricerche tecnologiche planetarie. Per poter accedere a questa funzione
-tuttavia &egrave; necessario che la struttura di comando sia al livello 9 (il massimo possibile) e che la struttura di ricerca sia almeno al livello 1.
-</p>
-<p align="justify">
-Le ricerche planetarie sono di cinque tipi:
+Es gibt f&uuml;nf Arten der Planetaren Forschung:
 <ul>
-<li><u>'.$TECH_NAME[$game->player['user_race']][0].'</u>: la prima delle cinque tipologie riguarda il &quot;terraforming&quot;, ossia intervenire sul pianeta per renderlo pi&ugrave;
-abitabile; sviluppare tale tecnologia aumenta il numero massimo di lavoratori e soldati ospitabili su un pianeta e la velocit&agrave; di costruzione
-dei lavoratori;</li>
-<li><u>'.$TECH_NAME[$game->player['user_race']][1].'</u>: la seconda tipologia riguarda l&#146;incremento della produzione di lavoratori sul pianeta; questa tecnologia
-offre un incremento doppio a parit&agrave; di livello rispetto alla tecnologia precedente, ma non aumenta la capacit&agrave; massima del pianeta
-stesso;</li>
-<li><u>'.$TECH_NAME[$game->player['user_race']][2].'</u>: aumenta il numero di piattaforme orbitali difensive costruibili sul pianeta e contemporaneamente
-ne riduce i costi di costruzione;</li>
-<li><u>'.$TECH_NAME[$game->player['user_race']][3].'</u>: questa tecnologia rende pi&ugrave; veloce la costruzione delle strutture sul pianeta (per alcune
-classi &egrave; una tecnologia importantissima);</li>
-<li><u>'.$TECH_NAME[$game->player['user_race']][4].'</u>: questa tecnologia aumenta l&#146;efficienza delle miniere. <b>ATTENZIONE</b>: per poter ottenere
-questa tecnologia devono verificarsi queste condizioni: livello di tutte e tre le miniere sul pianeta ALMENO a 5 e livello del Centro di Ricerca
-almeno a 3.</li>
+
+<li><u>1. '.$TECH_NAME[$game->player['user_race']][0].'</u>: Damit ist das technologische Eingreifen auf einem Planeten gemeint, um diesen allgemein 
+bewohnbarer und effektiver zu machen. Die Entwicklung dieser Technologie erh&ouml;ht die maximal m&ouml;gliche Anzahl von Arbeitern und Soldaten, die auf einem 
+Planeten untergebracht werden k&ouml;nnen, und beeinflusst damit auch die Geschwindigkeit, mit der die arbeitende Bev&ouml;lkerung w&auml;chst.;</li>
+
+<li><u>2. '.$TECH_NAME[$game->player['user_race']][1].'</u>: Hier wird zwar der Anstieg an arbeitender Bev&ouml;lkerung um das Doppelte pro Stufe erreicht, 
+jedoch erh&ouml;ht sich damit nicht automatisch auch die maximale Kapazit&auml;t an Arbietern am Planeten.</li>
+
+<li><u>3. '.$TECH_NAME[$game->player['user_race']][2].'</u>: erh&ouml;ht die max. Anzahl der planetaren Verteidigungsplattformen im Orbit, welche insgesamt 
+verbaut werden k&ouml;nnen und reduziert dabei gleichzeitig deren Baukosten erheblich  </li>
+
+<li><u>4. '.$TECH_NAME[$game->player['user_race']][3].'</u>: beschleunigt den Bau aller Geb&auml;ude auf dem Planeten - und ist damit f&uuml;r einige spezielle 
+Bauwerke die wichtigsten Technologie von allen!</li>
+
+<li><u>'.$TECH_NAME[$game->player['user_race']][4].'</u>: Diese Technologie erh&ouml;ht die Bergwerkseffineznz von Minen und Raffinierien . <b>WICHTIG!</b> 
+Um Sie erfolgreich einsetzen zu k&ouml;nnen, m&uuml;ssen die Spielstufen aller drei Minen/Raffinerien mindestens auf Spielstufe FÜNF und die Spielstufe der 
+zugeh&ouml;rigen Forschungseinrichtung mindestens auf DREI stehen.. </li>
+
 </ul>
+
 </p>
-<p align="justify">Come per le strutture, anche le ricerche sono organizzate a livelli, pi&ugrave; &egrave; alto il livello e maggiore sono i benefici ottenuti dalla struttura stessa; da notare che esiste un limite ai livelli delle ricerche pari a: 
+<p align="justify">Wie schon bei den Geb&auml;uden, so sind auch die Forschungen in Spielstufen eingeteilt. Je h&ouml;her die Spielstufe, desto gr&ouml;&szlig;er ist der Nutzen, 
+der sich aus dem Geb&auml;ude erschlie&szlig;t.
+Die max. Forschungsstufen sind wie folgt limitiert:
+
 <table width="100%">
 <tr><td>'.research_max_lev(1).'</td><td>'.research_max_lev(0).'</td></tr>
-<tr><td>per il pianeta capitale</td><td>per tutte le colonie.<br></td></tr>
+
+<tr><td>AM HAUPTPLANETEN</td><td>AUF JEDER WEITEREN KOLONIE<br></td></tr>
 </table>
 </p>
-<p align="justify">
-&Egrave; possibile anche sviluppare tecnologie da utilizzare poi durante la creazione di un progetto navale per la realizzazione di una nave
-spaziale; le tecnologie aumentano i costi in risorse e personale delle navi ma le rendono generalmente pi&ugrave; performanti.</p>
-<p align="justify">
-<b>Come si sviluppano le ricerche planetarie?</b><br>
-Seguendo il men&ugrave;
-"<a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>" viene
-presentato un pannello che elenca tutte le ricerche relative ai componenti installabili sulle varie classi di astronavi e sotto le cinque tipologie
-di ricerca planetaria. Se la struttura di ricerca non &egrave; occupata e sul pianeta sono presenti risorse a sufficienza, accanto al nome, al costo
-in risorse nonch&eacute; al tempo necessario per lo sviluppo, &egrave; possibile trovare un <span style="color: green">link verde</span> che
-permette di avviare la ricerca selezionata.<br>
-Non &egrave; possibile avere pi&ugrave; di una ricerca in coda.
 
+<p align="justify">
+Technologien erweitern im Allgemeinen die Erstellungsm&ouml;glichkeiten von &quot;Schiffstemplates&quot; und sorgen damit daf&uuml;r, dass der Schiffsbau immer effektiver 
+wird. Technologien erh&ouml;hen zwar auch die Kosten f&uuml;r Ressourcen und Schiffsbesatzungen, machen sie jedoch im Allgemeinen damit auch effizienter.</p>
+
+<p align="justify">
+<b>Wie setzt man diese Technologien nun im Spiel ein?</b><br>
+Im Men&uuml; "<a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>" 
+wird im weiteren OBEN angezeigt, welche Tecnologien man erforschen kann, um seine Raumschiffe zu erweitern, und UNTEN wird angezeigt, welche Technologien man zur
+Verbesserung von Planeten erforschen kann.
+Neben dem jeweiligen Namen/Bezeichnung der Forschung sind die jeweiligen Kosten in Resourcen aufgef&uuml;hrt. Eine Forschung ist nur m&ouml;glich, solange daf&uuml;r gen&uuml;gend Rohstoffe 
+zur Verf&uuml;gung stehen. Daneben steht der erforderliche Zeitaufwand f&uuml;r diese Forschung. Widerum daneben finden sie einen <span style="color: green">GRÜNFARBIGEN LINK</span>, 
+mit dem Sie die ausgew&auml;hlte Forschung in die Warteschlange stellen k&ouml;nnen. Es ist nur m&ouml;glich jeweils eine Schiffsforschung und eine Planetenforschung gleichzeitig zu 
+betreiben.
 ';
 ?>
+

@@ -8,7 +8,7 @@ Der Autor hofft, dass es für den Anf&auml;nger nützlich sein wird, jeden Aspek
 <li><a href="'.parse_link('a=database&view=guide&page=2').'">Die Planeten</li>
 <li><a href="'.parse_link('a=database&view=guide&page=3').'">Strukturen</li>
 <li><a href="'.parse_link('a=database&view=guide&page=4').'">Planetare Forschung</li>
-<li><a href="'.parse_link('a=database&view=guide&page=5').'">Sternen Kreuzer</li>
+<li><a href="'.parse_link('a=database&view=guide&page=5').'">Raumschiffe</li>
 <li><a href="'.parse_link('a=database&view=guide&page=6').'">Schiff Templates</li>
 <li><a href="'.parse_link('a=database&view=guide&page=7').'">Schiff Komponenten</li>
 <li><a href="'.parse_link('a=database&view=guide&page=8').'">Flotten (Erstellung)</li>

@@ -23,7 +23,7 @@ function building_max_lev($planet) {
 }
 
 
-$guide_html ='<span class="caption">LE STRUTTURE</span>
+$guide_html ='<span class="caption">GEB&Auml;UDE</span>
 <p align="justify">
 In STFC le strutture costruite sui pianeti rappresentano il modo pi&ugrave; veloce per ottenere punti.<br>
 Esse sono principalmente di cinque tipi:
