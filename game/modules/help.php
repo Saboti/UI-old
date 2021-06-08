@@ -198,7 +198,7 @@ $game->out('
 	</tr>
 	<tr>
 		<td align="center" colspan="2">
-		<a href="'.parse_link('a=messages&a2=newpost&receiver=STFC-Support&subject='.constant($game->sprache("TEXT1"))).'"><span style="color: #FFFF00; font-weight: bold; font-size: 11pt;"><u>'.constant($game->sprache("TEXT2")).'</u></a></span>
+		<a href="'.parse_link('a=messages&a2=newpost&receiver=STGW-Support&subject='.constant($game->sprache("TEXT1"))).'"><span style="color: #FFFF00; font-weight: bold; font-size: 11pt;"><u>'.constant($game->sprache("TEXT2")).'</u></a></span>
 		</td>
 	</tr>
 	<tr>

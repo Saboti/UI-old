@@ -940,7 +940,7 @@ function newMessage()
         if($message != false && $message['receiver'] == $game->player['user_id'])
         {
             if ($message['sender']==SUPPORTUSER)
-                $receiver['user_name']='STFC-Support';
+                $receiver['user_name']='STGW-Support';
             else
                 $receiver = $db->queryrow('SELECT user_name FROM user WHERE user_id = "'.$message['sender'].'"');
             
@@ -1039,7 +1039,7 @@ function submitMessage()
             $unknown_users = '';
             for ($i=0; $i<count($recv_list); $i++)
             {
-                if (strtolower($recv_list[$i])==strtolower('STFC-Support'))
+                if (strtolower($recv_list[$i])==strtolower('STGW-Support'))
                     $receiver['user_id']=SUPPORTUSER;
                 else
                     $receiver = $db->queryrow('SELECT user_id FROM user WHERE user_name="'.$recv_list[$i].'"');
@@ -1073,7 +1073,7 @@ function submitMessage()
                 message(DATABASE_ERROR, 'message_query: Could not call INSERT INTO in message');
                 exit();
             }
-            if (strtolower($_POST['receiver'])==strtolower('STFC-Support'))
+            if (strtolower($_POST['receiver'])==strtolower('STGW-Support'))
                 $receiver['user_id']=SUPPORTUSER;
             else
                 $receiver = $db->queryrow('SELECT user_id FROM user WHERE user_name="'.htmlspecialchars($_POST['receiver']).'"');

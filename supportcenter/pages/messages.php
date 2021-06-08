@@ -726,7 +726,7 @@ function submitMessage()
 			log_action('Nachricht mit dem Titel "'.$_POST['subject'].'" verschickt an '.$_POST['receiver']);
 			UpdateUnreadMessages($receiver['user_id']);
 
-			output('<center><p><span class="sub_caption">Messaggio inviato</span></p></center>');
+			output('<center><p><span class="sub_caption">Nachricht gesendet </span></p></center>');
 		}
 
 	} // End single receiver
