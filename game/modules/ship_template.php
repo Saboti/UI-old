@@ -26,8 +26,7 @@
 
 $game->init_player();
 
-/*include('include/static/static_components_'.$game->player['user_race'].'.php');*/
-include('include/static/static_components.php');
+include('include/static/static_components_'.$game->player['user_race'].'.php');
 $filename = 'include/static/static_components_'.$game->player['user_race'].'_'.$game->player['language'].'.php';
 if (file_exists($filename)) include($filename);
 
