@@ -562,27 +562,27 @@ define ("GER_TEXT266", 'Ferengi Spezialtansport (6h) - 0% Steuern');
 
 define ("GER_TEXT267", 'Contract Code:');
 
-define ("GER_TEXT268", 'Geba&uuml;de datum:');
+define ("GER_TEXT268", 'Baudatum:');
 
-define ("GER_TEXT269", 'Rateo:');
+define ("GER_TEXT269", 'R&uuml;ckstellung:');
 
-define ("GER_TEXT270", 'bad');
+define ("GER_TEXT270", 'schlecht');
 
-define ("GER_TEXT271", 'weak');
+define ("GER_TEXT271", 'schwach');
 
-define ("GER_TEXT272", 'average');
+define ("GER_TEXT272", 'durchschnittlich');
 
-define ("GER_TEXT273", 'good');
+define ("GER_TEXT273", 'gut');
 
 define ("GER_TEXT274", 'Auktionsflotte');
 
 define ("GER_TEXT275", 'keine');
 
-define ("GER_TEXT276", 'Offer');
+define ("GER_TEXT276", 'Angebot');
 
-define ("GER_TEXT277", 'Converted to');
+define ("GER_TEXT277", 'Konvertiert zu');
 
-define ("GER_TEXT278", 'You cannot exchange same resources type!');
+define ("GER_TEXT278", 'Du kannst nicht denselben Ressourcentyp eintauschen!');
 
 
 
