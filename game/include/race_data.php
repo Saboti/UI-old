@@ -509,7 +509,7 @@ $RACE_DATA = array(
 
       21 => 2.5, 
 
-      22 => false, 
+      22 => true, 
 
       23 => 0.8, 
 
@@ -719,7 +719,7 @@ $RACE_DATA = array(
 
       21 => 5, 
        
-      22 => false,
+      22 => true,
 
       23 => 0.7, 
 
@@ -859,7 +859,7 @@ $RACE_DATA = array(
 
       21 => 3, 
        
-      22 => false, 
+      22 => true, 
 
       23 => 0.9, 
 

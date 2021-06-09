@@ -103,8 +103,8 @@ function display_registration($data = array(), $message = '', $galaxy) {
 		    for($race = 0; $race < $races;$race++)
 		    {
 		        // Skip Ferengi, Borg, Q, Krenim|warum?
-		        if($race > 4 && $race < 9 || $race == 10) continue;
-		        //if($race > 5 && $race < 8 ) continue;
+		        //if($race > 4 && $race < 9 || $race == 10) continue;
+		        if($race > 5 && $race < 8 ) continue;
 		        
 		        $main_html .= NL.'            <option value="'.$race.'"'.( ($race_selected == $race) ? ' selected="selected"' : '' ).'>'.$locale['race'.$race].'</option>';
 		    }       
@@ -116,8 +116,8 @@ function display_registration($data = array(), $message = '', $galaxy) {
 		    for($race = 0; $race < $races;$race++)
 		    {
 		        // Skip Ferengi, Borg, Q and Krenim|warum?
-		        if($race > 4 && $race < 9 || $race == 10) continue;
-		        //if($race > 5 && $race < 8 ) continue;
+		        //if($race > 4 && $race < 9 || $race == 10) continue;
+		        if($race > 5 && $race < 8 ) continue;
 		        
 		        $main_html .= NL.'          <div id="dropmsg'.$dropnum.'" class="dropcontent"><br>'.$locale['race'.$race.'_desc'].NL.'          </div>';
 		        $dropnum++;
