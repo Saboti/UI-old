@@ -20,7 +20,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-$main_html .= '<span class=header>Utenti</span><br><br>';
+$main_html .= '<span class=header>Benutzer</span><br><br>';
 
 if (!isset($_REQUEST['order']) || empty($_REQUEST['order'])) $_REQUEST['order']=1;
 

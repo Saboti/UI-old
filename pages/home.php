@@ -28,7 +28,7 @@ $value='';
 $sql = ' SELECT *
          FROM page_news
          ORDER BY date DESC
-         LIMIT 0, 2';
+         LIMIT 0, 3';
 
 if(($q_news = $db->query($sql)) === false) {
     $news_html = $locale['nonews'].'<br><br><img src="./gfx/header_newsitem.jpg"><br><br>';

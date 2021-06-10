@@ -37,7 +37,7 @@ if (!isset($player['user_id']))
 <span class=header3><font color=green>Spieler suchen</font></span><br>
 <form method="post" action="index.php?p=multihunt">
 <input type="text" name="name" value="'.$_POST['name'].'" class="field">
-<input class="button" type="submit" name="submit" value="Cerca">
+<input class="button" type="submit" name="submit" value="suchen">
 </form>';
     return 1;
 }
