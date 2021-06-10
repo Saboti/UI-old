@@ -133,7 +133,7 @@ define ("GER_TEXT54", 'Namen:');
 
 define ("GER_TEXT55", 'Contract Code:');
 
-define ("GER_TEXT56", 'Geba&uuml;de datum:');
+define ("GER_TEXT56", 'Baudatum:');
 
 define ("GER_TEXT57", 'auf Mission:');
 
@@ -145,7 +145,7 @@ define ("GER_TEXT60", 'Torpedos:');
 
 define ("GER_TEXT61", 'Index F.S.:');
 
-define ("GER_TEXT62", 'Der Erstschlagwert (First Strike) repraesentiert die Reihenfolge in der die Schiffe im Kampf das Feuer eroeffnen. Je h�her der Wert, desto groe�er die Chance als erstes zu Feuern. Allerdings werden Schiffe mit dem hoechsten Wert im Gegenzug als erste vom Feind anvisiert.');
+define ("GER_TEXT62", 'Der Erstschlagwert (First Strike) repraesentiert die Reihenfolge in der die Schiffe im Kampf das Feuer eroeffnen. Je höher der Wert, desto groeßer die Chance als erstes zu Feuern. Allerdings werden Schiffe mit dem hoechsten Wert im Gegenzug als erste vom Feind anvisiert.');
 
 define("GER_TEXT63", 'AT Level');
 
@@ -155,25 +155,25 @@ define("GER_TEXT65", 'AT used on');
 
 define("GER_TEXT66", 'ToHit:');
 
-define("GER_TEXT67", 'This value represents the chance to score a hit on an enemy vessel.');
+define("GER_TEXT67", 'Dieser Wert stellt die Chance dar, einen Treffer auf einem feindlichen Schiff zu erzielen.');
 
-define("GER_TEXT68", 'Mitigazione Danno:');
+define("GER_TEXT68", 'Schadensbegrenzung:');
 
-define("GER_TEXT69", 'Questo parametro indica la percentuale di danno allo scafo che la nave e l&#146;equipaggio possono ridurre al termine del combattimento.');
+define("GER_TEXT69", 'Dieser Parameter gibt den Prozentsatz des Schadens am Rumpf an, den das Schiff und die Besatzung am Ende des Gefechts reduzieren können.');
 
-define("GER_TEXT70", 'Armi Leggere/Pesanti:');
+define("GER_TEXT70", 'Leichte / schwere Waffen:');
 
-define("GER_TEXT71", 'Nessuno');
+define("GER_TEXT71", 'Keine');
 
-define("GER_TEXT72", 'Rof Leggere/Pesanti:');
+define("GER_TEXT72", 'Rof leicht/schwer:');
 
-define("GER_TEXT73", 'Bonus Razziali:');
+define("GER_TEXT73", 'Rassenboni:');
 
-define("GER_TEXT74", 'Bonus di Classe:');
+define("GER_TEXT74", 'Klassenbonus:');
 
-define("GER_TEXT75", 'RoF Armi Leggere:');
+define("GER_TEXT75", 'RoF Leichte Waffen:');
 
-define("GER_TEXT76", 'RoF Armi Pesanti:');
+define("GER_TEXT76", 'RoF Schwere Waffen:');
 
 //English
 define ("ENG_TEXT0", 'Skills:');
