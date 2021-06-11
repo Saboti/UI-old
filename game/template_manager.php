@@ -427,7 +427,7 @@ echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <head>
 
-  <title>Star Trek: Frontline Combat 2 - Template Manager</title>
+  <title>Star Trek - Galaxy War - Template Manager</title>
 
 
 
@@ -543,7 +543,7 @@ echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 
 
-<center><span style="font-family: Arial,serif; font-size: 16pt; font-weight: bold; text-decoration: underline;">Star Trek: Frontline Combat 2 - Template Manager</span></center><br><br>
+<center><span style="font-family: Arial,serif; font-size: 16pt; font-weight: bold; text-decoration: underline;">Star Trek - Galaxy War - Template Manager</span></center><br><br>
 
 
 

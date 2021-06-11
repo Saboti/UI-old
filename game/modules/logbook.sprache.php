@@ -36,7 +36,7 @@ define ("GER_TEXT5", 'Der gew&auml;hlte Logeintrag existiert nicht');
 
 define ("GER_TEXT6", 'Fehler bei der Seitenberechnung des Logbuchs');
 
-define ("GER_TEXT7", 'Uerwartet: konnet $on_i nicht bestimmen');
+define ("GER_TEXT7", 'Uerwartet: konnte $on_i nicht bestimmen');
 
 define ("GER_TEXT8", '[vorheriger Eintrag]');
 
@@ -68,7 +68,7 @@ define ("GER_TEXT21", 'Typ');
 
 define ("GER_TEXT22", 'Zeit');
 
-define ("GER_TEXT23", 'alle w&auml;hlen');
+define ("GER_TEXT23", 'alle ausw&auml;hlen');
 
 define ("GER_TEXT24", 'gew&auml;hlte Eintr&auml;ge');
 
@@ -123,7 +123,7 @@ define ("GER_TEXT48", 'Ausbaustufe');
 
 define ("GER_TEXT49", 'Lokale Forschung');
 
-define ("GER_TEXT50", 'Schiffskomponenten-Forschung');
+define ("GER_TEXT50", 'Schiffsmodul-Forschung');
 
 define ("GER_TEXT51", 'Ein Flottenverband von');
 
@@ -135,7 +135,7 @@ define ("GER_TEXT54", 'Schiffstyp');
 
 define ("GER_TEXT55", 'Anzahl');
 
-define ("GER_TEXT56", 'Der Planet konnte nicht kolonisiert, da er nicht unbewohnt war.');
+define ("GER_TEXT56", 'Der Planet konnte nicht kolonisiert werden, da er nicht unbewohnt war.');
 
 define ("GER_TEXT57", 'Der Planet konnte nicht kolonisiert werden, da das beim Start gew&auml;hlte Kolonisationsschiff nicht mehr verf&uuml;gbar war.');
 
@@ -143,11 +143,11 @@ define ("GER_TEXT58", 'Der Planet wurde erfolgreich kolonisiert.');
 
 define ("GER_TEXT59", 'Dein Flottenverband hat den Zielplaneten erreicht, die Ladung auf den Planeten gebeamt und befindet sich wieder auf dem R&uuml;ckflug.');
 
-define ("GER_TEXT60", 'Alle Waren/Einheiten konnten nicht transferiert werden, da das Maximum des Planeten erreicht wurden.');
+define ("GER_TEXT60", 'Alle Waren/Einheiten konnten nicht transferiert werden, da die maximale Kapazit&auml;t des Planeten erreicht ist.');
 
 define ("GER_TEXT61", 'hat auf die Oberfl&auml;che der Kolonie Waren/Einheiten gebeamt und befindet sich wieder auf dem R&uuml;ckflug.');
 
-define ("GER_TEXT62", 'Dabei konnte nicht alles transferiert werden, da das Maximum des Planeten erreicht wurde');
+define ("GER_TEXT62", 'Es konnten nicht die ganze Fracht transferiert werden, da die maximale Kapazit&auml;t des Planeten erreicht ist');
 
 define ("GER_TEXT63", 'Ware/Einheit');
 
@@ -155,9 +155,9 @@ define ("GER_TEXT64", 'entladen');
 
 define ("GER_TEXT64a", 'laden');
 
-define ("GER_TEXT65", 'Dein Flottenverband hat den Zielplaneten erreicht, konnte die Ladung aber nicht auf dem Planeten abladen, da der Absender nicht der Besitzer des Planeten ist.');
+define ("GER_TEXT65", 'Dein Flottenverband hat zwar den Zielplaneten erreicht, konnte die Ladung aber nicht auf dem Planeten abladen, da der Absender der Waren nicht der Besitzer des Planeten ist.');
 
-define ("GER_TEXT66", 'hat versucht Waren auf den Planeten zu beamen. Da der der Besitzer der Ladung jedoch nicht dem Auftraggeber entsprechen, weigerte sich die Crew dies zu tun.');
+define ("GER_TEXT66", 'hat versucht Waren auf den Planeten zu beamen. Da der Besitzer der Ladung jedoch nicht dem Auftraggeber entspricht, weigerte sich die Crew den Befehl auszuf&uuml;hren.');
 
 define ("GER_TEXT67", 'Das ersteigerte Schiff ist im Trockendock deines Planeten angekommen.');
 
@@ -183,27 +183,27 @@ define ("GER_TEXT77", 'angegriffen , wurde von dieser jedoch zerst&ouml;rt.');
 
 define ("GER_TEXT78", 'Deine Flotte wurde beim Einflug in den Orbit von Schiffen von');
 
-define ("GER_TEXT79", 'angriffen, konnte diese aber zerst&ouml;ren.');
+define ("GER_TEXT79", 'angegriffen, konnte diese aber zerst&ouml;ren.');
 
-define ("GER_TEXT80", 'angriffen und wurde zerst&ouml;rt.');
+define ("GER_TEXT80", 'angegriffen und wurde zerst&ouml;rt.');
 
-define ("GER_TEXT81", 'Dein Flottenverband hat den Zielplaneten erreicht und alle gegnerische Schiffe sowie orbitale Verteidigungseinrichtungen zerst&ouml;rt. Alle &uuml;berlebenden Schiffe sind in der Umlaufbahn des Planeten.');
+define ("GER_TEXT81", 'Dein Flottenverband hat den Zielplaneten erreicht und alle gegnerische Schiffe sowie orbitale Verteidigungseinrichtungen zerst&ouml;rt. Alle &uuml;berlebenden Schiffe sind in die Umlaufbahn des Planeten eingeschwenkt.');
 
 define ("GER_TEXT82", 'Dein Flottenverband hat den Zielplaneten erreicht und wurde durch die gegnerischen Streitkr&auml;fte komplett zerst&ouml;rt.');
 
 define ("GER_TEXT83", 'der deine Streitkr&auml;fte im Orbit angegriffen hat, wurde komplett zerst&ouml;rt.');
 
-define ("GER_TEXT84", 'hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt und ist nun im Orbit des Planeten.');
+define ("GER_TEXT84", 'hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt und befindet sich im Orbit des Planeten.');
 
-define ("GER_TEXT85", 'Dein Flottenverband hat den Zielplaneten erreicht und alle gegnerische Schiffe sowie orbitale Verteidigungseinrichtungen zerst&ouml;rt. Alle &uuml;berlebenden Schiffe sind wieder auf dem R&uuml;ckflug.');
+define ("GER_TEXT85", 'Dein Flottenverband hat den Zielplaneten erreicht und alle gegnerische Schiffe sowie die orbitalen Verteidigungseinrichtungen zerst&ouml;rt. Alle &uuml;berlebenden Schiffe sind wieder auf dem R&uuml;ckflug.');
 
 define ("GER_TEXT86", 'hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt und ist wieder auf dem R&uuml;ckflug.');
 
-define ("GER_TEXT87", 'Ein Flottenverband der Borg hat, der deine Streitkr&auml;fte im Orbit angegriffen hat, wurde komplett zerst&ouml;rt.');
+define ("GER_TEXT87", 'Ein Flottenverband der Borg, der deine Streitkr&auml;fte im Orbit angegriffen hat, wurde komplett zerst&ouml;rt.');
 
 define ("GER_TEXT88", 'Ein Flottenverband der Borg hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt.');
 
-define ("GER_TEXT89", 'Ein Flottenverband der Borg hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt. In dem darauffolgenden Bodenkampf konnten jedoch alle Bodentruppen vernichtet und die Assimilierung verhindert werden.');
+define ("GER_TEXT89", 'Ein Flottenverband der Borg hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt. In dem darauffolgenden Bodenkampf konnten jedoch alle Bodentruppen der Borg vernichtet und eine Assimilierung verhindert werden.');
 
 define ("GER_TEXT90", 'Ein Flottenverband der Borg hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt und den Planeten assimiliert');
 
@@ -229,7 +229,7 @@ define ("GER_TEXT100", 'Dein Flottenverband hat die Bombardierung der Planetenob
 
 define ("GER_TEXT101", 'hat die Bombardierung der Planetenoberfl&auml;che fortgesetzt.');
 
-define ("GER_TEXT102", 'Dein Flottenverband hat die gegnerischen Streitkr&auml;fte angegriffen und komplett zerst&ouml;rt. Das Kolonieschiff, das f&uuml;r die Invasion vorgesehen war, konnte jedoch nicht mehr gefunden werden - eventuell wurde es bei dem Kampf zerst&ouml;rt.');
+define ("GER_TEXT102", 'Dein Flottenverband hat die gegnerischen Streitkr&auml;fte angegriffen und komplett zerst&ouml;rt. Das Kolonieschiff, das f&uuml;r die Invasion vorgesehen war, gilt als verschollen - eventuell wurde es bei dem Kampf zerst&ouml;rt.');
 
 define ("GER_TEXT103", 'Dein Flottenverband hat die gegnerischen Streitkr&auml;fte angegriffen und komplett zerst&ouml;rt. In dem darauffolgenden Bodenkampf konnten die gegnerischen Streitkr&auml;fte jedoch nicht &uuml;berw&auml;ltigt werden.');
 
@@ -237,7 +237,7 @@ define ("GER_TEXT104", 'hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml
 
 define ("GER_TEXT105", 'Dein Flottenverband hat die gegnerischen Streitkr&auml;fte angegriffen und komplett zerst&ouml;rt. In dem darauffolgenden Bodenkampf haben deine Streitkr&auml;fte die Kontrolle &uuml;ber alle planetaren Einrichtungen gewinnen k&ouml;nnen, so dass der Planet nun unter deiner Kontrolle steht.');
 
-define ("GER_TEXT106", 'hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt. In dem darauffolgenden Bodenkampf wurden deine Einheiten von den feindlichen Truppen vernichtet, so dass diese nun die Kontrolle &uuml;ber den Planeten haben.');
+define ("GER_TEXT106", 'hat deine Streitkr&auml;fte im Orbit komplett zerst&ouml;rt. In dem darauffolgenden Bodenkampf wurden deine Einheiten von den feindlichen Truppen vernichtet, so dass der Feind nun die Kontrolle &uuml;ber den Planeten hat.');
 
 define ("GER_TEXT107", '<b>Angreifende Flotten</b><br><i>Keine angreifenden Flotten -- Bug, bitte melden</i><br><br>');
 
@@ -274,7 +274,7 @@ define ("GER_TEXT121", 'Du hast die Auktion');
 
 define ("GER_TEXT122", 'gewonnen.<br>Dein Endgebot lag bei:');
 
-define ("GER_TEXT123", 'Zum Steuern des weiteren Ablaufs geh in das Handelszentrum und klick auf "Schulden bezahlen und Schiff abhohlen".<br><br>Du musst innerhalb einer Woche bezahlen. Wenn Du bis dahin nicht bezahlt hast, wirst Du eine Strafe erhalten.');
+define ("GER_TEXT123", 'F&uuml;r den weiteren Ablauf geh in das Handelszentrum und klick auf "Schulden bezahlen und Schiff abholen".<br><br>Du musst innerhalb einer Woche bezahlen. Wenn Du bis dahin nicht bezahlt hast, wirst Du eine Strafe erhalten.');
 
 define ("GER_TEXT124", 'Deine Auktion');
 
@@ -287,7 +287,7 @@ define ("GER_TEXT127", 'Zum Steuern des weiteren Ablaufs geh in das Handelszentr
 /* <-- Define for Ferengi Tax logbook entries --> */
 define ("GER_TEXT128", 'Gr&uuml;&beta;e vom gro&beta;en Nagus');
 
-define ("GER_TEXT129", 'Du wirst in K&uuml;rze eine Lieferung von Ressourcen erhalten, die von unserem Handelsimperium abfallen.<br>Die Zahlung bel&auml;uft sich auf:');
+define ("GER_TEXT129", 'Du wirst in K&uuml;rze eine Lieferung von Ressourcen erhalten, die dir von unserem Handelsimperium zur Verf&uuml;gung gestellt werden .<br>Die Zahlung bel&auml;uft sich auf:');
 
 /* <-- Define for Government logbook entries --> */
 define ("GER_TEXT130", 'Bei Aufst&auml;nden auf dem Planeten');
@@ -298,14 +298,14 @@ define ("GER_TEXT132", 'besch&auml;digt und von Stufe');
 
 define ("GER_TEXT133", 'auf Stufe');
 
-define ("GER_TEXT134", 'gesetzt.<br>Es fehlen');
+define ("GER_TEXT134", 'reduziert.<br>Es fehlen');
 
 define ("GER_TEXT135", 'der ben&ouml;tigten Truppen, um die Unruhen aufhalten zu k&ouml;nnen.');
 
 /* <-- Define for Revolution logbook entries --> */
 define ("GER_TEXT136", 'Auf deinem Planeten');
 
-define ("GER_TEXT137", 'kam es zu blutigen Auseinandersetzungen mit den Besatzungstruppen, die in einer Revolution endeten.<br>Der Planet steht nicht mehr weiter unter deiner Kontrolle und eine B&uuml;rgermiliz zur Verteidigung der Unabh&auml;ngigkeit wurde aufgestellt.');
+define ("GER_TEXT137", 'kam es zu blutigen Auseinandersetzungen mit den Besatzungstruppen, die in einer Revolution endeten.<br>Der Planet steht nicht mehr unter deiner Kontrolle. Es wurde eine B&uuml;rgermiliz zur Verteidigung der Unabh&auml;ngigkeit aufgestellt.');
 
 /* <-- Define for User diplomacy logbook entries --> */
 define ("GER_TEXT138", '<b>B&uuml;ndnis gebrochen</b><br><br>Das private B&uuml;ndnis mit');
@@ -317,19 +317,19 @@ define ("GER_TEXT140", 'Verteidiger:');
 
 define ("GER_TEXT141", 'Angreifer:');
 
-define ("GER_TEXT142", '* Achtung, das neue Kampfsystem ist experimentell installiert, bei groben Abweichungen bitte &uuml;ber das Forum melden!');
+define ("GER_TEXT142", '* Achtung, das neue Kampfsystem ist experimentell, bei groben Abweichungen bitte BUG &uuml;ber das Forum melden!');
 
-define ("GER_TEXT146", 'Metall vorkommen: ');
+define ("GER_TEXT146", 'Metallvorkommen: ');
 
-define ("GER_TEXT147", 'Mineral vorkommen: ');
+define ("GER_TEXT147", 'Mineralvorkommen: ');
 
-define ("GER_TEXT148", 'Latinum vorkommen: ');
+define ("GER_TEXT148", 'Latinumvorkommen: ');
 
-define ("GER_TEXT149", '-- UNTER duschschnittlich --');
+define ("GER_TEXT149", '-- UNTER durchschnittlich --');
 
 define ("GER_TEXT150", '-- durchschnittlich --');
 
-define ("GER_TEXT151", '-- &Uuml;ber durchschnittlich --');
+define ("GER_TEXT151", '-- &Uuml;BER durchschnittlich --');
 
 define ("GER_TEXT152", 'Das Experiment ist fehlgeschlagen. Mangel an Ressourcen!');
 
@@ -337,135 +337,135 @@ define ("GER_TEXT153", 'Dieser Vorgang kann nur auf Planeten der Klasse <b>A</b>
 
 define ("GER_TEXT154", 'Das Experiment scheint funktioniert zu haben. Zumindest gibt es einen Planeten im Orbit.');
 
-define ("GER_TEXT155", 'Die Siedler diese Planeten hatten den ersten Kontakt mit unserer Rasse.');
+define ("GER_TEXT155", 'Die Siedler diese Planeten hatten gerade einen ersten Kontakt mit unserer Rasse.');
 
-define ("GER_TEXT156", 'Die Siedler auf diesem Planeten begr&uuml;ssen unsere diplomatische Delegation. Der erste Kontakt hat sich positiv entwickelt!');
+define ("GER_TEXT156", 'Die Siedler auf diesem Planeten begr&uuml;ssen unsere diplomatischen Bem&uuml;hungen. Der erste Kontakt hat sich f&uuml;r uns sehr positiv entwickelt!');
 
-define ("GER_TEXT157", 'Die Siedler auf diesem Planeten habe deine diplomatische Delegation <b>zur&uuml;ckgewiesen!</b>');
+define ("GER_TEXT157", 'Die Siedler auf diesem Planeten haben deine diplomatische Delegation <b>zur&uuml;ckgewiesen!</b>');
 
 define ("GER_TEXT158", 'Unsere Beziehung zu den Planeten sind: ');
 
-define ("GER_TEXT159", 'Von unseren Beobachtungen zeigten die folgenden Ergebnisse:');
+define ("GER_TEXT159", 'Unsere Beobachtungen zeigten folgende Ergebnisse:');
 
-define ("GER_TEXT160", 'hat eine Zustimmungsrate von');
+define ("GER_TEXT160", 'hat einen Einfluss von');
 
 define ("GER_TEXT161", 'deine Auktion');
 
-define ("GER_TEXT162", 'wurde  beendet.<br>Es wurden keine Gebote abgegeben.');
+define ("GER_TEXT162", 'wurde beendet.<br>Es wurden keinerlei Gebote abgegeben.');
 
-define ("GER_TEXT163", 'benefits from allied diplomatic actions:');
+define ("GER_TEXT163", 'Vorteile der diplomatischen Aktionen unserer Verb&uuml;ndeten:');
 
-define ("GER_TEXT164", 'benefits from other members of our race:');
+define ("GER_TEXT164", 'Vorteile anderer Fraktionen unserer Rasse:');
 
-define ("GER_TEXT165", 'La nostra delegazione diplomatica ha terminato con successo la missione.<br><br>L&#146;accordo ottenuto ha rinforzato il nostro indice di gradimento sul pianeta di:');
+define ("GER_TEXT165", 'Unsere diplomatische Delegation hat die Mission erfolgreich abgeschlossen. <br> <br> Die Vereinbarungen haben unseren Einfluss verst&auml;rkt auf dem Planeten von:');
 
-define ("GER_TEXT166", 'Esiste gi&agrave; un trattato diplomatico con questa colonia!!!');
+define ("GER_TEXT166", 'Es existiert bereits ein diplomatischer Vertrag mit dieser Kolonie!!!');
 
 define ("GER_TEXT167", 'Col.');
 
-define ("GER_TEXT168", 'Saluti dalla Colonia Indipendente ');
+define ("GER_TEXT168", 'Ich Gr&uuml;sse Sie von der unabh&auml;ngigen Kolonie ');
 
-define ("GER_TEXT169", 'I nostri cantieri hanno ultimato la preparazione di una nave classe ');
+define ("GER_TEXT169", 'Die Werft hat die Bauvorbereitungen des folgenden Schiffstyps erfolgreich abgeschlossen: ');
 
-define ("GER_TEXT170", ', orgoglio e vanto della nostra colonia.<br>L&#146;unit&agrave; ha appena terminato la fase di collaudo e nonostanze l&#146;inesperienza dell&#146;equipaggio &egrave; pronta ad entrare in servizio.<br><br>Dati i buoni rapportano che ci legano, &egrave; nostro desiderio che tale unit&agrave; serva sotto il vostro comando!');
+define ("GER_TEXT170", ',Ruhm und Stolz unserer Kolonie! .<br>Die Testphase f&uuml;r das neue Schiff ist beendet. Trotz der Unerfahrenheit der neuen Crew, sind alle bereit in Dienst gestellt zu werden. Angesichts unserer guten Beziehungen ist es Ihr eigener Wunsch, dass die Einheit unter deinem Befehl dienen soll!');
 
-define ("GER_TEXT171", 'La nostra squadra scientifica ha terminato la missione con esisto favorevole. I laboratori di ricerca sulla colonia stanno gi&agrave; lavorando per mettere in pratica quanto appena scoperto grazie al nostro aiuto.<br><br>Il valore delle nostre relazioni con il pianeta aumenta di ');
+define ("GER_TEXT171", 'Unser wissenschaftliches Forschungsteam hat die Mission mit gutem Endergebnis abgeschlossen. Kolonieforschungslabors waren bereits vorhanden. Was mit unserer Hilfe entdeckt worden ist, soll für die Bewohner dieses Planeten jetzt in die Praxis umgesetzt werden. <br> <br> Der Einfluss unserer Beziehungen zum Planeten steigt um : ');
 
-define ("GER_TEXT172", 'La nostra squadra scientifica ha trovato i laboratori dei coloni gi&agrave; in possesso di sviluppi tecnologici da adottare, per ora non possono accettare nuove informazioni.');
+define ("GER_TEXT172", 'Das ausgesandte, wissenschaftliche Forschungsteam hat festgestellt, dass dem Partner angebotetene, technologische Entwicklung nicht &uuml;bergeben werden kann, weil sie l&auml;ngst von Ihn selbst erforscht ist.');
 
-define ("GER_TEXT173", 'La nostra squadra scientifica non &egrave; in grado di fornire informazioni utili al progresso della tecnologia della colonia. La nostra tecnologia deve progredire prima di poter tentare di nuovo.');
+define ("GER_TEXT173", 'Unser Wissenschaftsteam hat festgestellt, dass wir zur Weiterentwicklung der Kolonie keine Forschungen mehr zur Verf&uuml;gung stellen k&ouml;nnen. Denn unsere eigene Technoloie m&uuml;sste sich dazu erst einmal selbst noch weiterentwickeln.');
 
-define ("GER_TEXT174", 'La nostra squadra scientifica riporta che il pianeta ha gi&agrave; raggiunto il massimo livello tecnologico possibile nel campo specifico della missione e non pu&ograve; progredire ulteriormente!');
+define ("GER_TEXT174", 'Unser Wisssenschaftsteam hat festgestellt, dass der Planet bereits das h&ouml;chstm&ouml;gliche technische Niveau aufweist. Unsere Mision kann diesbez&uuml;glich leider nicht weiter fortgesetzt werden!');
 
-define ("GER_TEXT175", 'Qualcosa &egrave; andato storto. Segnalare questo messaggio come bug!!!');
+define ("GER_TEXT175", 'OH OH! Hier ist etwas schiefgelaufen. Bitte melden Sie uns den BUG !!!');
 
-define ("GER_TEXT176", 'Tecnologia da sviluppare: ');
+define ("GER_TEXT176", 'Zu entwickelnde Technologie(n): ');
 
-define ("GER_TEXT177", 'Tempo stimato per la conclusione degli aggiornamenti sul pianeta: ');
+define ("GER_TEXT177", 'Gesch&auml;tzte Zeit f&uuml;r die Fertigstellung von Updates auf dem Planeten: ');
 
-define ("GER_TEXT178", 'I coloni hanno respinto la nostra proposta di collaborazione perch&egrave; non esiste un Trattato diplomatico valido!!!');
+define ("GER_TEXT178", 'Unser Kooperationsvorschlag wurde abgelehnt, da wir keinen anerkannten diplomatischen Vertrag vorzuweisen hatten!!!');
 
-define ("GER_TEXT179", 'La nostra squadra ha terminato la costruzione di nuove postazioni difensive orbitali per la colonia indipendente.<br><br>Numero di nuove piattaforme orbitali posizionate: ');
+define ("GER_TEXT179", 'Unser Team hat den Bau neuer Orbitalverteidigungsposten f&uuml;r die unabh&auml;ngige Kolonie abgeschlossen. <br> <br> Anzahl der neu platzierten Orbitalplattformen:');
 
-define ("GER_TEXT180", 'La nostra squadra non &egrave; stata in grado di installare ulteriori postazioni difensive orbitali, il sistema &egrave; gi&agrave; completo e pienamente funzionante.');
+define ("GER_TEXT180", 'Unser Team ist nicht in der Lage zus&auml;tzliche orbitale Verteildungsplattformen zu installieren, da das System bereits vollst&auml;ndig ausgebaut und funktionsf&auml;hig ist.');
 
-define ("GER_TEXT181", 'A seguito di recenti eventi bellici ed/o attivit&agrave; diplomatica di vostri concorrenti, la popolazione di questa colonia indipendente ha deciso di favorire una diversa potenza straniera!<br><br>Il punteggio della nostra relazione diplomatica &egrave; stato superato.');
+define ("GER_TEXT181", 'Nach den j&uuml;ngsten Kriegsereignissen/Aktivit&auml;ten hat die Bev&ouml;lkerung dieser unabh&auml;ngigen Kolonie beschlossen, eine andere ausserirdische Macht zu bevorzugen, die diplomatisch unser Konkurrent ist. <br> <br> Unser diplomatischer Einfluss reicht nicht aus, um die Bev&ouml;lkerung von uns zu &uuml;berzeugen.');
 
-define ("GER_TEXT182", 'Un gruppo di volontari, addestrati sul pianeta, ha deciso di unirsi alle vostre forze e mettersi al vostro comando.');
+define ("GER_TEXT182", 'Eine Gruppe Freiwilliger von diesem Planeten, m&ouml;chte sich gerne unseren Streitkr&auml;ften anschliessen, um unter unserem Kommando zu dienen.');
 
-define ("GER_TEXT183", 'Visto il vostro interesse nel supportare le nostre attivit&agrave; estrattive sul pianeta, abbiamo deciso di donarvi, come segno di riconoscenza, parte delle risorse estratte finora.');
+define ("GER_TEXT183", 'Angesichts Ihres Interesses an der Unterst&uuml;tzung unserer Aktivit&auml;ten auf dem Planeten, haben wir uns dazu entschlossen, Ihnen als Zeichen der Dankbarkeit einen Teil der bisher eingesetzten Ressourcen zur&uuml;ckzugeben.');
 
-define ("GER_TEXT184", 'Stazione automatica di comunicazione, pianeta ');
+define ("GER_TEXT184", 'Automatische Kommunikationsstation des Planeten ');
 
-define ("GER_TEXT185", '<center>TRASMISSIONE AUTOMATICA DI EMERGENZA</center><br><br>Status della colonia: <b>Sconosciuto</b><br>Status difese orbitali: <b>Sconosciuto</b><br>Ultimo evento registrato dai sistemi automatici di difesa: presenza di una o pi&ugrave; navi Borg in orbita standard. Le difese planetarie sono state superate. Impossibile avviare evacuazione di emergenza della popolazione.');
+define ("GER_TEXT185", '<center>AUTOMATISCHE NOTFALL-&uuml;BERMITTLUNG</center><br><br>Koloniestatus: <b>unbekannt</b><br>Status der Orbitalen Abwehr: <b>unbekannt</b><br>Das letzte vom automatischen Verteidigungssystem aufgezeichnete Ereignis best&auml;tigt: Kontakt mit einem oder mehreren BORG-Schiffe in der Standardumlaufbahn gemeldet. Die planetare Verteidigung wurde &uuml;berrannt. Notfallevakuierungsmassnahmen k&ouml;nnten nicht eingeleitet werden. Wir werden assimiliert.');
 
-define ("GER_TEXT186", 'Comando difesa del pianeta ');
+define ("GER_TEXT186", 'Planetares Abwehrkommando ');
 
-define ("GER_TEXT187", '<b>Comunicazione prioritaria!!!</b><br>Stiamo subendo un attacco da parte dei Borg! Al momento le nostre difese reggono ma i Borg potrebbero tornare presto!');
+define ("GER_TEXT187", '<b>NACHRICHT DER PRIORIT&auml;TSTUFE EINS!!!</b><br>Wir wurden gerade von den BORG angegriffen! Im Moment halten zwar unsere Verteidigungsstellungen noch, aber die Borg werden sicher zur&Uuml;ckkehren!');
 
-define ("GER_TEXT188", '<center>TRASMISSIONE AUTOMATICA DI EMERGENZA</center><br><br>Status della colonia: <b>Sconosciuto</b><br><br>Status difese orbitali: <b>Sconosciuto</b><br><br>Tutte le richieste di comunicazione sono state ignorate, le difese planetarie sono state superate. Impossibile avviare evacuazione di emergenza della popolazione.<br><br> Ultimo evento registrato dai sistemi automatici di difesa: presenza di una o pi&ugrave; navi ostili in orbita standard, appartenenti alle forze di ');
+define ("GER_TEXT188", '<center>AUTOMATISCHE NOTFALL-&uuml;BERMITTLUNG</center><br><br><Koloniestatus: <b>unbekannt</b> <br>Status der Orbitalen Abwehr: <b>unbekannt</b> <br><br>S&auml;mtliche Komminikationsversuche wurde ignoriert. Die planetaren Verteidigungskr&auml;fte wurden &uuml;berrannt. Notfallevakuierungsmassnahmen konnten nicht eingeleitet werden.<br><br> Letztes von den automatischen Verteidigungssystemen aufgezeichnetes Ereignis: Es sind eines oder mehrere feindliche Schiffe in der Standardumlaufbahn vorhanden, welche Teil der Streitkr&auml;fte sind von: ');
 
-define ("GER_TEXT189", 'Sul pianeta non vi sono nostre squadre in azione!<br><br>Verificare la presenza di una squadra attraverso il Pannello Tattico.');
+define ("GER_TEXT189", 'Es sind keine weiteren Truppen auf dem Planeten vorhanden!<br> <br> Über&uuml;rfen Sie das bittte im Taktik-Panel selbst.');
 
-define ("GER_TEXT190", 'Ogni tentativo di mettersi in contatto ha avuto esito negativo e dalle nostre scansioni della superficie appare evidente che la squadra a terra &egrave; stata, in qualche modo, annientata.');
+define ("GER_TEXT190", 'Jeder Versuch der weiteren Kontaktaufnahme ist gescheitert. Aus den Oberfl&auml;chenscans ist ersichtlich, dass unser Aussenteam aus unbekannten Gr&uuml;nden vernichtet wurde.');
 
-define ("GER_TEXT191", 'Il recupero della squadra a terra ha avuto successo, tuttavia, la squadra non ha portato a termine la missione assegnata.');
+define ("GER_TEXT191", 'Die Sicherstellung unseres Aussenteams war erfolgreich, das Team hat aber die zugewiesene Mission jedoch nicht abschlie&szlig;en k&ouml;nnen.');
 
-define ("GER_TEXT192", 'Il recupero della squadra a terra ha avuto successo.');
+define ("GER_TEXT192", 'Die Sicherung unseres Aussenteams war erfolgreich.');
 
-define ("GER_TEXT193", 'Questa missione deve svolgersi su una colonia fondata da te!');
+define ("GER_TEXT193", 'Diese Mission ist nur auf eine Ihrer eigenen Welten m&ouml;glich!');
 
-define ("GER_TEXT194", 'Questa missione NON deve svolgersi su una colonia fondata da te!');
+define ("GER_TEXT194", 'Diese Mission ist NICHT auf einer Ihrer eigenen Welten m&ouml;glich!');
 
-define ("GER_TEXT195", 'La colonia non ha nessun fondatore!!! Missione annullata!');
+define ("GER_TEXT195", 'Diese Kolonie wurde noch nicht von Ihnen erstellt!!! Mission abgesetzt!');
 
-define ("GER_TEXT196", 'La tua squadra &egrave; sbarcata sul pianeta con successo e ha iniziato a svolgere la propria missione.');
+define ("GER_TEXT196", 'Ihr Aussenteam ist erfolgreich auf dem Planeten gelandet und beginnt ordnungsgem&auml;ss seine Mission zu erf&uuml;llen.');
 
-define ("GER_TEXT197", 'La nostra squadra a terra ha incontrato una squadra di cacciatori hirogeni appostata sul pianeta. La nostra squadra &egrave; stata attaccata ma &egrave; riuscita a salvarsi, tornando a bordo della nave.<br><br>Missione Annullata.');
+define ("GER_TEXT197", 'Unser Aussenteam hat auf der Oberfl&auml;che des Planeten Hirogen-J&auml;ger getroffen, die dort auf jagd waren. Unser Aussenteam wurde angegriffen, schaffte es aber zu fliehen und kehrte wohlbehalten an Bord unseres Schiffes zur&uuml;ck. <br> <br> Mission gescheitert!');
 
-define ("GER_TEXT198", 'Subito dopo lo sbarco, la nostra squadra &egrave; stata colta in un agguato da parte di cacciatori hirogeni ed &egrave; stata annientata!!!<br><br>Missione Annullata.');
+define ("GER_TEXT198", 'Unmittelbar nach der Landung wurde unser Team von Hirogen-J&auml;ger in einen Hinterhalt gelockt. Es wurde vollst&auml;ndig vernichtet!!! <br> <br> Mission abgebrochen.');
 
-define ("GER_TEXT199", 'Questa missione ammette una sola squadra sbarcata sul pianeta.<br><br>Missione Annullata.');
+define ("GER_TEXT199", 'Diese Mission ist nur EINEM Landungsteam erlaubt, das auf dem Planeten gelandet ist. <br> <br> Mission abgesagt.');
 
-define ("GER_TEXT200", 'La nave non pu&ograve; procedere al recupero della squadra dal pianeta perch&egrave; ha gi&agrave; una squadra a bordo!<br><br>Missione Annullata!');
+define ("GER_TEXT200", 'Das Schiff kann das Ausseneam nicht vom Planeten beamen, da bereits ein anderes Aussenteam an Bord ist! <br> <br> Mission abgebrochen!');
 
-define ("GER_TEXT201", 'L&#146;azione di altre squadre diplomatiche sulla colonia ha prodotto alcuni effetti secondari, brevemente riepilogati qui di seguito:<br>');
+define ("GER_TEXT201", 'Die Anwesenheit eines anderen Aussenteams hat folgende sekund&auml;ren Einfl&uuml;sse auf die hier vorliegende Kolonie:<br>');
 
-define ("GER_TEXT202", 'La nostra squadra scientifica non pu&ograve; fornire nessun tipo di supporto circa la tecnologia selezionata (segnalate questo messaggio come bug, grazie!)');
+define ("GER_TEXT202", 'Unser eigenes Wissenschaftsteam kann die ausgew&auml;hlte Technologie nicht benutzen. (bitte melden Sie diese Nachricht als BUG, Danke!)');
 
-define ("GER_TEXT203", 'Segnale automatico ricevuto: la squadra &egrave; stata annientata sul pianeta da nemici di livello superiore.');
+define ("GER_TEXT203", 'AUTOMATISCHE NOTFALL-&uuml;BERMITTLUNG! Unser Aussenteam wurde auf dem Planeten von feindlichen &uuml;berm&auml;chtigen Kr&auml;ften ausgel&ouml;scht.');
 
-define ("GER_TEXT204", 'La squadra di cacciatori in agguato ha segnalato di aver attaccato una squadra avversaria in arrivo sul pianeta ma non &egrave stata in grado di sconfiggerla.');
+define ("GER_TEXT204", 'Das nach Beute Auschau haltende J&auml;gerteam berichtet, dass ein gegnerisches Aussenteam, welches auf dem Planeten beamte, zwar angegriffen, aber nicht besiegt wurde.');
 
-define ("GER_TEXT205", 'La squadra di cacciatori in agguato segnala di aver costretto alla fuga una squadra avversaria che tentava di sbarcare sulla superfice.');
+define ("GER_TEXT205", 'Das nach Beute Auschau haltende J&auml;gerteam berichtet, dass es ein gegnerisches Aussenteam zur Flucht gezwungen hat, welches versuchte, auf der Oberfl&auml;che des Planeten zu landen.');
 
-define ("GER_TEXT206", 'La squadra di cacciatori in agguato segnala di aver annientato una squadra avversaria che tentava di sbarcare sulla superfice!!!');
+define ("GER_TEXT206", 'Das nach Beute Auschau haltende J&auml;gerteam berichtet,  dass es erfolgreich ein gegnerisches Aussenteam vernichtet hat, welches versuchte, auf der Oberfl&auml;che des Planeten zu landen!!!');
 
-define ("GER_TEXT207", 'La nostra squadra a terra ha incontrato una squadra di cacciatori hirogeni appostata sul pianeta; i cacciatori hanno tentato un assalto ma sono stati respinti, riuscendo per&ograve; a far perdere le loro tracce.');
+define ("GER_TEXT207", 'Unser Aussenteam traf Hirogen-J&auml;ger, die auf dem Planeten auf Jagd waren. Die J&auml;ger versuchten einen Angriff auf uns, wurden aber von unseren Trupp zur&uuml;ckgeschlagen. Wir haben Sie aber leider aus den Augen verloren.');
 
-define ("GER_TEXT208", 'La nostra squadra a terra ha incontrato una squadra di cacciatori hirogeni appostata sul pianeta; i cacciatori hanno tentato un assalto ma hanno avuto la peggio e sono stati uccisi!!!');
+define ("GER_TEXT208", 'Unser Aussenteam traf am Planeten Hirogen-J&auml;ger auf Beutesuche. Die J&auml;ger griffen uns zwar an, wurden jedoch dank unserer Überlegenheit get&ouml;tet.!!!');
 
-define ("GER_TEXT209", 'Trasmissione in arrivo da:');
+define ("GER_TEXT209", 'Eingehende Sendung von:');
 
-define ("GER_TEXT210", 'Le missioni da addestramento richiedono specifiche strutture sul pianeta per essere portate a termine, strutture che non sono presenti nella colonia indicata.<br><br>Missione Annullata.');
+define ("GER_TEXT210", 'Trainingsmissionen ben&ouml;tigen bestimmte Strukturen auf dem Planeten, die auf der angegebenen Kolonie nicht vorhanden sind. <br> <br> Mission abgebrochen.');
 
-define ("GER_TEXT211", 'Essi giungeranno come truppe mercenarie sul vostro pianeta capitale.');
+define ("GER_TEXT211", 'Es sind S&ouml;ldnertruppen auf Ihrem Hauptstadt-Planeten eingetroffen.');
 
-define ("GER_TEXT212", 'Essi giungeranno come truppe mercenarie sul vostro pianeta ');
+define ("GER_TEXT212", 'Es sind S&ouml;ldnertruppen auf Ihrem Planeten eingetroffen.');
 
-define ("GER_TEXT213", 'Tale donazione giunger&agrave; sul vostro pianeta capitale secondo gli usuali canali commerciali.');
+define ("GER_TEXT213", 'Ein gro&szlig;z&uuml;gige Spende erreichte erfreulicherweise gerade Ihren Hauptstadtplaneten &uuml;ber die &uuml;blichen Handelswege.');
 
-define ("GER_TEXT214", 'Tale donazione giunger&agrave; tramite gli usuali canali commerciali sul vostro pianeta ');
+define ("GER_TEXT214", 'Ein gro&szlig;z&uuml;gige Spende erreichte erfreulicherweise gerade Ihren Planeten &uuml;ber die &uuml;blichen Handelswege.');
 
-define ("GER_TEXT215", 'La nostra flotta '); 
+define ("GER_TEXT215", 'Unsere Flotte '); 
 
-define ("GER_TEXT216", 'comunica l&#146;avvistamento di navi appartenenti a '); 
+define ("GER_TEXT216", 'meldet die Sichtung der Schiffen von '); 
 
-define ("GER_TEXT217", ' in arrivo intorno al pianeta ');
-        
-define ("GER_TEXT218", 'Segue il dettaglio delle navi avvistate:');
+define ("GER_TEXT217", ' ankommend auf dem Planeten ');
 
-define ("GER_TEXT219", 'Das auf die Rettungsmission geschickte Schiff hat nicht genug Platz f&uuml;r das Aussenteam!!!');
+define ("GER_TEXT218", 'Detailierte Scans der gesichteten Schiffe:');
+
+define ("GER_TEXT219", 'Das auf die Rettungsmission befindliche Schiff hat nicht genug Frachtraum f&uuml;r das Aussenteam!!!');
 
 
 //English
@@ -1361,3 +1361,4 @@ define ("ITA_TEXT218", 'Segue il dettaglio delle navi avvistate:');
 
 define ("ITA_TEXT219", 'La nave incaricata del recupero non ha spazio sufficiente a bordo per ospitare la squadra a terra!!!');
 ?>
+

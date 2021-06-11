@@ -111,7 +111,7 @@ define ("GER_TEXT43", '&Uuml;bernehmen');
 
 define ("GER_TEXT44", 'Die Schiffe werden die feindliche Flotte angreifen.');
 
-define ("GER_TEXT45", '<b>Bombardieren:</b><br>Alle Schiffe mit planetaren Waffen werden nach dem Ausschalten der orbitalen Verteidigung die Planetenoberfl&auml;che angreifen. Dadurch k&ouml;nnen Geb&auml;ude zerst&ouml;rt und Arbeiter get&ouml;tet werden.<br><b>Wenn kein Schiff planetare Waffen besitzt, kann auch kein Bombardement stattfinden!<br>Der planetare Angriff wird solange fortgesetzt, bis er abgebrochen oder alle Geb&auml;ude auf dem Planeten zerst&ouml;rt wurden.</b>');
+define ("GER_TEXT45", '<b>Bombardieren:</b><br>Alle Schiffe mit planetaren Waffen werden nach dem Ausschalten der orbitalen Verteidigung die Planetenoberfl&auml;che angreifen. Dadurch k&ouml;nnen Geb&auml;ude zerst&ouml;rt und Arbeiter get&ouml;tet werden.<br><b>Wenn kein Schiff planetare Waffen besitzt, kann auch kein Bombardement stattfinden!<br>Der planetare Angriff wird solange fortgesetzt, bis er abgebrochen wird oder bis alle Geb&auml;ude auf dem Planeten zerst&ouml;rt wurden.</b>');
 
 define ("GER_TEXT46", 'alles bombardieren');
 
@@ -121,7 +121,7 @@ define ("GER_TEXT48", 'konzentrieren auf Produktionsgeb&auml;ude');
 
 define ("GER_TEXT49", 'konzentrieren auf Regierung/Forschung');
 
-define ("GER_TEXT50", '<b>Angreifen und &Uuml;bernehmen:</b><br>Die Schiffe werden die planetare Verteidigung angreifen. Wenn diese ausgeschaltet wurde, versuchen die auf den Transportern der Flotte befindlichen Bodentruppen sowie die des verwenden Kolonisationsschiff die Kontrolle &uuml;ber den Planeten zu erlangen. Dabei wird das Kolonieschiff benutzt, um auf den Planeten zu laden und das provisorische Hauptquartier zu errichten.<br><br>Folgendes Kolonieschiff wird bei dem &Uuml;bernahmeversuch benutzt:');
+define ("GER_TEXT50", '<b>Angreifen und &Uuml;bernehmen:</b><br>Die Schiffe werden die planetare Verteidigung angreifen. Wenn diese ausgeschaltet ist, versuchen die auf den Transportern der Flotte befindlichen Bodentruppen sowie evtl. Kolonisationsschiffe die Kontrolle &uuml;ber den Planeten zu erlangen. Dabei wird das Kolonieschiff dazu benutzt, um auf den Planeten zu laden und ein provisorisches Hauptquartier zu errichten.<br><br>Folgendes Kolonieschiff wird bei dem &Uuml;bernahmeversuch benutzt:');
 
 define ("GER_TEXT51", 'Besatzung:');
 
@@ -135,44 +135,43 @@ define ("GER_TEXT55", 'Nur ein Planet kann kolonisiert werden');
 
 define ("GER_TEXT56", '<i>unbewohnt</i>');
 
-define ("GER_TEXT57", '<b>Kolonisieren:</b><br>Der Zielplanet wird, wenn er unbewohnt ist, von einem Kolonisationsschiff der Flotte kolonisiert. Dabei wird dieses Schiff demontiert und daraus das erste Geb&auml;ude gebaut. Seine &uuml;bersch&uuml;ssige Besatzung wird auf dem Planeten stationiert. Die anderen Schiffe bleiben im Orbit des Planeten.<br><br>Folgendes Kolonieschiff wird bei der Kolonisation benutzt:');
+define ("GER_TEXT57", '<b>Kolonisation:</b><br>Der Zielplanet wird, wenn er unbewohnt ist, von einem Kolonisationsschiff der Flotte kolonisiert. Danach wird dieses Schiff demontiert und daraus das erste Geb&auml;ude gebaut. Seine &uuml;bersch&uuml;ssige Besatzung wird auf dem Planeten stationiert. Die anderen Schiffe bleiben im Orbit des Planeten.<br><br>Folgendes Kolonieschiff wird bei der Kolonisation benutzt:');
 
-define ("GER_TEXT58", '<b>Planeten-Analyse:</b><br>Das Schiff f&uuml;hrt eine Reihe von Scans der Umgebung und von Bord eines wissenschaftlichen Teams am Boden f&uuml;r die Ausf&uuml;hrung Geological Survey, wenn m&ouml;glich, die Berichterstattung dann die Ergebnisse der Analyse.');
+define ("GER_TEXT58", '<b>Planetenanalyse:</b><br>Das Schiff f&uuml;hrte eine Reihe von Scans der Umgebung aus. Unser wissenschaftliches Aussenteam am Boden des Planeten erstellte zeitgleich ein geologisches Gutachten, welches zu folgendem Ergebnis f&uuml;hrte.');
 
-define ("GER_TEXT59", '<b>Terraform:</b><br>Das Ziel Asteroiden, verwenden eine Technologie im Versuchsstadium, &Auml;nderungen in ihrer Zusammensetzung. Die Folgen sind unvorhersehbar, aber das Experiment kann die Geburt eines neuen Planeten lebenswichtig f&uuml;hren. NB Um zu funktionieren, muss die Flotte haben eine Reserve von 150.000');
+define ("GER_TEXT59", '<b>Terraforming:</b><br>Mithilfe unserer neuen experimentellen Technologie ver&auml;nderte sich die Zusammensetzung des Zielasteroiden. Die Folgen sind zwar unvorhersehbar, aber das Experiment k&ouml;nnte zur Geburt eines neuen Planeten f&uuml;hren. Damit es funktioniert, muss zwingend vorliegen: Unsere Flotte ben&ouml;tigt einen Vorrat von 150.000');
 
 define ("GER_TEXT60", 'Unzureichende Ressourcen, um das Terraforming durchzuf&uuml;hren!');
 
-define ("GER_TEXT61", '<b>Erster Kontakt:</b><br>Das Schiff wird eine Erkundung Team mit der Aufgabe, einen ersten Kontakt mit der lokalen Bev&ouml;lkerung komplette Land. Wenn das Team erfolgreich sein wird, das Vertrauen in Ihr Rennen wird wachsen.');
+define ("GER_TEXT61", '<b>ERSTKONTAKT:</b><br>Das Schiff wird ein Erkundungsteam mit der Aufgabe betrauen, einen ersten Kontakt mit der lokalen Bev&ouml;lkerung herzustellen. Wenn das Team erfolgreich ist, dann wird das Vertrauen in uns wachsen.');
 
-define ("GER_TEXT62", 'Missionen auf dem Planeten sind nur f&uuml;r Flotten, bestehend aus einem einzigen Schiff zugewiesen.');
+define ("GER_TEXT62", 'Missionen auf diesem Planeten sind nur f&uuml;r Flotten m&ouml;glich, die aus einem einzigen Schiff bestehen.');
 
 define ("GER_TEXT63", 'Erforderlich: ');
 
-define ("GER_TEXT64", '<b>Diplomatische Vertr&auml;ge:</b><br>Das Schiff wird Land eine diplomatische Delegation mit der Aufgabe, Vereinbarungen &uuml;ber die Zusammenarbeit und den kulturellen Austausch mit der lokalen Bev&ouml;lkerung zu kn&uuml;pfen. Sollten die Verhandlungen Ende gut, wird das Vertrauen in Ihre Rasse von Anwohnern deutlich erh&ouml;hen.<br>Die Reaktion der Siedler konnte einige Zeit dauern ankommen.');
+define ("GER_TEXT64", '<b>Diplomatische Vertr&auml;ge:</ b> <br> Das Schiff wird eine diplomatische Delegation mit der Aufgabe beauftragen, Vereinbarungen &uuml;ber die Zusammenarbeit zu schlie&szlig;en und um den kulturellen Austausch mit der lokalen Bev&ouml;lkerung zu f&ouml;rdern. Wenn die Verhandlungen gut enden, steigt das Vertrauen der Bewohner in Ihre Rasse erheblich. <br> Es kann einige Zeit dauern, bis eine Reaktion der Siedler eintrifft.');
 
-define ("GER_TEXT65", '<b>Aufkl&aum;rung:</b><br>Das Schiff wird Strahl nach unten auf dem Planeten eine Untersuchung Team mit der Aufgabe der Beurteilung der sozialen und politischen Bedingungen der Bev&ouml;lkerung und erhalten n&uuml;tzliche Informationen f&uuml;r k&uuml;nftige diplomatische Kontakte.');
+define ("GER_TEXT65", '<b>Aufkl&aum;rung:</b><br>Das Schiff wird ein Untersuchungsteam auf den Planeten beamen, welches die sozialen und politischen Bedingungen in der Bev&ouml;lkerung bewerten soll. Ziel wird auch sein, da&szlig; wir n&uuml;tzliche Informationen f&uuml;r zuk&uuml;nftige diplomatische Kontakte erhalten.');
 
-define ("GER_TEXT66", '<b>Colonize:</b><br>The aim planet will be colonized if it is uninhabited, by a colonization ship of the fleet. Besides, this ship will be dismantled and the first building is built from it. Its crew will be stationed on the planet. The new colony will be handled by the Settlers indipendent faction , with no intervention of the player.');
+define ("GER_TEXT66", '<b>Kolonisation:</b><br>Der Zielplanet wird von einem Kolonisationsschiff kolonisiert, wenn er unbewohnt ist. Danach wird dieses Schiff demontiert und das erste Geb&auml;ude daraus gebaut. Seine Crew wird auf dem Planeten umgesiedelt. Die neue Kolonie wird von der unabh&auml;ngigen Fraktion der Siedler - ohne M&ouml;glichkeit des Eingreifens des Spielers - verwaltet.');
 
-define("GER_TEXT67", '<b>Supporto Sviluppo Tecnologico:</b><br>Sul pianeta viene inviata una squadra con lo scopo di fornire supporto tecnologico e scientifico alla popolazione locale. Attraverso questo aiuto, la colonia beneficier&agrave; di un miglioramento alle condizioni di vita e lavoro.<br>Indicare in quale campo scientifico dovr&agrave operare la squadra:');
+define("GER_TEXT67", '<b>Technologische Entwicklungsunterst&uuml;tzung:</b> <br> Ein Aussenteam wird auf den Planeten entsandt, um der lokalen Bev&ouml;lkerung technologische und wissenschaftliche Hilfe anzubieten. Durch diese Hilfe profitiert die Kolonie mittels der Verbesserung der Lebens- und Arbeitsbedingungen. <br> Geben Sie an, in welchem ​​wissenschaftlichen Bereich dieses Team t&auml;tig sein soll:');
 
-define("GER_TEXT68", '<b>Modifica ambientale</b>: fornire tecnologie ambientali che migliorano l&#146;abitabilit&agrave; del pianeta (innalza il limite di popolazione del pianeta e fornisce un bonus alla generazione di lavoratori)');
+define("GER_TEXT68", '<b>Ver&auml;nderung der Umwelt:</b> Durch die Bereitstellung von Umwelttechnologien zur Verbesserung der Bewohnbarkeit des Planeten erh&ouml;ht sich die max. Bev&ouml;lkerung des Planeten und bietet dadurch insgesamt mehr Arbeitern in Zukunft Platz.');
 
-define("GER_TEXT69", '<b>Automazione</b>: fornire tecnologie che migliorano i processi produttivi sul pianeta (riduce i tempi di lavorazione delle accademie e dei cantieri)');
+define("GER_TEXT69", '<b>Automatisierung:</b> Es werden Technologien bereitgestellt, welche die Produktionsprozesse auf dem Planeten verbessern werden. Das verk&uuml;rzt letztendlich die Baudauer von Forschungen, aber genauso von allen Arten von Bauvorhaben.');
 
-define("GER_TEXT70", '<b>Estrazione</b>: fornire tecnologie che migliorano l&#146;estrazione e la raffinazione di materie prime (migliora la resa delle miniere sul pianeta)');
+define("GER_TEXT70", '<b>Bergbau:</ b> Die Bereitstellung von Technologien zur Verbesserung der Gewinnung und der Raffination von Rohstoffen verbessert den Ertrag von Minen auf diesem Planeten');
 
-define("GER_TEXT71", '<b>Supporto Difesa Planetaria</b>: Sul pianeta viene inviata una squadra tecnica per fornire supporto alla progettazione e costruzione di un sistema difensivo orbitale migliorato a disposizione della colonia, allo scopo di meglio difendersi da tentativi di invasione.');
+define("GER_TEXT71", '<b>Erweiterung der Planetaren Verteidigung:</ b> Ein Technikteam wird auf den Planeten geschickt, um beim Bau eines verbesserten Orbitalabwehrsystems zu unterst&uuml;tzen. Damit wird sich die Kolonie besser gegen Invasionsversuche verteidigen k&ouml;nnen.');
 
-define("GER_TEXT72", '<b>Verteidigung:</b> Technologien, die Oberfl&auml;che des Planeten Verteidigung (erh&ouml;ht die Anzahl der leichten und schweren Orbitalwaffen auf dem Planeten) verbessern zu liefern.');
+define("GER_TEXT72", '<b>Erweiterung der Planetaren Verteidigung:</b>Die Bereitstellung von Technologien zur Verbesserung der Oberfl&auml;chenverteidigung hilft durch die Erh&ouml;hung der max. m&ouml;glichen Anzahl von leichten und schweren Orbitalgesch&uuml;tze auf diesem Planeten weiter.');
 
-define("GER_TEXT85", '<b>Ricerca medica</b>: fornire tecnologie mediche che migliorano le condizioni di salute sulla colonia; (fornisce un bonus alla produzione di lavoratori)');
+define("GER_TEXT85", '<b>Medizinische Forschung:</b>: Die Bereitstellung medizinischer Technologien zur Verbesserung der Gesundheitsbedingungen in der Kolonie, f&uuml;hren zu einem Anstieg in der arbeitenden Bev&ouml;lkerung.');
 
-define("GER_TEXT86", '<b>Addestramento Avanzato</b>: sbarcando la squadra su una colonia attrezzata per l&#146;addestramento di truppe di terra, si potr&agrave; abbreviare il percorso formativo di una squadra da sbarco di altissimo livello.');
+define("GER_TEXT86", '<b>Erweitertes Training:</b>: Durch die Landung eines Aussenteams auf einer Kolonie, welche f&uuml;r die Ausbildung von Bodentruppen ger&uuml;stet ist, kann ein Landungsteam bis auf das h&ouml;chste Niveau trainiert werden.');
 
-define("GER_TEXT87", 'Nessuna azione possibile sui pianeti di un sistema privato.');
-
+define("GER_TEXT87", 'Innerhalb eines nicht-&ouml;ffentlichen Systems ist leider keinerlei Aktion m&ouml;glich.');
 
 //English
 define ("ENG_TEXT0", 'Ship movements');
