@@ -608,10 +608,10 @@ switch($portal_action) {
 <center>
 <span class="caption">'.constant($game->sprache("TEXT16")).'</span><br><br>');
         
-/*        display_shoutbox();*/
-/*discord von Tobias*/
+        display_shoutbox();
+/*discord von Tobias
 $game->out('<br>');
-	display_discord();
+	display_discord();*/
 /*Ende*/
         $game->out('
 <br><br>            
