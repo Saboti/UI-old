@@ -30,33 +30,31 @@ function components_categories() {
 	return $avail_cat;
 }
 
-$guide_html = '<span class="caption">I PROGETTI NAVALI</span>
+$guide_html = '<span class="caption">SCHIFFSTEMPLATES</span>
 <p align="justify">
-Tramite questo pannello &egrave; possibile creare i propri progetti navali che potranno poi essere realizzati per mezzo del "<a href="'.parse_link('a=shipyard').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][7].'</span></a>".<br>
-La lista di navi visualizzata in questa sezione, varia a seconda del tuo punteggio e del pianeta selezionato: la prima nave disponibile sar&agrave; lo scout.<br>
-Ecco la lista massima di navi disponibili:
+<br>Über das entsprechende Men&uuml; k&ouml;nnen Schiffsvorlagen als Templates erstellt werden, die man dann im "<a href="'.parse_link('a=shipyard').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][7].'</span></a>" bauen kann.</br>
+
+<br>Das allererste Schiff ist der Scout. In der Templateliste erscheinen nur diejenigen Schiffe oder Bauten, die der ausgew&auml;hlte Planet je nach Punktzahl &uuml;berhaupt bauen kann. Auch die Verteidigungseinrichtungen k&ouml;nnen erforscht werden, daher sind Sie hier mit aufgef&uuml;hrt, obwohl Sie kein Schiff sind.</br>
+<br>Insgesamt gibt es auch nur die folgenden Schiffstypen / Verteidigungseinrichtungen im Spiel (die abh&auml;ngig von der Rasse sind: ):
 '.available_ships().'
 </p>
+
 <p align="justify">
-Una volta selezionata la classe di nave desiderata, &egrave; possibile specificare nel progetto quali
-<a href="'.parse_link('a=database&view=guide&page=7').'"><span class="highlight_link">componenti</span></a> dovranno essere installati durante la costruzione della nave.<br>
-I componenti navali, che vengono ricercati nel "<a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>", sono suddivisi nelle seguenti categorie:
-'.components_categories().'
-</p>
-<p align="justify">
-Per ogni categoria &egrave; possibile specificare <b>UN</b> solo componente, non tutti possono essere montati su tutte le classi di navi disponibili ed inoltre dev&#146;essere rispettato il limite massimo di consumo energetico, altrimenti non sar&agrave; possibile completare il progetto.
-</p>
-<p align="justify">
-<b>Come si crea un progetto nave?</b><br>
-Seguendo il men&ugrave; "<a href="'.parse_link('a=ship_template').'"><span class="highlight_link">Progetti navi</span></a>" viene presentato un pannello con tre voci:
+<br>Im Untermen&uuml; von "<a href="'.parse_link('a=ship_template').'"><span class="highlight_link">Schiffstemplates</span></a>" sind drei Punkte zur Auswahl :</br>
 <ul>
-<li>Dettagli, che mostra una lista di tutti i progetti gi&agrave; realizzati;</li>
-<li>Crea progetto, per creare un nuovo progetto e</li>
-<li>Confronta progetti, per poter visualizzare un raffronto tra tre progetti differenti.</li>
+<li>&Uuml;bersicht</li> 
+zeigt eine Liste der bereits vorhandenen Schiffstemplates</br><br>
+<li>Template erstellen</li> 
+erstellt wie gesagt ein neues Schiffstemplate als Vorlage f&uuml;r sp&auml;tere Schiffe</br><br>
+<li>Templates vergleichen</li> 
+vergleicht zwei der vorhandenen Templates untereinander im Detail. </br><br>
 </ul>
-Selezionare la voce "<a href="'.parse_link('a=ship_template&view=create').'"><span class="highlight_link">Crea Progetto</span></a>" , scegliere, dalla lista disponibile, la classe di nave di cui si desidera creare un progetto e premere il pulsante <input class="button_nosize" type="submit" value ="(2/3) Continua...">.<br>
-Verr&agrave; visualizzato l&#146;elenco di tutti i componenti disponibili (<b><u>gi&agrave; ricercati sul pianeta selezionato</u></b>) dal quale scegliere quelli da installare.<br>
-Al termine della selezione, premere il bottone <input class="button_nosize" type="submit" value="(3/3) Continua..."> per dare un nome al progetto ed eventualmente una descrizione di esso, quindi selezionare il pulsante <input class="button_nosize" type="submit" value="Finalizzare"> per salvare il progetto.
+<b>HINWEIS:</b><br> Schiffbaupl&auml;ne/Templates k&ouml;nnen in der og. Liste nur erstellt werden, wenn ausreichend globale und lokale Punkte vorhanden sind und die Forschung f&uuml;r die Schiffe grunds&auml;tzlich &uuml;berhaupt auf dem entsprechenden Planeten schon vorhanden ist. Alle erf&uuml;llten Voraussetzungen werden <span style="color: lightgreen">GRÜN</span> angezeigt.</p>
+<p align="justify">
+Wenn Sie dazu den Punkt "<a href="'.parse_link('a=ship_template&view=create').'"><span class="highlight_link">Template erstellen</span></a>" im Koloniemen&uuml; auf der Hauptseite anklicken, k&ouml;nnen Sie den  den entsprechenden Schiffstyp ausw&auml;hlen. Danach auf <input class="button_nosize" type="submit" value ="(2/3) Weiter...">. klicken.</br>
+
+<br>Danach geht es weiter im Untermen&uuml; "Komponenten w&auml;hlen". Dieser wird auf der n&auml;chsten Seite ausf&uuml;hrlichst behandelt.</br>
+</p>
 
 ';
 ?>

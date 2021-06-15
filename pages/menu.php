@@ -26,7 +26,7 @@ $main_html='
 		<h1>MENU</h1>
 			<div class="buttons">
 				<a href="'.parse_link().'" class="gold">Home</a>
-				<a href="'.parse_link('a=stats').'" class="green">Stats</a>
+				<a href="'.parse_link('a=stats').'" class="green">Statistiken</a>
 				<a href="'.parse_link('a=faq').'" class="violet">FAQ(Hilfe)</a>
 				<a href="https://discord.gg/fbzafjkMp4" target="blank">Discord</a>
 				<a href="https://st-gw.de/forum/" target="blank">Forum</a>

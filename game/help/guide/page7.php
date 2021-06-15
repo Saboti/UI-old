@@ -1,46 +1,72 @@
 <?PHP
 
-$guide_html = '<span class="caption">I COMPONENTI NAVI</span>
+include('include/static/static_components.php');
+$filename = 'include/static/static_components_'.$game->player['language'].'.php';
+if (file_exists($filename)) include($filename);
+
+function components_categories() {
+        global $game, $ship_components;
+        $avail_cat = '<ul>';
+        for ($c=0; $c < count($ship_components[$game->player['user_race']]); $c++)
+        {
+                $avail_cat .= '<li>'.$ship_components[$game->player['user_race']][$c]['name'].'</li>';
+        }
+        $avail_cat .= '</ul>';
+        return $avail_cat;
+}
+
+$guide_html = '<span class="caption">DIE SCHIFFSKOMPONENTEN</span>
+
 <p align="justify">
-I componenti navi sono speciali tecnologie ricercabili mediante la struttura "<a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>",
-che servono a migliorare il rendimento di una o pi&ugrave; classi di navi rispetto ai loro progetti iniziali, i quali in origine non hanno alcun componente installato.<br>
-Essi sono suddivisi in categorie, a seconda dell&#146;area funzionale per cui sono stati progettati e semplificando queste sono: propulsione, armamenti, difese e sistemi supplementari.
-</p>
-<p align="justify">
-Ogni categoria contiene uno o pi&ugrave; componenti che una volta ricercati possono essere utilizzati in un
-<a href="'.parse_link('a=database&view=guide&page=6').'"><span class="highlight_link">progetto navale</span></a>. A loro volta, ogni componente
-si distingue dagli altri per il costo di realizzazione (sia in termini di risorse, che di equipaggio extra che di tempo di costruzione per la nave),
-per l&#146;effetto ottenuto (quale ad esempio un aumento delle armi leggere) e l&#146;eventuale quantitativo di energia consumato e per la possibilit&agrave;
-di poter essere o meno installato su determinate classi di navi.
-</p>
-<p align="justify">
-Ecco quindi i parametri di una nave stellare (che verranno approfonditi pi&ugrave; avanti) su cui vanno ad agire i vari componenti:
-<ul>
-<li>Armi Leggere</li>
-<li>Armi Pesanti</li>
-<li>Armi Planetarie</li>
-<li>Potenza Scudi</li>
-<li>Punti Scafo (HP)</li>
-<li>Reazione</li>
-<li>Prontezza</li>
-<li>Agilit&agrave;</li>
-<li>Esperienza</li>
-<li>Curvatura (Warp)</li>
-<li>Sensori</li>
-<li>Occultamento</li>
-<li>Consumo di Energia</li>
-</ul>
-</p>
-<p align="justify">
-<b>Come si sviluppano i componenti navi?</b><br>
-Seguendo il men&ugrave;
-"<a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>" viene
-presentato un pannello che elenca tutte le ricerche relative ai componenti installabili sulle varie classi di astronavi.
-Se la struttura di ricerca non &egrave; occupata e sul pianeta sono presenti risorse a sufficienza, accanto al nome, al costo
-in risorse nonch&eacute; al tempo necessario per lo sviluppo, &egrave; possibile trovare un <span style="color: green">link verde</span> che
-permette di avviare la ricerca selezionata.<br>
-Non &egrave; possibile avere pi&ugrave; di una ricerca in coda.
+<b><u>Grunds&auml;tzliches:</b></u>
+
+<br>Schiffskomponenten sind einzelne Module oder Schiffsbauteile. Sie dienen dazu die Leistung der vorhandenen Schiffstypen zu verbessern. Sie sind in Kategorien unterteilt, je nach Funktionsbereich, f&uuml;r den sie konzipiert wurden. </br>
+<br><i>Vereinfacht ist das: <span style="color: brown">Antrieb, Bewaffnung, Verteidigung und Erg&auml;nzungssysteme.</span></i></br>
 </p>
 
+<p align="justify">
+<b><u>Wie werden Schiffkomponenten entwickelt/erforscht?</u></b>
+
+<br>Solange genug Ressourcen und alle Voraussetzungen auf dem jeweiligen Planeten vorhanden sind, werden im Men&uuml; Kolonie "<a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>" alle m&ouml;glichen Komponenten, die in ein Raumschiff eingebaut werden k&ouml;nnen, im oberen Teil der Seite angezeigt. Sobald eine Komponente baubar ist, wird Sie <span style="color: green">GR&Uuml;N</span> angezeigt. Jedoch ist in der entsprechenden Warteschleife nur max. EINE EINZIGE Forschung zeitgleich m&ouml;glich.</br>
+
+<br>Sie m&uuml;ssen alle zun&auml;chst einzeln erforscht werden, bevor Sie in Schiffe eingebaut werden k&ouml;nnen. Deren Erforschung erfolgt &uuml;ber das Hauptmen&uuml;: "Kolonie -> <a href="'.parse_link('a=researchlabs').'"><span class="highlight_link">'.$BUILDING_NAME[$game->player['user_race']][8].'</span></a>". Diese Komponenten (Bauteile)) teilen sich in folgende Unterkategorien auf: </br>
+
+'.components_categories().'
+</p>
+
+<p align="justify">
+
+<b><u>Genaueres zur Template-Erstellung:</u></b>
+
+<br>Nach der Auswahl des Schiffstypen kann im Template festgelegt werden, was f&uuml;r Komponenten beim Bau des Schiffes verbaut werden sollen. Jede Komponente ben&ouml;tigt eine unterschiedliche Menge an Baukosten (Ressourcen, Besatzung und Bauzeit) und nicht jede Komponente kann gleicherma&szlig;en auf jedem Schiffstyp eingesetzt werden.<br>
+
+<br>Durch die Weiterforschung an einzelnen Komponenten kann die Leistung eines Schiffes laufend weiter erh&ouml;ht werden. Die folgenden Einstellungen eines Raumschiffes bestimmen deren grunds&auml;tzliche Leistung :</br>
+
+<ul>
+<li>Leichte Waffen</li>
+<li>Schwere Waffen</li>
+<li>Planetare Waffen</li>
+<li>Schilde</li>
+<li>Rumpfpunkte/H&uuml;lle (HP)</li>
+<li>Reaktion</li>
+<li>Bereitschaft</li>
+<li>Beweglichkeit</li>
+<li>Erfahrung</li>
+<li>Warpleistung</li>
+<li>Sensoren</li>
+<li>Tarnung</li>
+<li>Energieverbrauch</li>
+</ul>
+
+<br>In jeder dieser Kategorien kann nur jeweils <b>max. EINE!!!</b> Komponente ausgew&auml;hlt werden. Es ist nicht m&ouml;glich, alle Bauteile einer Komponentengruppe in ein Schiff einzubauen. Begrenzt wird die ganze Auswahl zus&auml;tzlich durch die max. erzeugbare Energie im Schiff.</br>
+</p>
+ 
+<p align="justify">
+ 
+<b><u>Abschliessen der Template-Erstellung:</u></b>
+
+<br>Wenn die Auswahl der Schiffskomponenten erfolgt ist, dr&uuml;cken Sie auf <input class="button_nosize" type="submit" value="(3/3) Weiter...">. Zum Schluss kann dem Template noch ein passender Name oder eine Beschreibung mitgegeben werden.
+Dr&uuml;cken Sie zum Schlu&szlig; des ganzen Vorgangs auf <input class="button_nosize" type="submit" value="Abschlie&szlig;en">. Damit wird das entsprechende Schiffstemplate genau so in Zukunft &uuml;ber jedwede Werft auf all Ihren Planeten bauf&auml;hig sein.</br>
+</p>
 ';
 ?>

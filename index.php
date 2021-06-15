@@ -132,7 +132,6 @@ else {
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="date=no">
 <link rel="stylesheet" type="text/css" href="css/lcars-classic-min.css">
-<!--<link rel="stylesheet" href="css/lcars.css">-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 </head>
