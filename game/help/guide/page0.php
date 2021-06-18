@@ -6,16 +6,16 @@ Der Autor hofft, dass es für den Anf&auml;nger nützlich sein wird, jeden Aspek
 <ul>
 <li><a href="'.parse_link('a=database&view=guide&page=1').'">Das Spiel</a></li>
 <li><a href="'.parse_link('a=database&view=guide&page=2').'">Die Planeten</li>
-<li><a href="'.parse_link('a=database&view=guide&page=3').'">Strukturen</li>
-<li><a href="'.parse_link('a=database&view=guide&page=4').'">Planetare Forschung</li>
-<li><a href="'.parse_link('a=database&view=guide&page=5').'">Raumschiffe</li>
-<li><a href="'.parse_link('a=database&view=guide&page=6').'">Schiff Templates</li>
-<li><a href="'.parse_link('a=database&view=guide&page=7').'">Schiff Komponenten</li>
-<li><a href="'.parse_link('a=database&view=guide&page=8').'">Flotten (Erstellung)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=9').'">Flotten (bewegen mit Flotten Men&uuml;)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=10').'">Flotten (bewegen mit Taktik Men&uuml;)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=11').'">Flotten (Kommandos)</li>
-<li><a href="'.parse_link('a=database&view=guide&page=12').'">Flotten (Kommandos im Orbit)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=3').'">Gebäude</li>
+<li><a href="'.parse_link('a=database&view=guide&page=4').'">Technologische Erforschung</li>
+<li><a href="'.parse_link('a=database&view=guide&page=5').'">Die Raumschiffe</li>
+<li><a href="'.parse_link('a=database&view=guide&page=6').'">Schiffstemplates</li>
+<li><a href="'.parse_link('a=database&view=guide&page=7').'">die Schiffskomponenten</li>
+<li><a href="'.parse_link('a=database&view=guide&page=8').'">Die Raumflotten (Teil1: Raumhafen)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=9').'">Die Raumflotten (Teil2: Flottenmenü)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=10').'">Die Raumflotten (Teil3: Taktiv Menü, Kolonisieren)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=11').'">Die Raumflotten (Teil4: Kommandos)</li>
+<li><a href="'.parse_link('a=database&view=guide&page=12').'">Die Raumflotten (Teil5: Kommandos im Orbit)</li>
 </ul>
 </p>';
 

@@ -37,12 +37,12 @@ define ("GER_TEXT204", 'Geb&auml;ude');
 define ("GER_TEXT205", 'Technologische Erforschung');
 define ("GER_TEXT206", 'Die Raumschiffe');
 define ("GER_TEXT207", 'Schiffstemplates');
-define ("GER_TEXT208", 'Schiffskomponenten');
-define ("GER_TEXT209", 'Flotten (Erstellung)');
-define ("GER_TEXT210", 'Flotten (bewegen mit Flotten Men&uuml;)');
-define ("GER_TEXT211", 'Flotten (bewegen mit Taktik Men&uuml;)');
-define ("GER_TEXT212", 'Flotten (Kommandos)');
-define ("GER_TEXT213", 'Flotten (Kommandos im Orbit)');
+define ("GER_TEXT208", 'Die Schiffskomponenten');
+define ("GER_TEXT209", 'Die Raumflotten (Teil1: Raumhafen)');
+define ("GER_TEXT210", 'Die Raumflotten (Teil2: Flottenmen&uuml;)');
+define ("GER_TEXT211", 'Die Raumflotten (Teil3: Taktiv Men&uuml, Kolonisieren)');
+define ("GER_TEXT212", 'Die Raumflotten (Teil4: Kommandos)');
+define ("GER_TEXT213", 'Die Raumflotten (Teil5: Kommandos im Orbit)');
 
 
 // English

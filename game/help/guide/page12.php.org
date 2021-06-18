@@ -1,9 +1,8 @@
 <?PHP
 
-$guide_html = '<span class="caption">Die RAUMFLOTTEN</span><br>
-<span class="sub_caption2">Teil5: Kommandos im Orbit</span>
+$guide_html = '<span class="caption">LE FLOTTE</span><br>
+<span class="sub_caption2">Parte quinta: i comandi dall&#146;orbita</span>
 <p align="justify">
-
 Alcuni dei comandi elencati <a href="'.parse_link('a=database&view=guide&page=11').'"><span class="highlight_link">precedentemente</span></a>, possono essere assegnati anche quando la flotta ha raggiunto l&#146;orbita di un pianeta.<br>
 Tali istruzioni sono impartibili esclusivamente dalla sezione "<a href="'.parse_link('a=tactical_cartography').'"><span class="highlight_link">Cartografia stellare</span></a>" del men&ugrave; Tattico dopo aver selezionato 
 il pianeta interessato.<br>
