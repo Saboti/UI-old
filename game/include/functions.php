@@ -1420,7 +1420,8 @@ class game {
 
 
 			'ACTIVE_PLANET_ATTACKED' => ($this->planet['planet_next_attack'] > 0) ? '<a href="index.php?a=tactical_sensors"><img src="'.$this->GFX_PATH.'menu_attack_small.gif" border=0></a>' : '',
-			'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.'planet_type_'.$this->planet['planet_type'].'.png',
+			/*'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.'planet_type_'.$this->planet['planet_type'].'.png',*/
+			'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.$this->planet['planet_type'].'.gif',
 
 			'ACTIVE_PLANET_MAXPOINTS' => (($this->player['user_capital']==$this->planet['planet_id']) ? $MAX_POINTS[1] : $MAX_POINTS[0]),
 			'GAME_HTML' => &$this->game_html,

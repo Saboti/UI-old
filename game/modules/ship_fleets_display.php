@@ -27,7 +27,7 @@ if ($game->option_retr('show_fleets_map')==0)
     $html_code = '<b>[&nbsp;<a href="'.parse_link('a=ship_fleets_display&sfmap=1').'"><i>'.constant($game->sprache("TEXT102")).'</i></a>&nbsp;]</b>';
 else
     $html_code = '<b>[&nbsp;<a href="'.parse_link('a=ship_fleets_display&sfmap=0').'"><i>'.constant($game->sprache("TEXT103")).'</i></a>&nbsp;]</b><br><br>
-    <a href="userfleets.php?size=6&map" target=_blank><img src="userfleets.php?size=2" border=0></a><br>';
+    <a href="userfleets.php?size=6&map" target=_self><img src="userfleets.php?size=2" border=0></a><br>';
 
 $game->out('
 <table width="90%" align="center" border="0" cellpadding="2" cellspacing="2" class="style_outer"><tr><td>
