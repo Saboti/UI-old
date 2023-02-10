@@ -102,6 +102,7 @@ $tables = array(
     'message',
     'message_archiv',
     'message_removed',
+    'page_news',
     'planets',
     'planet_details',
     'portal_news',
