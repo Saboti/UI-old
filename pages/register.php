@@ -400,7 +400,8 @@ if(isset($_POST['submit'])) {
     }
 
     $activation_key = md5( pow($user_id,2) );
-    $activation_link = 'https://st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
+    //$activation_link = 'https://st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
+    $activation_link = '.$site_url.'/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
     $mail_message  = $locale['mail_message_congrats'].' '.$_POST['user_name'].'!'.NL;
     $mail_message .= $locale['mail_message_reg1a'].' '.$galaxyname.' '.$locale['mail_message_reg1b'].NL;
     $mail_message .= $locale['mail_message_reg2'].NL.$activation_link."\n\n".$locale['mail_message_reg3'].NL;

@@ -1059,7 +1059,7 @@ class game {
 
 	var $uid_cache = array();
 
-	function game() {
+	function __construct() {
 		$this->TIME = time();
 
 		$this->sectors_per_quadrant     = $this->quadrant_map_split * $this->quadrant_map_split;
