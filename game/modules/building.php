@@ -297,7 +297,7 @@ function Start_Build()
 
     // If queue max length
     if ($db->num_rows() == BUILDING_QUEUE_LEN) {
-        $game->out('<span class="text_large">'.constant($game->sprache("TEXT3")).'</span><br>');
+        $game->out('<span class="text_large_error">'.constant($game->sprache("TEXT3")).'</span><br /><br />');
     }
     else if ($db->num_rows()>0) {
         Start_Queued();

@@ -37,7 +37,7 @@ $main_html .= '
 						<tr><td>'.$locale['galaxy'].'</td><td><select name="galaxy"><option value="./game/index.php" selected="selected">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option></select></td><td></td></tr>
 					</table>
 					<br>
-					[ <a href="index.php?a=lost_password">'.$locale['lost_password'].'</a> ]<br><br>
+					[ <a href="generic.php?a=lost_password">'.$locale['lost_password'].'</a> ]<br><br>
 					<input class="lcars-element rounded" type="submit" name="stgc_login" value="'.$locale['submit'].'">
 					</form>
 				</p>

@@ -237,7 +237,7 @@ $main_html .= '
                 <h1>'.$locale['stats'].'</h1>
         </header>
         <p>
-                <table class="lcars-table lcars-husk-color standard-header">
+                <table>
 			<thead>
 				<tr><th>Server Web/DB (STGW)</th></tr>
 			</thead>
@@ -255,7 +255,7 @@ $main_html .= '
 		<br>
 		<br>
 		<br>
-                <table class="lcars-table lcars-husk-color standard-header">
+                <table>
                         <thead>
                                 <tr><th>'.$locale['galaxy'].' '.GALAXY1_NAME.'</th></tr>
                 </thead>
@@ -279,7 +279,7 @@ $main_html .= '
 		<br>
 		<br>
 		<br>
-		<table class="lcars-table lcars-husk-color standard-header">
+		<table>
                         <thead>
                                 <tr><th>'.$locale['racial_statistics'].' - '.GALAXY1_NAME.'</th></tr>
                         </thead>
@@ -301,7 +301,7 @@ $main_html .= '
                 <br>
                 <br>
                 <br>
-		<table class="lcars-table lcars-husk-color standard-header">
+		<table>
                         <thead>
                                 <tr><th class="lcars-u-3">'.$locale['affiliate_planets'].' - '.GALAXY1_NAME.'</th></tr>
                         </thead>

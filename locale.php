@@ -335,14 +335,13 @@ $loc_strings = array(
         'noreports' => 'Keine Reporte vorhanden',
         'today' => 'Heute',
         'yesterday' => 'Gestern',
-        'welcome_old' => 'Star Trek - Galaxy War, ist ein kostenloses Multiplayerspiel im Star Trek&trade;
-          Universum. Zum Spielen wird nur ein Browser ben&ouml;tigt.<br><br>
-          ST-GW ist ein Echtzeit Aufbau und Taktik Spiel aus dem Genere der Strategie.<br><br>
-          W&auml;hle aus verschiedenen Rassen wie: F&ouml;deration, Romulaner, Klingonen, Cardassianer und
-          vielen mehr.<br> Nachdem deine Welt erstellt wurde, kolonisiere neue Welten um deine Macht zu steigern.
-          Baue Handelsschiffe wie auch Kampfschiffe um das Universum mit anderen spielern zu erkunden und zu bek&auml;mpfen.
-          Ernkunde Bereiche im Universum in denen noch kein anderer jemals war!',
-        'welcome' => 'Star Trek - Galaxy War ist ein kostenloses Multiplayerspiel im Star Trek(tm)
+        'welcome' => 'Star Trek - Galaxy War, ist ein kostenloses Multiplayer Strategie Spiel im Star Trek&trade;
+          Universum. Zum Spielen wird nur ein Browser ben&ouml;tigt.<br /><br />
+          W&auml;hle aus verschiedenen Rassen wie: F&ouml;deration, Romulaner, Klingonen, Cardassianern und vielen mehr.<br />
+          Nachdem deine Welt erstellt wurde, baue diese aus und kolonisiere weitere neue Welten um deine Macht zu steigern.<br />
+          Baue Handelsschiffe und Kampfschiffe um das Universum mit anderen Spielern in einer Allianz zu erkunden oder diese zu bek&auml;mpfen.<br />
+          Ernkunde Bereiche im Universum die nie ein Mench zuvor gesehen hat!',
+        'welcome_old' => 'Star Trek - Galaxy War ist ein kostenloses Multiplayerspiel im Star Trek(tm)
           Universum, für das nichts weiter als ein Webbrowser benötigt wird.
           Es läuft in Echtzeit und ist ein Mix aus dem Genre Strategie, Aufbau und Taktik.<br><br>
           Werde Teil eines einzigartigen Universums, wähle Deine Lieblingsrasse, forsche, treibe Handel,
@@ -490,7 +489,7 @@ $loc_strings = array(
         'country_at' => '&Ouml;sterreich',
         'country_ch' => 'Schweiz',
         'country_fr' => 'Frankreich',
-        'term_of_use' => 'Ich habe die <a href="JavaScript:void(window.open(\'agb.htm.de\',\'STGW\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));"><b><u>Nutzungsbedingungen</u></b></a> von dem Spiel gelesen und akzeptiert.',
+        'term_of_use' => 'Ich habe die <a href="JavaScript:void(window.open(\'agb.htm\',\'STGW\',\'toolbar=no,width=600,height=400,resizable=no,scrollbars=yes\'));"><b><u>Nutzungsbedingungen</u></b></a> von dem Spiel gelesen und akzeptiert.',
         'no_multiaccount' => 'Nur ein Account per IP',
         'multiaccount_desc' => 'Diese Limitation heisst, jeder Spieler der mehr als einen Account hat \
          betrieben ab einer IP f&uuml;r mehr als vier Tage nach Anmeldung gekickt und gebannt wird!<br />\

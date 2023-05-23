@@ -248,7 +248,7 @@ define ('USER_CHOOSE_QUADRANT', 1);
 define ('USER_WHOLE_SYSTEM', 1);
 
 // User start with a boosted capital planet
-define ('USER_START_BOOST', 0);
+define ('USER_START_BOOST', 1);
 
 // User maximum number of planets - OBSOLETE
 // define ('USER_MAX_PLANETS', 400);

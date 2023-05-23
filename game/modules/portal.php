@@ -625,7 +625,7 @@ $game->out('<br>');
 
 //       $game->out('<a href="http://www.pledgie.com/campaigns/15671"><img alt="Click here to lend your support to: Campagna donazioni 2012 and make a donation at www.pledgie.com !" src="http://www.pledgie.com/campaigns/15671.png?skin_name=chrome" border="0" /></a><br><br><span class="text_large" style="color: #23F025"><blink>Supporta anche tu STFC!</blink></span><br><br>');
 
-        display_news();
+//        display_news();
 
         $game->out('
     </td>
@@ -637,7 +637,7 @@ $game->out('<br>');
 
         $game->out('<br>');*/
 
-        display_galaxymap();
+//        display_galaxymap();
 
         $game->out('<br>');
 
@@ -645,7 +645,7 @@ $game->out('<br>');
 
 //        $game->out('<br>');
 
-        display_skins();
+//        display_skins();
 
 
 

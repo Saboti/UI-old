@@ -4,7 +4,7 @@ $title_html = 'Planeten Datenbank';
 $meta_descr = 'Uebersicht &uuml;ber alle Planeten';
 $main_html='
 <h1>FAQ</h1>
-[<a href="index.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<b>Planeten Datenbank</b>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
+[<a href="generic.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<b>Planeten Datenbank</b>]&nbsp;&nbsp;[<a href="generic.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
 
 <table width="100%" border="0" cellpadding="2" cellspacing="2">
   <tr>

@@ -87,7 +87,7 @@ if (isset($_POST['galaxy']))
         $mail_message .= $newpassword.NL.NL;
         $mail_message .= $locale['mail_message_lp3'].NL.NL;
         $mail_message .= $locale['mail_message_sig_line1'].NL.$locale['mail_message_sig_line2'].NL.NL;
-        $mail_message .= 'Credits: https://st-gw.de/index.php?a=imprint';
+        $mail_message .= 'Credits: https://st-gw.de/generic.php?a=imprint';
 
         send_mail('STGW Mailer', 'noreply@st-gw.de', $_POST['user_name'], $player['user_email'], $locale['mail_subject_lp'], $mail_message);
 
@@ -106,7 +106,7 @@ $main_html .= '
                 <h1>'.$locale['password_recovery'].'</h1>
         </header>
 	<p>
-		<form method="post" action="index.php?a=lost_password">
+		<form method="post" action="generic.php?a=lost_password">
 		<b>'.$locale['lost_password_warning'].'</b>
 		<br>
 		<br>
@@ -117,7 +117,7 @@ $main_html .= '
 			<tr><td>'.$locale['galaxy'].'</td><td><select name="galaxy"><option value="0">'.GALAXY1_NAME.' ['.$player_online['num'].' online]</option></td><td></td></tr>
 		</table>
 		<br>
-		[ <a href="index.php?a=login">'.$locale['back_to_login'].'</a> ]<br><br>
+		[ <a href="generic.php?a=login">'.$locale['back_to_login'].'</a> ]<br><br>
 		<input class="lcars-element rounded lcars-u-2-1" type="submit" name="stgc_password" value="'.$locale['password_request'].'">
 		</form>
 ';

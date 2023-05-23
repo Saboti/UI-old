@@ -165,7 +165,7 @@ $game->out('
 
 <table border=0><tr><td width=125>
 <span class="sub_caption2">'.constant($game->sprache("TEXT12")).':</span><br>
-<a href="'.$game->PLAIN_GFX_PATH.$game->planet['planet_type'].'.gif" target=_blank ><img src="'.$game->PLAIN_GFX_PATH.$game->planet['planet_type'].'.gif" width="80" height="80" border="0"></a><br>
+<a href="'.$game->PLAIN_GFX_PATH.'planet_type_'.$game->planet['planet_type'].'.png" target=_blank ><img src="'.$game->PLAIN_GFX_PATH.'planet_type_'.$game->planet['planet_type'].'.png" width="80" height="80" border="0"></a><br>
 </td>
 <td width=125 valign=top>
 <form method="post" action="'.parse_link('a=headquarter').'">

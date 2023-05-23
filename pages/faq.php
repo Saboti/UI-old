@@ -4,7 +4,7 @@ $title_html = 'FAQ';
 $meta_descr = 'Heufige Fragen';
 $main_html='
 <h1>FAQ</h1>
-[<b>FAQ</b>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<a href="index.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
+[<b>FAQ</b>]&nbsp;&nbsp;[<a href="generic.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<a href="generic.php?a=rassenwerte">Rassenwerte</a>]&nbsp;&nbsp;<br><br>
 <table width="100%" cellpadding="5" cellspacing="5">
 <tr>
 	<td align="justify">

@@ -24,7 +24,6 @@
 $start_time = (microtime(true) + time());
 ignore_user_abort(true);
 
-$debug = true;
 
 // #############################################################################
 // Determine Error-Level

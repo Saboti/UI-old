@@ -20,8 +20,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
-
+include_once(dirname(__FILE__) . '/../../config.inc.php');
 
 
 function display_success($galaxy,$bg) {
@@ -84,13 +83,13 @@ function display_registration($data = array(), $message = '', $galaxy) {
         <header>
                 <h1>Anmelden</h1>
         </header>
-	<form name="register" method="post" action="index.php?a=register" onSubmit="return this.submit_b.disabled = true;">
+	<form name="register" method="post" action="generic.php?a=register" onSubmit="return this.submit_b.disabled = true;">
 	<p>
 	'.$locale['galaxy_registration'].' "'.$galaxyname.'":
 	<br>
 	'.$message.'
 	<br>
-	<table class="lcars-table scanning lcars-husk-color">
+	<table>
 		<tr><td class="lcars-u-2">'.$locale['player_name'].' *</td><td><input type="text" name="user_name" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_name'].'"></td><td></td></tr>
                 <tr><td>'.$locale['login'].' **</td><td><input type="text" name="login_name" class="lcars-text-input decorated lcars-husk-color" value="'.$data['login_name'].'"></td><td></td></tr>
                 <tr><td>'.$locale['password'].'</td><td><input type="password" name="user_password" class="lcars-text-input decorated lcars-husk-color" value="'.$data['user_password'].'" autocomplete="off"></td><td></td></tr>
@@ -131,7 +130,7 @@ function display_registration($data = array(), $message = '', $galaxy) {
 		<tr><td class="lcars-u-5"><input style="border: none;" type="checkbox" name="confirm_agb" value="1"'.( ($agb_checked) ? ' checked="checked"' : '' ).'>&nbsp;'.$locale['term_of_use'].'</td>
 		<tr><td><br></td></tr>
 		<tr><td class="lcars-u-3"><b>'.$locale['no_multiaccount'].' [<a href="javascript: void;" onmouseover="return overlib(\''.$locale['multiaccount_desc'].'\', CAPTION, \''.$locale['no_multiaccount'].':\', WIDTH, 400, FGCOLOR, \'#ffffff\', TEXTCOLOR, \'#ffffff\', FGBACKGROUND,\'https://st-gw.de/stfc_gfx/skin1/bg_stars1.gif\', BGCOLOR, \'#33355E\', BORDER, 2, CAPTIONFONT, \'Arial\', CAPTIONSIZE, 2, TEXTFONT, \'Arial\', TEXTSIZE, 2);" onmouseout="return nd();">Info</a>]</b></td>
-		<tr><td class="lcars-u-2"><a href=index.php?a=multis&galaxy='.$galaxy.'><u>'.$locale['multiaccount_title'].'</u></a></td></tr>
+		<tr><td class="lcars-u-2"><a href=generic.php?a=multis&galaxy='.$galaxy.'><u>'.$locale['multiaccount_title'].'</u></a></td></tr>
                 <tr><td><br></td></tr>
         	<tr><td><input type=hidden name="submit" value="1"><input type=hidden name="galaxy" value="'.$galaxy.'"><input class="lcars-element rounded" type="submit" name="submit_b" value="'.$locale['register'].'"><br><br><i>'.$locale['stars_explanations'].'</i></td></tr>
 	</table>
@@ -159,10 +158,10 @@ $main_html.='
 					'.$locale['galaxy_selection'].'	'.GALAXY1_NAME.'
 					<br>
 					<br>
-					<a href="index.php?a=register&galaxy=0"><img src="'.GALAXY1_IMG.'" border="0" alt="'.GALAXY1_NAME.'"></a>
+					<a href="generic.php?a=register&galaxy=0"><img src="'.GALAXY1_IMG.'" border="0" alt="'.GALAXY1_NAME.'"></a>
 					<br>
 					<br>
-					<table class="lcars-table scanning-fast lcars-husk-color">
+					<table>
 						<tr><td>'.$locale['version'].'</td><td>STFC2</td></tr>
 						<tr><td>'.$locale['running_since'].'</td><td>'.round($config['tick_id']/480,0).' '.$locale['days'].'</td></tr>
 						<tr><td>'.$locale['available_places'].'</td><td>'.($config['max_player']-$playercount['num']).'/'.$config['max_player'].'</td></tr>
@@ -400,13 +399,13 @@ if(isset($_POST['submit'])) {
     }
 
     $activation_key = md5( pow($user_id,2) );
-    //$activation_link = 'https://st-gw.de/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
-    $activation_link = '.$site_url.'/index.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
+    $activation_link = 'https://stgw.saboti.de/generic.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
+//    $activation_link = $config['site_url'].'/generic.php?a=activate&galaxy='.$galaxy.'&user_id='.$user_id.'&key='.$activation_key;
     $mail_message  = $locale['mail_message_congrats'].' '.$_POST['user_name'].'!'.NL;
     $mail_message .= $locale['mail_message_reg1a'].' '.$galaxyname.' '.$locale['mail_message_reg1b'].NL;
     $mail_message .= $locale['mail_message_reg2'].NL.$activation_link."\n\n".$locale['mail_message_reg3'].NL;
     $mail_message .= $locale['mail_message_reg4'].NL.NL.$locale['mail_message_sig_line1'].NL;
-    $mail_message .= $locale['mail_message_sig_line2'].NL.NL.'Impressum: https://st-gw.de/index.php?a=imprint';
+    $mail_message .= $locale['mail_message_sig_line2'].NL.NL.'Impressum: https://st-gw.de/generic.php?a=imprint';
     send_mail('STGW Mailer', 'noreply@st-gw.de', $_POST['user_name'], $_REQUEST['user_email'], $locale['mail_subject_reg'], $mail_message);
 
     // Update NewRegister

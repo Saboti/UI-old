@@ -1420,8 +1420,8 @@ class game {
 
 
 			'ACTIVE_PLANET_ATTACKED' => ($this->planet['planet_next_attack'] > 0) ? '<a href="index.php?a=tactical_sensors"><img src="'.$this->GFX_PATH.'menu_attack_small.gif" border=0></a>' : '',
-			/*'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.'planet_type_'.$this->planet['planet_type'].'.png',*/
-			'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.$this->planet['planet_type'].'.gif',
+			'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.'planet_type_'.$this->planet['planet_type'].'.png',
+			/*'ACTIVE_PLANET_GFX' => FIXED_GFX_PATH.$this->planet['planet_type'].'.gif',*/
 
 			'ACTIVE_PLANET_MAXPOINTS' => (($this->player['user_capital']==$this->planet['planet_id']) ? $MAX_POINTS[1] : $MAX_POINTS[0]),
 			'GAME_HTML' => &$this->game_html,
@@ -1562,7 +1562,7 @@ echo'
 
 <!-- PHP Exec Time:    '.($total_time - $db->t_query).' secs -->
 <!-- MySQL Query Time: '.$db->t_query.' secs -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br />
 
 </body>
 
@@ -2873,9 +2873,9 @@ function GlobalTorsoReq($ship)
 		$dat[6]=0;
 		$dat[7]=3300;
 		$dat[8]=0;
-		$dat[9]=7920;
+		$dat[9]=0;
 		$dat[10]=0;
-		$dat[11]=0;
+		$dat[11]=7920;
 		$dat[12]=0; // No orbital
 	}
 	elseif ($game->player['user_race']==11) // Kazon
@@ -3063,9 +3063,9 @@ function LocalTorsoReq($ship)
 		$dat[6]=0;
 		$dat[7]=460;
 		$dat[8]=0;
-		$dat[9]=495;
+		$dat[9]=0;
 		$dat[10]=0;
-		$dat[11]=0;
+		$dat[11]=495;
 		$dat[12]=0; // No orbital
 	}
 	elseif ($game->player['user_race']==11) // Kazon

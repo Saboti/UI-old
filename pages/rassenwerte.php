@@ -4,7 +4,7 @@ $title_html = 'Rassenwerte';
 $meta_descr = 'Uebersicht über alle Planeten';
 $main_html='
 <h1>FAQ</h1>
-[<a href="index.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<a href="index.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<b>Rassenwerte</b>]&nbsp;&nbsp;<br><br>
+[<a href="generic.php?a=faq">FAQ</a>]&nbsp;&nbsp;[<a href="generic.php?a=planeten">Planeten Datenbank</a>]&nbsp;&nbsp;[<b>Rassenwerte</b>]&nbsp;&nbsp;<br><br>
     <table width="100%" align="center" border="1" cellpadding="2" cellspacing="2" class="style_outer">
     <tr>
         <td align="center"><span class="sub_caption">Die Rassenwerte von STGW</span></td>

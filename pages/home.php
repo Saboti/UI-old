@@ -84,16 +84,23 @@ else {
 }
 
 $main_html .= '
-	<h1>Willkommen bei ST-GW</h1>
+        <header>
+		<h1>Star Trek &#149; Galaxy War<br /></h1>
+                <p>Forsche, treibe Handel oder führe Krieg!<br />Alles liegt in Deiner Hand.</p>
+        </header>
 	<p>'.$locale['welcome'].'</p>
-	<br>
+	<ul class="actions">
+        	<li><a class="button" href="https://stgw.saboti.de/index.php?a=login">Login</a></li>
+                <li><a class="button primary" href="https://stgw.saboti.de/index.php?a=register">Anmelden</a></li>
+        </ul>
+<!--	<br />
 	<hr>
         <h1>News</h1>
 	<p>'.$news_html.'</p>
+	<br />
 	<hr>
 	<h1>Partner</h1>
-	<a href="https://www.stuniverse.de"><img src="https://www.stuniverse.de/assets/main/banner.png" class="pics"></a>
-	</div>
+	<a href="https://www.stuniverse.de"><img src="https://www.stuniverse.de/assets/main/banner.png" class="pics"></a> -->
 ';
 
 ?>
